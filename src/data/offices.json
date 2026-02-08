@@ -1,0 +1,157 @@
+[
+    {
+      "id": "lahore-nadra-gulberg",
+      "city": "Lahore",
+      "category": "NADRA",
+      "name": "NADRA Registration Center (Gulberg)",
+      "area": "Gulberg",
+      "address": "Gulberg, Lahore (verify exact address)",
+      "googleMapsLink": "https://www.google.com/maps",
+      "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
+      "requirements": [
+        "Original CNIC / B-Form",
+        "Supporting documents (if needed)",
+        "Photocopies (recommended)"
+      ],
+      "steps": [
+        "Arrive early and take a token",
+        "Submit documents",
+        "Biometrics/photo (if needed)",
+        "Collect receipt and timeline"
+      ],
+      "fees": ["Fees vary by service (verify at center)"],
+      "notes": ["Arrive early for shorter lines"],
+      "lastUpdated": "2026-02-08"
+    },
+  
+    {
+      "id": "karachi-nadra-defence",
+      "city": "Karachi",
+      "category": "NADRA",
+      "name": "NADRA Registration Center (Defence / DHA)",
+      "area": "DHA",
+      "address": "DHA, Karachi (verify exact address)",
+      "googleMapsLink": "https://www.google.com/maps",
+      "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
+      "requirements": [
+        "Original CNIC / B-Form",
+        "Supporting documents (if needed)",
+        "Photocopies (recommended)"
+      ],
+      "steps": [
+        "Take token",
+        "Document submission/verification",
+        "Biometrics/photo",
+        "Collect receipt and timeline"
+      ],
+      "fees": ["Fees vary by service (verify at center)"],
+      "notes": ["Bring photocopies to save time"],
+      "lastUpdated": "2026-02-08"
+    },
+  
+    {
+      "id": "islamabad-passport-g10",
+      "city": "Islamabad",
+      "category": "Passport",
+      "name": "Passport Office (G-10)",
+      "area": "G-10",
+      "address": "G-10, Islamabad (verify exact address)",
+      "googleMapsLink": "https://www.google.com/maps",
+      "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
+      "requirements": [
+        "Original CNIC",
+        "Old passport (for renewal, if applicable)",
+        "Fee payment / challan (as required)"
+      ],
+      "steps": [
+        "Take token",
+        "Document verification",
+        "Biometrics and photo",
+        "Fee submission (if needed)",
+        "Collect receipt/tracking info"
+      ],
+      "fees": ["Fees depend on urgent/normal and validity (verify)"],
+      "notes": ["Check if online fee payment is available before visiting"],
+      "lastUpdated": "2026-02-08"
+    },
+  
+    {
+      "id": "lahore-passport-garden-town",
+      "city": "Lahore",
+      "category": "Passport",
+      "name": "Passport Office (Garden Town)",
+      "area": "Garden Town",
+      "address": "Garden Town, Lahore (verify exact address)",
+      "googleMapsLink": "https://www.google.com/maps",
+      "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
+      "requirements": [
+        "Original CNIC",
+        "Old passport (for renewal, if applicable)",
+        "Fee payment / challan (as required)"
+      ],
+      "steps": [
+        "Take token",
+        "Document verification",
+        "Biometrics and photo",
+        "Fee submission (if needed)",
+        "Collect receipt/tracking info"
+      ],
+      "fees": ["Fees depend on urgent/normal and validity (verify)"],
+      "notes": ["Arrive early; lines can be long"],
+      "lastUpdated": "2026-02-08"
+    },
+  
+    {
+      "id": "karachi-traffic-licensing-clifton",
+      "city": "Karachi",
+      "category": "Traffic",
+      "name": "Driving License Branch (Clifton)",
+      "area": "Clifton",
+      "address": "Clifton, Karachi (verify exact address)",
+      "googleMapsLink": "https://www.google.com/maps",
+      "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
+      "requirements": [
+        "Original CNIC",
+        "Passport-size photos (if required)",
+        "Medical certificate (if required)",
+        "Fee payment (as required)"
+      ],
+      "steps": [
+        "Token / application form",
+        "Document verification",
+        "Learner/test process (if applicable)",
+        "Biometrics/photo",
+        "Collect receipt and timeline"
+      ],
+      "fees": ["Fees vary by license type (verify)"],
+      "notes": ["Bring extra photos just in case"],
+      "lastUpdated": "2026-02-08"
+    },
+  
+    {
+      "id": "islamabad-utility-iesco-customer-service",
+      "city": "Islamabad",
+      "category": "Utilities",
+      "name": "IESCO Customer Service Center",
+      "area": "Islamabad",
+      "address": "Islamabad (verify exact address)",
+      "googleMapsLink": "https://www.google.com/maps",
+      "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
+      "requirements": [
+        "Copy of latest bill (recommended)",
+        "CNIC copy (if required)",
+        "Application/request letter (if needed)"
+      ],
+      "steps": [
+        "Explain issue/request at counter",
+        "Submit bill/details",
+        "Get reference/complaint number",
+        "Follow up using reference number"
+      ],
+      "fees": ["Usually no fee for complaints; fees vary for service requests (verify)"],
+      "notes": ["Always take a photo of your complaint/reference number"],
+      "lastUpdated": "2026-02-08"
+    }
+  ]
+  
+  
