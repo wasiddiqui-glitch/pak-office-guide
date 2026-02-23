@@ -1,157 +1,1523 @@
 [
-    {
-      "id": "lahore-nadra-gulberg",
-      "city": "Lahore",
-      "category": "NADRA",
-      "name": "NADRA Registration Center (Gulberg)",
-      "area": "Gulberg",
-      "address": "Gulberg, Lahore (verify exact address)",
-      "googleMapsLink": "https://www.google.com/maps",
-      "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
-      "requirements": [
-        "Original CNIC / B-Form",
-        "Supporting documents (if needed)",
-        "Photocopies (recommended)"
-      ],
-      "steps": [
-        "Arrive early and take a token",
-        "Submit documents",
-        "Biometrics/photo (if needed)",
-        "Collect receipt and timeline"
-      ],
-      "fees": ["Fees vary by service (verify at center)"],
-      "notes": ["Arrive early for shorter lines"],
-      "lastUpdated": "2026-02-08"
-    },
-  
-    {
-      "id": "karachi-nadra-defence",
-      "city": "Karachi",
-      "category": "NADRA",
-      "name": "NADRA Registration Center (Defence / DHA)",
-      "area": "DHA",
-      "address": "DHA, Karachi (verify exact address)",
-      "googleMapsLink": "https://www.google.com/maps",
-      "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
-      "requirements": [
-        "Original CNIC / B-Form",
-        "Supporting documents (if needed)",
-        "Photocopies (recommended)"
-      ],
-      "steps": [
-        "Take token",
-        "Document submission/verification",
-        "Biometrics/photo",
-        "Collect receipt and timeline"
-      ],
-      "fees": ["Fees vary by service (verify at center)"],
-      "notes": ["Bring photocopies to save time"],
-      "lastUpdated": "2026-02-08"
-    },
-  
-    {
-      "id": "islamabad-passport-g10",
-      "city": "Islamabad",
-      "category": "Passport",
-      "name": "Passport Office (G-10)",
-      "area": "G-10",
-      "address": "G-10, Islamabad (verify exact address)",
-      "googleMapsLink": "https://www.google.com/maps",
-      "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
-      "requirements": [
-        "Original CNIC",
-        "Old passport (for renewal, if applicable)",
-        "Fee payment / challan (as required)"
-      ],
-      "steps": [
-        "Take token",
-        "Document verification",
-        "Biometrics and photo",
-        "Fee submission (if needed)",
-        "Collect receipt/tracking info"
-      ],
-      "fees": ["Fees depend on urgent/normal and validity (verify)"],
-      "notes": ["Check if online fee payment is available before visiting"],
-      "lastUpdated": "2026-02-08"
-    },
-  
-    {
-      "id": "lahore-passport-garden-town",
-      "city": "Lahore",
-      "category": "Passport",
-      "name": "Passport Office (Garden Town)",
-      "area": "Garden Town",
-      "address": "Garden Town, Lahore (verify exact address)",
-      "googleMapsLink": "https://www.google.com/maps",
-      "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
-      "requirements": [
-        "Original CNIC",
-        "Old passport (for renewal, if applicable)",
-        "Fee payment / challan (as required)"
-      ],
-      "steps": [
-        "Take token",
-        "Document verification",
-        "Biometrics and photo",
-        "Fee submission (if needed)",
-        "Collect receipt/tracking info"
-      ],
-      "fees": ["Fees depend on urgent/normal and validity (verify)"],
-      "notes": ["Arrive early; lines can be long"],
-      "lastUpdated": "2026-02-08"
-    },
-  
-    {
-      "id": "karachi-traffic-licensing-clifton",
-      "city": "Karachi",
-      "category": "Traffic",
-      "name": "Driving License Branch (Clifton)",
-      "area": "Clifton",
-      "address": "Clifton, Karachi (verify exact address)",
-      "googleMapsLink": "https://www.google.com/maps",
-      "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
-      "requirements": [
-        "Original CNIC",
-        "Passport-size photos (if required)",
-        "Medical certificate (if required)",
-        "Fee payment (as required)"
-      ],
-      "steps": [
-        "Token / application form",
-        "Document verification",
-        "Learner/test process (if applicable)",
-        "Biometrics/photo",
-        "Collect receipt and timeline"
-      ],
-      "fees": ["Fees vary by license type (verify)"],
-      "notes": ["Bring extra photos just in case"],
-      "lastUpdated": "2026-02-08"
-    },
-  
-    {
-      "id": "islamabad-utility-iesco-customer-service",
-      "city": "Islamabad",
-      "category": "Utilities",
-      "name": "IESCO Customer Service Center",
-      "area": "Islamabad",
-      "address": "Islamabad (verify exact address)",
-      "googleMapsLink": "https://www.google.com/maps",
-      "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
-      "requirements": [
-        "Copy of latest bill (recommended)",
-        "CNIC copy (if required)",
-        "Application/request letter (if needed)"
-      ],
-      "steps": [
-        "Explain issue/request at counter",
-        "Submit bill/details",
-        "Get reference/complaint number",
-        "Follow up using reference number"
-      ],
-      "fees": ["Usually no fee for complaints; fees vary for service requests (verify)"],
-      "notes": ["Always take a photo of your complaint/reference number"],
-      "lastUpdated": "2026-02-08"
-    }
-  ]
-  
-  
+  {
+    "id": "lahore-nadra-gulberg",
+    "city": "Lahore",
+    "category": "NADRA",
+    "name": "NADRA Registration Center (Gulberg)",
+    "area": "Gulberg",
+    "address": "Gulberg, Lahore (verify exact address)",
+    "googleMapsLink": "https://www.google.com/maps",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Supporting documents (if needed)",
+      "Photocopies (recommended)"
+    ],
+    "steps": [
+      "Arrive early and take a token",
+      "Submit documents",
+      "Biometrics/photo (if needed)",
+      "Collect receipt and timeline"
+    ],
+    "fees": [
+      "Fees vary by service (verify at center)"
+    ],
+    "notes": [
+      "Arrive early for shorter lines"
+    ],
+    "lastUpdated": "2026-02-08"
+  },
+  {
+    "id": "karachi-nadra-defence",
+    "city": "Karachi",
+    "category": "NADRA",
+    "name": "NADRA Registration Center (Defence / DHA)",
+    "area": "DHA",
+    "address": "DHA, Karachi (verify exact address)",
+    "googleMapsLink": "https://www.google.com/maps",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Supporting documents (if needed)",
+      "Photocopies (recommended)"
+    ],
+    "steps": [
+      "Take token",
+      "Document submission/verification",
+      "Biometrics/photo",
+      "Collect receipt and timeline"
+    ],
+    "fees": [
+      "Fees vary by service (verify at center)"
+    ],
+    "notes": [
+      "Bring photocopies to save time"
+    ],
+    "lastUpdated": "2026-02-08"
+  },
+  {
+    "id": "islamabad-passport-g10",
+    "city": "Islamabad",
+    "category": "Passport",
+    "name": "Passport Office (G-10)",
+    "area": "G-10",
+    "address": "G-10, Islamabad (verify exact address)",
+    "googleMapsLink": "https://www.google.com/maps",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
+    "requirements": [
+      "Original CNIC",
+      "Old passport (for renewal, if applicable)",
+      "Fee payment / challan (as required)"
+    ],
+    "steps": [
+      "Take token",
+      "Document verification",
+      "Biometrics and photo",
+      "Fee submission (if needed)",
+      "Collect receipt/tracking info"
+    ],
+    "fees": [
+      "Fees depend on urgent/normal and validity (verify)"
+    ],
+    "notes": [
+      "Check if online fee payment is available before visiting"
+    ],
+    "lastUpdated": "2026-02-08"
+  },
+  {
+    "id": "lahore-passport-garden-town",
+    "city": "Lahore",
+    "category": "Passport",
+    "name": "Passport Office (Garden Town)",
+    "area": "Garden Town",
+    "address": "Garden Town, Lahore (verify exact address)",
+    "googleMapsLink": "https://www.google.com/maps",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
+    "requirements": [
+      "Original CNIC",
+      "Old passport (for renewal, if applicable)",
+      "Fee payment / challan (as required)"
+    ],
+    "steps": [
+      "Take token",
+      "Document verification",
+      "Biometrics and photo",
+      "Fee submission (if needed)",
+      "Collect receipt/tracking info"
+    ],
+    "fees": [
+      "Fees depend on urgent/normal and validity (verify)"
+    ],
+    "notes": [
+      "Arrive early; lines can be long"
+    ],
+    "lastUpdated": "2026-02-08"
+  },
+  {
+    "id": "karachi-traffic-licensing-clifton",
+    "city": "Karachi",
+    "category": "Traffic",
+    "name": "Driving License Branch (Clifton)",
+    "area": "Clifton",
+    "address": "Clifton, Karachi (verify exact address)",
+    "googleMapsLink": "https://www.google.com/maps",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
+    "requirements": [
+      "Original CNIC",
+      "Passport-size photos (if required)",
+      "Medical certificate (if required)",
+      "Fee payment (as required)"
+    ],
+    "steps": [
+      "Token / application form",
+      "Document verification",
+      "Learner/test process (if applicable)",
+      "Biometrics/photo",
+      "Collect receipt and timeline"
+    ],
+    "fees": [
+      "Fees vary by license type (verify)"
+    ],
+    "notes": [
+      "Bring extra photos just in case"
+    ],
+    "lastUpdated": "2026-02-08"
+  },
+  {
+    "id": "islamabad-utility-iesco-customer-service",
+    "city": "Islamabad",
+    "category": "Utilities",
+    "name": "IESCO Customer Service Center",
+    "area": "Islamabad",
+    "address": "Islamabad (verify exact address)",
+    "googleMapsLink": "https://www.google.com/maps",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
+    "requirements": [
+      "Copy of latest bill (recommended)",
+      "CNIC copy (if required)",
+      "Application/request letter (if needed)"
+    ],
+    "steps": [
+      "Explain issue/request at counter",
+      "Submit bill/details",
+      "Get reference/complaint number",
+      "Follow up using reference number"
+    ],
+    "fees": [
+      "Usually no fee for complaints; fees vary for service requests (verify)"
+    ],
+    "notes": [
+      "Always take a photo of your complaint/reference number"
+    ],
+    "lastUpdated": "2026-02-08"
+  },
+  {
+    "id": "nadra-lhr-rho-johar-town",
+    "name": "NADRA Regional Head Office (RHO) Lahore",
+    "category": "NADRA",
+    "city": "Lahore",
+    "area": "Johar Town",
+    "address": "73, Trade Centre, Johar Town, Lahore",
+    "phone": "042-35554444",
+    "hours": "Mon–Fri 9:00–16:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=73%2C%20Trade%20Centre%2C%20Johar%20Town%2C%20Lahore"
+  },
+  {
+    "id": "nadra-lhr-zarrar-shaheed",
+    "name": "NADRA Office Zarrar Shaheed Road",
+    "category": "NADRA",
+    "city": "Lahore",
+    "area": "Guldasht Town",
+    "address": "12-A, Nagina Centre, Zarrar Shaheed Road, Guldasht Town, Lahore",
+    "phone": "042-99220837",
+    "hours": "Mon–Fri 9:00–16:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=12-A%2C%20Nagina%20Centre%2C%20Zarrar%20Shaheed%20Road%2C%20Guldasht%20Town%2C%20Lahore"
+  },
+  {
+    "id": "nadra-lhr-exec-dha-phase-1",
+    "name": "NADRA Executive Office DHA Phase 1",
+    "category": "NADRA",
+    "city": "Lahore",
+    "area": "DHA Phase 1",
+    "address": "124-G, DHA Phase 1, Lahore",
+    "phone": "042-35734910",
+    "hours": "Mon–Sat (varies by branch; call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=124-G%2C%20DHA%20Phase%201%2C%20Lahore"
+  },
+  {
+    "id": "nadra-lhr-jallo-mor",
+    "name": "NADRA Office Jallo",
+    "category": "NADRA",
+    "city": "Lahore",
+    "area": "Jallo Mor",
+    "address": "Jallo Mor, Near Macca Tower, G.T. Road, Lahore",
+    "hours": "Mon–Fri 9:00–16:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Jallo%20Mor%2C%20Near%20Macca%20Tower%2C%20G.T.%20Road%2C%20Lahore"
+  },
+  {
+    "id": "nadra-lhr-exec-dha-phase-4",
+    "name": "NADRA Executive Office DHA Phase 4",
+    "category": "NADRA",
+    "city": "Lahore",
+    "area": "DHA Phase 4",
+    "address": "153-CC, DHA Phase 4, Lahore",
+    "phone": "042-95895893",
+    "hours": "Mon–Fri 9:00–16:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=153-CC%2C%20DHA%20Phase%204%2C%20Lahore"
+  },
+  {
+    "id": "nadra-lhr-samanabad",
+    "name": "NADRA Office Samanabad",
+    "category": "NADRA",
+    "city": "Lahore",
+    "area": "Samanabad",
+    "address": "926-N, Samanabad, Lahore",
+    "phone": "042-37590606",
+    "hours": "Mon–Fri 9:00–16:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=926-N%2C%20Samanabad%2C%20Lahore"
+  },
+  {
+    "id": "nadra-lhr-secretariat-mall-road",
+    "name": "NADRA Office Secretariat (Mall Road)",
+    "category": "NADRA",
+    "city": "Lahore",
+    "area": "Mall Road",
+    "address": "Secretariat Building, Mall Road, Lahore",
+    "phone": "042-99210228",
+    "hours": "Mon–Fri 9:00–16:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Secretariat%20Building%2C%20Mall%20Road%2C%20Lahore"
+  },
+  {
+    "id": "nadra-lhr-shahdara-saeed-park",
+    "name": "NADRA Office Shahdara",
+    "category": "NADRA",
+    "city": "Lahore",
+    "area": "Shahdara Town",
+    "address": "Saeed Park, Near Toll Plaza, Shahdara Town, Lahore",
+    "phone": "042-37940788",
+    "hours": "Mon–Fri 9:00–16:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Saeed%20Park%2C%20Near%20Toll%20Plaza%2C%20Shahdara%20Town%2C%20Lahore"
+  },
+  {
+    "id": "nadra-lhr-exec-allama-iqbal-town",
+    "name": "NADRA Executive Office Allama Iqbal Town",
+    "category": "NADRA",
+    "city": "Lahore",
+    "area": "Allama Iqbal Town",
+    "address": "56/16, Karim Block, Allama Iqbal Town, Lahore",
+    "phone": "042-35424477",
+    "hours": "Mon–Fri 9:00–16:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=56%2F16%2C%20Karim%20Block%2C%20Allama%20Iqbal%20Town%2C%20Lahore"
+  },
+  {
+    "id": "nadra-lhr-high-court-mozang",
+    "name": "NADRA Office Lahore High Court",
+    "category": "NADRA",
+    "city": "Lahore",
+    "area": "Mozang Chungi",
+    "address": "Lahore High Court, Mall Road, Mozang Chungi, Lahore",
+    "hours": "Mon–Fri 9:00–16:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Lahore%20High%20Court%2C%20Mall%20Road%2C%20Mozang%20Chungi%2C%20Lahore"
+  },
+  {
+    "id": "nadra-lhr-exec-township-college-road",
+    "name": "NADRA Executive Office Township",
+    "category": "NADRA",
+    "city": "Lahore",
+    "area": "Township",
+    "address": "Block C-2, College Road, Township, Lahore",
+    "hours": "Mon–Fri 9:00–16:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Block%20C-2%2C%20College%20Road%2C%20Township%2C%20Lahore"
+  },
+  {
+    "id": "nadra-lhr-peco-road-kot-lakhpat",
+    "name": "NADRA Office Peco Road",
+    "category": "NADRA",
+    "city": "Lahore",
+    "area": "Kot Lakhpat",
+    "address": "Peco Road, Kot Lakhpat, Lahore",
+    "phone": "042-35943301",
+    "hours": "Mon–Fri 9:00–16:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Peco%20Road%2C%20Kot%20Lakhpat%2C%20Lahore"
+  },
+  {
+    "id": "nadra-lhr-raiwind-bypass",
+    "name": "NADRA Office Raiwind",
+    "category": "NADRA",
+    "city": "Lahore",
+    "area": "Raiwind",
+    "address": "Near Raiwind Bypass, Lahore",
+    "phone": "042-3539334",
+    "hours": "Mon–Fri 9:00–16:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Near%20Raiwind%20Bypass%2C%20Lahore"
+  },
+  {
+    "id": "nadra-lhr-protectorate-model-town",
+    "name": "NADRA Office Protectorate",
+    "category": "NADRA",
+    "city": "Lahore",
+    "area": "Model Town",
+    "address": "117, Block G, Model Town, Lahore",
+    "phone": "042-35885731",
+    "hours": "Mon–Fri 9:00–16:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=117%2C%20Block%20G%2C%20Model%20Town%2C%20Lahore"
+  },
+  {
+    "id": "nadra-lhr-chung-multan-road",
+    "name": "NADRA Office Chung",
+    "category": "NADRA",
+    "city": "Lahore",
+    "area": "Chung",
+    "address": "Multan Road, Chung, Lahore",
+    "hours": "Mon–Fri 9:00–16:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Multan%20Road%2C%20Chung%2C%20Lahore"
+  },
+  {
+    "id": "nadra-khi-provincial-hq-machs",
+    "name": "NADRA Provincial Headquarters Karachi",
+    "category": "NADRA",
+    "city": "Karachi",
+    "area": "MACHS",
+    "address": "29-E, Miran Muhammad Shah Road, MACHS, Karachi",
+    "hours": "Mon–Sat 09:00–17:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=29-E%2C%20Miran%20Muhammad%20Shah%20Road%2C%20MACHS%2C%20Karachi"
+  },
+  {
+    "id": "nadra-khi-mega-dha-phase-1",
+    "name": "NADRA Mega Centre DHA",
+    "category": "NADRA",
+    "city": "Karachi",
+    "area": "DHA Phase 1",
+    "address": "Service Road, 18th East Street, Phase 1, DHA, Karachi",
+    "hours": "Often 24/7 for Mega Centres (verify before visiting)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Service%20Road%2C%2018th%20East%20Street%2C%20Phase%201%2C%20DHA%2C%20Karachi"
+  },
+  {
+    "id": "nadra-khi-mega-north-nazimabad",
+    "name": "NADRA Mega Centre North Nazimabad",
+    "category": "NADRA",
+    "city": "Karachi",
+    "area": "North Nazimabad",
+    "address": "Plot No D15/1, Euro Twin Tower, Block L, North Nazimabad Town, Karachi",
+    "hours": "Often 24/7 for Mega Centres (verify before visiting)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Plot%20No%20D15%2F1%2C%20Euro%20Twin%20Tower%2C%20Block%20L%2C%20North%20Nazimabad%20Town%2C%20Karachi"
+  },
+  {
+    "id": "nadra-khi-mega-siemens-site",
+    "name": "NADRA Mega Centre Siemens (SITE)",
+    "category": "NADRA",
+    "city": "Karachi",
+    "area": "SITE Area",
+    "address": "Siemens Chowrangi, SITE Area, Karachi",
+    "hours": "Often 24/7 for Mega Centres (verify before visiting)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Siemens%20Chowrangi%2C%20SITE%20Area%2C%20Karachi"
+  },
+  {
+    "id": "nadra-khi-exec-shahrah-e-quaideen",
+    "name": "NADRA Executive Office Shahrah-e-Quaideen",
+    "category": "NADRA",
+    "city": "Karachi",
+    "area": "Khudadad Colony",
+    "address": "Plot no. 85-C, Saleem Tower, Khudadad Colony, Karachi",
+    "phone": "021-34555585",
+    "hours": "Mon–Sat 09:00–17:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Plot%20no.%2085-C%2C%20Saleem%20Tower%2C%20Khudadad%20Colony%2C%20Karachi"
+  },
+  {
+    "id": "nadra-khi-exec-clifton-quality-arcade",
+    "name": "NADRA Executive Office Clifton",
+    "category": "NADRA",
+    "city": "Karachi",
+    "area": "Clifton",
+    "address": "B-7, Quality Arcade near Shawn Circle, Clifton, Karachi",
+    "phone": "021-35308063",
+    "hours": "Mon–Sat 09:00–17:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=B-7%2C%20Quality%20Arcade%20near%20Shawn%20Circle%2C%20Clifton%2C%20Karachi"
+  },
+  {
+    "id": "nadra-khi-exec-saddar-passport",
+    "name": "NADRA Executive Office Saddar",
+    "category": "NADRA",
+    "city": "Karachi",
+    "area": "Saddar",
+    "address": "Near Saddar Passport Office, Karachi",
+    "phone": "021-99206352",
+    "hours": "Mon–Sat 09:00–17:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Near%20Saddar%20Passport%20Office%2C%20Karachi"
+  },
+  {
+    "id": "nadra-khi-exec-kcci-saddar",
+    "name": "NADRA Executive Office KCCI",
+    "category": "NADRA",
+    "city": "Karachi",
+    "area": "Saddar",
+    "address": "Karachi Chamber of Commerce Building, Saddar Town, Karachi",
+    "phone": "0300-2546004",
+    "hours": "Mon–Sat 09:00–17:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Karachi%20Chamber%20of%20Commerce%20Building%2C%20Saddar%20Town%2C%20Karachi"
+  },
+  {
+    "id": "nadra-khi-gulistan-e-jauhar-block-15",
+    "name": "NADRA Centre Gulistan-e-Jauhar",
+    "category": "NADRA",
+    "city": "Karachi",
+    "area": "Gulistan-e-Johar",
+    "address": "Block 15 near Income Building, Gulistan-e-Johar, Karachi",
+    "hours": "Mon–Sat 09:00–17:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Block%2015%20near%20Income%20Building%2C%20Gulistan-e-Johar%2C%20Karachi"
+  },
+  {
+    "id": "nadra-khi-safoora-goth",
+    "name": "NADRA Office Safoora Goth",
+    "category": "NADRA",
+    "city": "Karachi",
+    "area": "Safoora Goth",
+    "address": "Plot 5 Block B, Race Course Club, Safoora Goth, Karachi",
+    "phone": "021-32066719",
+    "hours": "Mon–Sat 09:00–17:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Plot%205%20Block%20B%2C%20Race%20Course%20Club%2C%20Safoora%20Goth%2C%20Karachi"
+  },
+  {
+    "id": "nadra-khi-awami-markaz-shahrah-e-faisal",
+    "name": "NADRA Office Awami Markaz",
+    "category": "NADRA",
+    "city": "Karachi",
+    "area": "Shahrah-e-Faisal",
+    "address": "Awami Markaz, Shahrah-e-Faisal, Karachi",
+    "phone": "021-99240546",
+    "hours": "Mon–Sat 09:00–17:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Awami%20Markaz%2C%20Shahrah-e-Faisal%2C%20Karachi"
+  },
+  {
+    "id": "nadra-khi-lyari-chakiwara",
+    "name": "NADRA Office Lyari",
+    "category": "NADRA",
+    "city": "Karachi",
+    "area": "Lyari",
+    "address": "UC-10, Mullah Fazal Hall, Chakiwara Road near Al-Jameel Hotel, Lyari, Karachi",
+    "phone": "021-32546688",
+    "hours": "Mon–Sat 09:00–17:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=UC-10%2C%20Mullah%20Fazal%20Hall%2C%20Chakiwara%20Road%20near%20Al-Jameel%20Hotel%2C%20Lyari%2C%20Karachi"
+  },
+  {
+    "id": "nadra-khi-orangi-town-no-5",
+    "name": "NADRA Centre Orangi Town",
+    "category": "NADRA",
+    "city": "Karachi",
+    "area": "Orangi Town",
+    "address": "Town Administrator Office, Orangi Town No. 5, Karachi",
+    "phone": "021-36699980",
+    "hours": "Mon–Sat 09:00–17:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Town%20Administrator%20Office%2C%20Orangi%20Town%20No.%205%2C%20Karachi"
+  },
+  {
+    "id": "nadra-khi-surjani-town-sector-4a",
+    "name": "NADRA Centre Surjani Town",
+    "category": "NADRA",
+    "city": "Karachi",
+    "area": "Surjani Town",
+    "address": "KDA Building, Sector 4-A, Surjani Town, Karachi",
+    "phone": "021-36910771",
+    "hours": "Mon–Sat 09:00–17:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=KDA%20Building%2C%20Sector%204-A%2C%20Surjani%20Town%2C%20Karachi"
+  },
+  {
+    "id": "nadra-khi-soldier-bazar-garden-west",
+    "name": "NADRA Centre Soldier Bazar",
+    "category": "NADRA",
+    "city": "Karachi",
+    "area": "Garden West",
+    "address": "UC-13, Garden West, Karachi",
+    "phone": "021-99215558",
+    "hours": "Mon–Sat 09:00–17:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=UC-13%2C%20Garden%20West%2C%20Karachi"
+  },
+  {
+    "id": "nadra-khi-liaquatabad-nazimabad-3",
+    "name": "NADRA Centre Liaquatabad",
+    "category": "NADRA",
+    "city": "Karachi",
+    "area": "Nazimabad-3",
+    "address": "Liaquatabad Town Office, KMC Building, Nazimabad-3, Karachi",
+    "phone": "021-36600096-97",
+    "hours": "Mon–Sat 09:00–17:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Liaquatabad%20Town%20Office%2C%20KMC%20Building%2C%20Nazimabad-3%2C%20Karachi"
+  },
+  {
+    "id": "nadra-khi-landhi-3half-babar-market",
+    "name": "NADRA Centre Landhi",
+    "category": "NADRA",
+    "city": "Karachi",
+    "area": "Landhi 3½",
+    "address": "UC-07 Office Building, 37/C near Babar Market, Landhi 3½, Karachi",
+    "phone": "021-35023645",
+    "hours": "Mon–Sat 09:00–17:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=UC-07%20Office%20Building%2C%2037%2FC%20near%20Babar%20Market%2C%20Landhi%203%C2%BD%2C%20Karachi"
+  },
+  {
+    "id": "nadra-khi-malir-rafi-mall",
+    "name": "NADRA Centre Malir",
+    "category": "NADRA",
+    "city": "Karachi",
+    "area": "Malir",
+    "address": "Rafi Mall Building, National Highway near Malir Court, Malir, Karachi",
+    "phone": "021-34114261",
+    "hours": "Mon–Sat 09:00–17:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Rafi%20Mall%20Building%2C%20National%20Highway%20near%20Malir%20Court%2C%20Malir%2C%20Karachi"
+  },
+  {
+    "id": "nadra-khi-korangi-no4-old-kda",
+    "name": "NADRA Centre Korangi",
+    "category": "NADRA",
+    "city": "Karachi",
+    "area": "Korangi No.4",
+    "address": "UC Office, Old KDA Building near Sultan Clinic, Korangi No.4, Karachi",
+    "phone": "021-35074166",
+    "hours": "Mon–Sat 09:00–17:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=UC%20Office%2C%20Old%20KDA%20Building%20near%20Sultan%20Clinic%2C%20Korangi%20No.4%2C%20Karachi"
+  },
+  {
+    "id": "nadra-khi-gulshan-e-hadeed-phase-1",
+    "name": "NADRA Centre Gulshan-e-Hadeed",
+    "category": "NADRA",
+    "city": "Karachi",
+    "area": "Gulshan-e-Hadeed",
+    "address": "UC-6 Building, Gulshan-e-Hadeed Phase-1, Near Bank AL-Habib, Bin Qasim Town, Karachi",
+    "phone": "021-34717652",
+    "hours": "Mon–Sat 09:00–17:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=UC-6%20Building%2C%20Gulshan-e-Hadeed%20Phase-1%2C%20Near%20Bank%20AL-Habib%2C%20Bin%20Qasim%20Town%2C%20Karachi"
+  },
+  {
+    "id": "nadra-khi-shah-faisal-colony-water-board",
+    "name": "NADRA Centre Shah Faisal Colony",
+    "category": "NADRA",
+    "city": "Karachi",
+    "area": "Shah Faisal Town",
+    "address": "KMC Office, Water Board Shah Faisal Colony, Shah Faisal Town, Karachi",
+    "phone": "021-34599569",
+    "hours": "Mon–Sat 09:00–17:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=KMC%20Office%2C%20Water%20Board%20Shah%20Faisal%20Colony%2C%20Shah%20Faisal%20Town%2C%20Karachi"
+  },
+  {
+    "id": "nadra-khi-memon-goth-gadap",
+    "name": "NADRA Centre Memon Goth",
+    "category": "NADRA",
+    "city": "Karachi",
+    "area": "Gadap Town",
+    "address": "UC-01, Murad Memon Goth, Gadap Town, Karachi",
+    "phone": "021-34602300",
+    "hours": "Mon–Sat 09:00–17:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=UC-01%2C%20Murad%20Memon%20Goth%2C%20Gadap%20Town%2C%20Karachi"
+  },
+  {
+    "id": "nadra-khi-saudabad-student-bakery",
+    "name": "NADRA Centre Saudabad",
+    "category": "NADRA",
+    "city": "Karachi",
+    "area": "Saudabad",
+    "address": "UC-03 Building, Saudabad near Student Bakery, Malir, Karachi",
+    "phone": "021-34507800",
+    "hours": "Mon–Sat 09:00–17:00 (call to confirm)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=UC-03%20Building%2C%20Saudabad%20near%20Student%20Bakery%2C%20Malir%2C%20Karachi"
+  },
+  {
+    "id": "nadra-isl-mega-service-centre-blue-area-109-jinnah",
+    "name": "NADRA Mega Service Centre Blue Area",
+    "category": "NADRA",
+    "city": "Islamabad",
+    "area": "Blue Area (G-7/2)",
+    "address": "109 Jinnah Ave, Block I G-7/2, Blue Area, Islamabad",
+    "hours": "Open 24/7 (verify services after hours)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=109%20Jinnah%20Ave%2C%20Block%20I%20G-7%2F2%2C%20Blue%20Area%2C%20Islamabad"
+  },
+  {
+    "id": "nadra-isl-hq-g5-2",
+    "name": "NADRA Headquarters",
+    "category": "NADRA",
+    "city": "Islamabad",
+    "area": "G-5/2",
+    "address": "State Bank of Pakistan Building, Shahrah-i-Jamhuriat, G-5/2, Islamabad",
+    "hours": "08:30–16:30 (verify before visiting)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=State%20Bank%20of%20Pakistan%20Building%2C%20Shahrah-i-Jamhuriat%2C%20G-5%2F2%2C%20Islamabad"
+  },
+  {
+    "id": "nadra-isl-rho-g10-4-mauve-area",
+    "name": "NADRA Regional Head Office Islamabad",
+    "category": "NADRA",
+    "city": "Islamabad",
+    "area": "G-10/4",
+    "address": "Mauve Area, Plot #30, Sector G-10/4, Islamabad",
+    "hours": "09:00–17:00 (verify before visiting)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Mauve%20Area%2C%20Plot%20%2330%2C%20Sector%20G-10%2F4%2C%20Islamabad"
+  },
+  {
+    "id": "nadra-isl-e-sahulat-bhara-kahu",
+    "name": "NADRA e-Sahulat Bhara Kahu",
+    "category": "NADRA",
+    "city": "Islamabad",
+    "area": "Bhara Kahu",
+    "address": "Abdullah Town, Near BOP, Main Murree Road, Bhera Pull, Bhara Kahu, Islamabad",
+    "hours": "08:00–16:00 (verify before visiting)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Abdullah%20Town%2C%20Near%20BOP%2C%20Main%20Murree%20Road%2C%20Bhera%20Pull%2C%20Bhara%20Kahu%2C%20Islamabad"
+  },
+  {
+    "id": "nadra-isl-mega-khyber-plaza-blue-area",
+    "name": "NADRA Mega Centre (Khyber Plaza) Blue Area",
+    "category": "NADRA",
+    "city": "Islamabad",
+    "area": "Blue Area",
+    "address": "Khyber Plaza, Blue Area, Islamabad",
+    "hours": "Open 24/7 (verify services after hours)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Khyber%20Plaza%2C%20Blue%20Area%2C%20Islamabad"
+  },
+  {
+    "id": "nadra-isl-taramri-gulzar-arcade",
+    "name": "NADRA Office Taramri",
+    "category": "NADRA",
+    "city": "Islamabad",
+    "area": "Taramri",
+    "address": "1st Floor, Gulzar Arcade, Near HBS Medical & Dental College, Lehtrar Road, Taramri, Islamabad",
+    "hours": "08:00–16:00 (verify before visiting)",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Document verification",
+      "Biometrics and photo capture",
+      "Receive receipt / collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA service fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra copies of documents",
+      "Always verify requirements before visiting"
+    ],
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=1st%20Floor%2C%20Gulzar%20Arcade%2C%20Near%20HBS%20Medical%20%26%20Dental%20College%2C%20Lehtrar%20Road%2C%20Taramri%2C%20Islamabad"
+  }
+]

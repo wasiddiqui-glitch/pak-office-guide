@@ -3,55 +3,70 @@ import { getOfficesByCity } from "@/lib/offices";
 import { layout } from "@/lib/ui";
 
 export default async function CityPage({ params }) {
-  const { city: rawCity } = await params; // ✅ params is a Promise
+  const { city: rawCity } = await params; // params is a Promise in your Next version
   const city = decodeURIComponent(rawCity);
 
   const offices = getOfficesByCity(city);
 
   return (
-    <main style={page}>
+    <main className="page-transition" style={layout.page}>
       <div style={layout.container}>
-      <div style={{ display: "flex", justifyContent: "space-between", gap: 10 }}>
-        <div>
-          <h1 style={title}>{city}</h1>
-          <p style={sub}>{offices.length} office(s)</p>
-        </div>
-        <Link href="/cities" style={pill}>All cities</Link>
-      </div>
+        {/* Breadcrumbs + header */}
+        <div style={{ display: "grid", gap: 8, marginBottom: 12 }}>
+          <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+            <Link href="/" style={{ ...layout.badge, textDecoration: "none" }}>
+              Home
+            </Link>
+            <span style={layout.badge}>›</span>
+            <Link href="/cities" style={{ ...layout.badge, textDecoration: "none" }}>
+              Cities
+            </Link>
+            <span style={layout.badge}>›</span>
+            <span style={layout.badge}>{city}</span>
+          </div>
 
-      <div style={{ display: "grid", gap: 12 }}>
-        {offices.map((o) => (
-          <Link key={o.id} href={`/office/${o.id}`} style={card}>
-            <div style={{ fontWeight: 800 }}>{o.name}</div>
-            <div style={small}>{o.category} • {o.area}</div>
-          </Link>
-        ))}
-      </div>
+          <div style={{ display: "flex", justifyContent: "space-between", gap: 10 }}>
+            <div>
+              <h1 style={layout.h1}>{city}</h1>
+              <p style={layout.sub}>{offices.length} office(s)</p>
+            </div>
+
+            <Link href="/cities" style={{ ...layout.pill, textDecoration: "none" }}>
+              All cities
+            </Link>
+          </div>
+        </div>
+
+        {/* Offices list */}
+        <div style={{ display: "grid", gap: 12 }}>
+          {offices.map((o) => (
+            <Link
+              key={o.id}
+              href={`/office/${o.id}`}
+              style={{ ...layout.card, display: "block", textDecoration: "none" }}
+            >
+              <div style={{ fontWeight: 900 }}>{o.name}</div>
+
+              <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 8 }}>
+                <span style={layout.badge}>{o.category}</span>
+                <span style={layout.badge}>{o.area}</span>
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
     </main>
   );
 }
 
-const page = {
-  minHeight: "100vh",
-  background: "#0b0f19",
-  color: "#e7ecf5",
-  padding: 18,
-  paddingBottom: 90,
-  fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, Arial",
-};
+
+
 
 const title = { margin: 0, fontSize: 26 };
 const sub = { margin: "6px 0 14px 0", color: "#a9b3c7" };
 const small = { color: "#a9b3c7", fontSize: 13, marginTop: 4 };
 
-const card = {
-  display: "block",
-  padding: 14,
-  borderRadius: 16,
-  background: "#121a2a",
-  border: "1px solid rgba(255,255,255,0.08)",
-};
+
 
 const pill = {
   height: "fit-content",
