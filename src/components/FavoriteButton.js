@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { layout } from "@/lib/ui";
 import { isFavorite, toggleFavorite } from "@/lib/favorites";
 
-export default function FavoriteButton({ id }) {
+export default function FavoriteButton({ id, bubbleStyle }) {
   const [fav, setFav] = useState(false);
 
   useEffect(() => {
@@ -20,11 +20,19 @@ export default function FavoriteButton({ id }) {
     <button
       onClick={onToggle}
       style={{
-        ...layout.btnBase,
-        ...layout.btnGhost,
+        ...(bubbleStyle || { ...layout.btnBase, ...layout.btnGhost }),
+        cursor: "pointer",
       }}
     >
-      {fav ? "⭐ Saved" : "☆ Save"}
+      <span
+        style={{
+          color: fav ? "#16a34a" : "inherit",
+          marginRight: 6,
+        }}
+      >
+        {fav ? "★" : "☆"}
+      </span>
+      {fav ? "Saved" : "Save"}
     </button>
   );
 }

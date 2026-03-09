@@ -1,6 +1,6 @@
 "use client";
 
-export default function CopyButton({ text, label = "Copy" }) {
+export default function CopyButton({ text, label = "Copy", style = {} }) {
   const copy = async () => {
     try {
       await navigator.clipboard.writeText(text);
@@ -21,6 +21,8 @@ export default function CopyButton({ text, label = "Copy" }) {
         color: "black",
         cursor: "pointer",
         fontSize: 13,
+
+        ...style, // ✅ allows page to override style (bubble style)
       }}
     >
       📋 {label}

@@ -26,10 +26,23 @@ export default async function OfficePage({ params }) {
   }
 
   const maps =
-    office.googleMapsLink ||
-    `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-      `${office.name} ${office.area} ${office.city}`
-    )}`;
+  office.googleMapsLink ||
+  `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+    `${office.name} ${office.address} ${office.city}`
+  )}`;
+
+  // Reusable "bubble" style (matches your Open in Maps pill-card)
+  const actionBubble = {
+  ...layout.card,
+  padding: "10px 14px",
+  textDecoration: "none",
+  display: "inline-flex",
+  alignItems: "center",
+  justifyContent: "center",   // ✅ center content
+  gap: 8,
+  borderRadius: 999,          // ✅ more pill-like
+  minWidth: 125,              // ✅ makes buttons consistent width
+};
 
   return (
     <main className="page-transition" style={layout.page}>
@@ -76,14 +89,13 @@ export default async function OfficePage({ params }) {
           </Link>
         </div>
 
-        {/* Actions */}
-                {/* Actions (sticky) */}
+        {/* Actions (sticky) */}
         <div
           style={{
             position: "sticky",
             top: 12,
             zIndex: 20,
-            background: "rgba(246,248,247,0.92)", // matches colors.bg
+            background: "rgba(246,248,247,0.92)",
             backdropFilter: "blur(10px)",
             WebkitBackdropFilter: "blur(10px)",
             paddingTop: 6,
@@ -91,27 +103,22 @@ export default async function OfficePage({ params }) {
             marginBottom: 12,
           }}
         >
-          <FavoriteButton id={office.id} />
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
-            <a
-              href={maps}
-              target="_blank"
-              rel="noreferrer"
-              style={{
-                ...layout.card,
-                padding: "10px 12px",
-                textDecoration: "none",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: 8,
-                borderRadius: 14,
-              }}
-            >
+          {/* ALL actions in ONE row (wraps nicely on small screens) */}
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 10, alignItems: "center" }}>
+            <a href={maps} target="_blank" rel="noreferrer" style={actionBubble}>
               📍 Open in Maps
             </a>
 
-            {office.address && <CopyButton text={office.address} label="Copy address" />}
-            {office.phone && <CopyButton text={office.phone} label="Copy phone" />}
+            {office.address && (
+              <CopyButton text={office.address} label="Copy address" style={actionBubble} />
+            )}
+
+            {office.phone && (
+              <CopyButton text={office.phone} label="Copy phone" style={actionBubble} />
+            )}
+
+            {/* Save moved to the right of copy buttons and styled like bubble */}
+            <FavoriteButton id={office.id} bubbleStyle={actionBubble} />
           </div>
         </div>
 
@@ -168,7 +175,7 @@ export default async function OfficePage({ params }) {
             )}
           </CollapsibleSection>
 
-          <CollapsibleSection title="Fees" icon="💵">
+          <CollapsibleSection title="Fees" icon="💵" defaultOpen>
             {(office.fees || []).length > 0 ? (
               <ul style={{ margin: 0, paddingLeft: 18, color: colors.muted, lineHeight: 1.7 }}>
                 {(office.fees || []).map((x, i) => (
@@ -180,7 +187,7 @@ export default async function OfficePage({ params }) {
             )}
           </CollapsibleSection>
 
-          <CollapsibleSection title="Notes" icon="📝">
+          <CollapsibleSection title="Notes" icon="📝" defaultOpen>
             {(office.notes || []).length > 0 ? (
               <ul style={{ margin: 0, paddingLeft: 18, color: colors.muted, lineHeight: 1.7 }}>
                 {(office.notes || []).map((x, i) => (
@@ -196,7 +203,7 @@ export default async function OfficePage({ params }) {
             </div>
           </CollapsibleSection>
 
-          <CollapsibleSection title="Verify before you visit" icon="✅">
+          <CollapsibleSection title="Verify before you visit" icon="✅" defaultOpen>
             <div style={{ color: colors.muted, lineHeight: 1.6, fontSize: 14 }}>
               Requirements and timings can change. Always confirm with the official source or call
               the office.
@@ -233,7 +240,6 @@ export default async function OfficePage({ params }) {
     </main>
   );
 }
-
 
 
 const page = {

@@ -6,7 +6,7 @@
     "name": "NADRA Registration Center (Gulberg)",
     "area": "Gulberg",
     "address": "Gulberg, Lahore (verify exact address)",
-    "googleMapsLink": "https://www.google.com/maps",
+    "googleMapsLink": "",
     "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
     "requirements": [
       "Original CNIC / B-Form",
@@ -34,7 +34,7 @@
     "name": "NADRA Registration Center (Defence / DHA)",
     "area": "DHA",
     "address": "DHA, Karachi (verify exact address)",
-    "googleMapsLink": "https://www.google.com/maps",
+    "googleMapsLink": "",
     "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
     "requirements": [
       "Original CNIC / B-Form",
@@ -62,7 +62,7 @@
     "name": "Passport Office (G-10)",
     "area": "G-10",
     "address": "G-10, Islamabad (verify exact address)",
-    "googleMapsLink": "https://www.google.com/maps",
+    "googleMapsLink": "",
     "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
     "requirements": [
       "Original CNIC",
@@ -91,7 +91,7 @@
     "name": "Passport Office (Garden Town)",
     "area": "Garden Town",
     "address": "Garden Town, Lahore (verify exact address)",
-    "googleMapsLink": "https://www.google.com/maps",
+    "googleMapsLink": "",
     "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
     "requirements": [
       "Original CNIC",
@@ -120,7 +120,7 @@
     "name": "Driving License Branch (Clifton)",
     "area": "Clifton",
     "address": "Clifton, Karachi (verify exact address)",
-    "googleMapsLink": "https://www.google.com/maps",
+    "googleMapsLink": "",
     "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
     "requirements": [
       "Original CNIC",
@@ -150,7 +150,7 @@
     "name": "IESCO Customer Service Center",
     "area": "Islamabad",
     "address": "Islamabad (verify exact address)",
-    "googleMapsLink": "https://www.google.com/maps",
+    "googleMapsLink": "",
     "hours": "Mon–Fri 9:00 AM – 5:00 PM (verify)",
     "requirements": [
       "Copy of latest bill (recommended)",
@@ -1519,5 +1519,790 @@
       "Always verify requirements before visiting"
     ],
     "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=1st%20Floor%2C%20Gulzar%20Arcade%2C%20Near%20HBS%20Medical%20%26%20Dental%20College%2C%20Lehtrar%20Road%2C%20Taramri%2C%20Islamabad"
-  }
+  },
+  {
+    "id": "1772557550880",
+    "name": "NADRA Office Mohlanwal",
+    "city": "Lahore",
+    "area": "Mohlanwal",
+    "category": "NADRA",
+    "address": "Off Defence Rd, Block D Mohlanwal, Lahore",
+    "phone": "N/A",
+    "website": "N/A",
+    "hours": "8 AM - 3:30 PM",
+    "requirements": [
+      "N/A"
+    ],
+    "steps": [
+      "N/A"
+    ],
+    "fees": [
+      "N/A"
+    ],
+    "lastUpdated": "2026-03-03"
+  },
+  {
+    "id": "lahore-driving-license-manawan-ctpl",
+    "city": "Lahore",
+    "category": "Driving License",
+    "name": "CTPL Licensing Center Manawan Traffic Police Line",
+    "area": "Manawan",
+    "address": "Manawan Traffic Police Line, Lahore (verify exact address)",
+    "googleMapsLink": "",
+    "hours": "9:00 AM – 12:00 AM (Sunday open)",
+    "requirements": [
+      "Original CNIC",
+      "Required supporting documents for the selected license service",
+      "Photocopies (recommended)",
+      "Medical or additional documents if required by the licensing authority"
+    ],
+    "steps": [
+      "Arrive at the center and take a token",
+      "Submit documents for the requested service",
+      "Complete biometrics/photo if required",
+      "Complete test process if applicable",
+      "Pay applicable fee and collect receipt"
+    ],
+    "fees": [
+      "Fees vary by service (verify at center)"
+    ],
+    "notes": [
+      "Services available: Learner Permit, Regular Driving License, Duplicate License, Renewal License, International Driving License"
+    ],
+    "lastUpdated": "2026-03-06"
+  },
+  {
+    "id": "lahore-driving-license-greater-iqbal-park-testing-center",
+    "city": "Lahore",
+    "category": "Driving License",
+    "name": "Greater Iqbal Park Testing Center",
+    "area": "Greater Iqbal Park",
+    "address": "Greater Iqbal Park, Lahore (verify exact address)",
+    "googleMapsLink": "",
+    "hours": "24/7",
+    "requirements": [
+      "Original CNIC",
+      "Required supporting documents for the selected license service",
+      "Photocopies (recommended)"
+    ],
+    "steps": [
+      "Visit the center and obtain a token",
+      "Submit required documents",
+      "Complete testing/verification if required",
+      "Pay fee and collect receipt"
+    ],
+    "fees": [
+      "Fees vary by service (verify at center)"
+    ],
+    "notes": [
+      "Services available: Learner Permit, Regular Driving License, Duplicate License, Renewal, International Driving License"
+    ],
+    "lastUpdated": "2026-03-06"
+  },
+  {
+    "id": "lahore-driving-license-railway-station-booth",
+    "city": "Lahore",
+    "category": "Driving License",
+    "name": "Railway Station Booth",
+    "area": "Railway Station",
+    "address": "Railway Station area, Lahore (verify exact address)",
+    "googleMapsLink": "",
+    "hours": "9:00 AM – 12:00 AM",
+    "requirements": [
+      "Original CNIC",
+      "Required supporting documents for the selected license service",
+      "Photocopies (recommended)"
+    ],
+    "steps": [
+      "Take a token on arrival",
+      "Submit required documents",
+      "Complete processing and verification",
+      "Pay applicable fee",
+      "Collect receipt and follow next instructions"
+    ],
+    "fees": [
+      "Fees vary by service (verify at booth)"
+    ],
+    "notes": [
+      "Services available: Learner Permit, Duplicate License, Renewal, International Driving License"
+    ],
+    "lastUpdated": "2026-03-06"
+  },
+  {
+    "id": "lahore-driving-license-pkm-mayo-hospital-booth",
+    "city": "Lahore",
+    "category": "Driving License",
+    "name": "PKM Mayo Hospital Booth",
+    "area": "Mayo Hospital",
+    "address": "PKM Mayo Hospital area, Lahore (verify exact address)",
+    "googleMapsLink": "",
+    "hours": "9:00 AM – 12:00 AM",
+    "requirements": [
+      "Original CNIC",
+      "Required supporting documents for the selected license service",
+      "Photocopies (recommended)"
+    ],
+    "steps": [
+      "Visit the booth and take a token",
+      "Submit documents",
+      "Complete verification process",
+      "Pay applicable fee",
+      "Collect receipt"
+    ],
+    "fees": [
+      "Fees vary by service (verify at booth)"
+    ],
+    "notes": [
+      "Services available: Learner Permit, Duplicate License, Renewal, International Driving License"
+    ],
+    "lastUpdated": "2026-03-06"
+  },
+  {
+    "id": "lahore-driving-license-lahore-chamber-of-commerce-booth",
+    "city": "Lahore",
+    "category": "Driving License",
+    "name": "Lahore Chamber of Commerce Booth",
+    "area": "Lahore Chamber of Commerce",
+    "address": "Lahore Chamber of Commerce, Lahore (verify exact address)",
+    "googleMapsLink": "",
+    "hours": "9:30 AM – 4:00 PM",
+    "requirements": [
+      "Original CNIC",
+      "Required supporting documents for the selected license service",
+      "Photocopies (recommended)"
+    ],
+    "steps": [
+      "Take a token on arrival",
+      "Submit required documents",
+      "Complete processing",
+      "Pay fee and collect receipt"
+    ],
+    "fees": [
+      "Fees vary by service (verify at booth)"
+    ],
+    "notes": [
+      "Services available: Learner Permit, Duplicate License, Renewal, International Driving License"
+    ],
+    "lastUpdated": "2026-03-06"
+  },
+  {
+    "id": "lahore-driving-license-samanabad-booth",
+    "city": "Lahore",
+    "category": "Driving License",
+    "name": "Samanabad Booth",
+    "area": "Samanabad",
+    "address": "Samanabad, Lahore (verify exact address)",
+    "googleMapsLink": "",
+    "hours": "8:00 AM – 12:00 AM",
+    "requirements": [
+      "Original CNIC",
+      "Required supporting documents for the selected license service",
+      "Photocopies (recommended)"
+    ],
+    "steps": [
+      "Take a token",
+      "Submit documents",
+      "Complete verification",
+      "Pay fee and collect receipt"
+    ],
+    "fees": [
+      "Fees vary by service (verify at booth)"
+    ],
+    "notes": [
+      "Services available: Learner Permit, Duplicate License, Renewal, International Driving License"
+    ],
+    "lastUpdated": "2026-03-06"
+  },
+  {
+    "id": "lahore-driving-license-liberty-khidmat-markaz-testing-center",
+    "city": "Lahore",
+    "category": "Driving License",
+    "name": "Khidmat Markaz Liberty & Testing Center",
+    "area": "Liberty",
+    "address": "Liberty, Lahore (verify exact address)",
+    "googleMapsLink": "",
+    "hours": "24/7",
+    "requirements": [
+      "Original CNIC",
+      "Required supporting documents for the selected license service",
+      "Photocopies (recommended)"
+    ],
+    "steps": [
+      "Visit the center and take a token",
+      "Submit required documents",
+      "Complete testing if applicable",
+      "Pay fee and collect receipt"
+    ],
+    "fees": [
+      "Fees vary by service (verify at center)"
+    ],
+    "notes": [
+      "Services available: Learner Permit, Regular Driving License, Duplicate License, Renewal, International Driving License",
+      "Location assistance may be needed; verify before visit"
+    ],
+    "lastUpdated": "2026-03-06"
+  },
+  {
+    "id": "lahore-driving-license-dha-testing-center",
+    "city": "Lahore",
+    "category": "Driving License",
+    "name": "DHA Testing Center",
+    "area": "DHA",
+    "address": "DHA, Lahore (verify exact address)",
+    "googleMapsLink": "",
+    "hours": "Verify current hours",
+    "requirements": [
+      "Original CNIC",
+      "Required supporting documents for the selected license service",
+      "Photocopies (recommended)"
+    ],
+    "steps": [
+      "Visit the center and take a token",
+      "Submit documents",
+      "Complete testing if required",
+      "Pay fee and collect receipt"
+    ],
+    "fees": [
+      "Fees vary by service (verify at center)"
+    ],
+    "notes": [
+      "Services available: Learner Permit, Regular Driving License, Duplicate License, Renewal, International Driving License"
+    ],
+    "lastUpdated": "2026-03-06"
+  },
+  {
+    "id": "lahore-driving-license-cantt-booth",
+    "city": "Lahore",
+    "category": "Driving License",
+    "name": "Cantt Booth",
+    "area": "Cantt",
+    "address": "Cantt, Lahore (verify exact address)",
+    "googleMapsLink": "",
+    "hours": "9:00 AM – 12:00 AM",
+    "requirements": [
+      "Original CNIC",
+      "Required supporting documents for the selected license service",
+      "Photocopies (recommended)"
+    ],
+    "steps": [
+      "Take a token",
+      "Submit documents",
+      "Complete verification",
+      "Pay fee and collect receipt"
+    ],
+    "fees": [
+      "Fees vary by service (verify at booth)"
+    ],
+    "notes": [
+      "Services available: Learner Permit, Duplicate License, Renewal, International Driving License"
+    ],
+    "lastUpdated": "2026-03-06"
+  },
+  {
+    "id": "lahore-driving-license-raiwind-pajiyan-chowk-booth",
+    "city": "Lahore",
+    "category": "Driving License",
+    "name": "Raiwind Booth Pajiyan Chowk",
+    "area": "Raiwind / Pajiyan Chowk",
+    "address": "Pajiyan Chowk, Raiwind, Lahore (verify exact address)",
+    "googleMapsLink": "",
+    "hours": "9:00 AM – 6:00 PM",
+    "requirements": [
+      "Original CNIC",
+      "Required supporting documents for the selected license service",
+      "Photocopies (recommended)"
+    ],
+    "steps": [
+      "Take a token",
+      "Submit documents",
+      "Complete verification",
+      "Pay fee and collect receipt"
+    ],
+    "fees": [
+      "Fees vary by service (verify at booth)"
+    ],
+    "notes": [
+      "Services available: Learner Permit, Duplicate License, Renewal, International Driving License"
+    ],
+    "lastUpdated": "2026-03-06"
+  },
+  {
+    "id": "lahore-driving-license-zahid-gondal-shaheed-cto-office",
+    "city": "Lahore",
+    "category": "Driving License",
+    "name": "Zahid Gondal Shaheed (CTO Office)",
+    "area": "CTO Office",
+    "address": "CTO Office, Lahore (verify exact address)",
+    "googleMapsLink": "",
+    "hours": "9:00 AM – 12:00 AM",
+    "requirements": [
+      "Original CNIC",
+      "Required supporting documents for the selected license service",
+      "Photocopies (recommended)"
+    ],
+    "steps": [
+      "Take a token",
+      "Submit documents",
+      "Complete verification or testing if required",
+      "Pay fee and collect receipt"
+    ],
+    "fees": [
+      "Fees vary by service (verify at office)"
+    ],
+    "notes": [
+      "Services available: Learner Permit, Duplicate License, Renewal, International Driving License"
+    ],
+    "lastUpdated": "2026-03-06"
+  },
+  {
+    "id": "lahore-driving-license-police-khidmat-markaz-kahna",
+    "city": "Lahore",
+    "category": "Driving License",
+    "name": "Police Khidmat Markaz Kahna",
+    "area": "Kahna",
+    "address": "Kahna, Lahore (verify exact address)",
+    "googleMapsLink": "",
+    "hours": "9:00 AM – 5:00 PM",
+    "requirements": [
+      "Original CNIC",
+      "Required supporting documents for the selected license service",
+      "Photocopies (recommended)"
+    ],
+    "steps": [
+      "Take a token on arrival",
+      "Submit documents",
+      "Complete verification",
+      "Pay fee and collect receipt"
+    ],
+    "fees": [
+      "Fees vary by service (verify at center)"
+    ],
+    "notes": [
+      "Services available: Learner Permit, Duplicate License, Renewal, International Driving License, Regular Driving License"
+    ],
+    "lastUpdated": "2026-03-06"
+  },
+  {
+    "id": "lahore-driving-license-town-hall-facilitation-center",
+    "city": "Lahore",
+    "category": "Driving License",
+    "name": "Town Hall Facilitation Center",
+    "area": "Town Hall",
+    "address": "Town Hall, Lahore (verify exact address)",
+    "googleMapsLink": "",
+    "hours": "9:00 AM – 12:00 AM",
+    "requirements": [
+      "Original CNIC",
+      "Required supporting documents for the selected license service",
+      "Photocopies (recommended)"
+    ],
+    "steps": [
+      "Take a token",
+      "Submit documents",
+      "Complete processing",
+      "Pay fee and collect receipt"
+    ],
+    "fees": [
+      "Fees vary by service (verify at center)"
+    ],
+    "notes": [
+      "Services available: Learner Permit, Duplicate License, Renewal, International Driving License"
+    ],
+    "lastUpdated": "2026-03-06"
+  },
+  {
+    "id": "lahore-driving-license-high-court-facilitation-center",
+    "city": "Lahore",
+    "category": "Driving License",
+    "name": "High Court Facilitation Center",
+    "area": "High Court",
+    "address": "High Court area, Lahore (verify exact address)",
+    "googleMapsLink": "",
+    "hours": "9:00 AM – 6:00 PM",
+    "requirements": [
+      "Original CNIC",
+      "Required supporting documents for the selected license service",
+      "Photocopies (recommended)"
+    ],
+    "steps": [
+      "Take a token",
+      "Submit documents",
+      "Complete processing",
+      "Pay fee and collect receipt"
+    ],
+    "fees": [
+      "Fees vary by service (verify at center)"
+    ],
+    "notes": [
+      "Services available: Learner Permit, Duplicate License, Renewal, International Driving License"
+    ],
+    "lastUpdated": "2026-03-06"
+  },
+  {
+    "id": "lahore-driving-license-ichhra-booth",
+    "city": "Lahore",
+    "category": "Driving License",
+    "name": "Ichhra Booth",
+    "area": "Ichhra",
+    "address": "Ichhra, Lahore (verify exact address)",
+    "googleMapsLink": "",
+    "hours": "8:00 AM – 12:00 AM",
+    "requirements": [
+      "Original CNIC",
+      "Required supporting documents for the selected license service",
+      "Photocopies (recommended)"
+    ],
+    "steps": [
+      "Take a token",
+      "Submit documents",
+      "Complete processing",
+      "Pay fee and collect receipt"
+    ],
+    "fees": [
+      "Fees vary by service (verify at booth)"
+    ],
+    "notes": [
+      "Services available: Learner Permit, Regular Driving License, Duplicate License, Renewal, International Driving License"
+    ],
+    "lastUpdated": "2026-03-06"
+  },
+  {
+    "id": "lahore-driving-license-moon-market-facilitation-center",
+    "city": "Lahore",
+    "category": "Driving License",
+    "name": "Moon Market Facilitation Center",
+    "area": "Moon Market",
+    "address": "Moon Market, Lahore (verify exact address)",
+    "googleMapsLink": "",
+    "hours": "Verify current hours",
+    "requirements": [
+      "Original CNIC",
+      "Required supporting documents for the selected license service",
+      "Photocopies (recommended)"
+    ],
+    "steps": [
+      "Take a token",
+      "Submit documents",
+      "Complete processing",
+      "Pay fee and collect receipt"
+    ],
+    "fees": [
+      "Fees vary by service (verify at center)"
+    ],
+    "notes": [
+      "Services available: Learner Permit, Duplicate License, Renewal, International Driving License"
+    ],
+    "lastUpdated": "2026-03-06"
+  },
+  {
+    "id": "lahore-driving-license-arfa-karim-testing-center",
+    "city": "Lahore",
+    "category": "Driving License",
+    "name": "Arfa Karim Testing Center",
+    "area": "Arfa Karim",
+    "address": "Arfa Karim area, Lahore (verify exact address)",
+    "googleMapsLink": "",
+    "hours": "9:00 AM – 12:00 AM (Sunday open)",
+    "requirements": [
+      "Original CNIC",
+      "Required supporting documents for the selected license service",
+      "Photocopies (recommended)"
+    ],
+    "steps": [
+      "Take a token",
+      "Submit documents",
+      "Complete testing if required",
+      "Pay fee and collect receipt"
+    ],
+    "fees": [
+      "Fees vary by service (verify at center)"
+    ],
+    "notes": [
+      "Services available: Learner Permit, Regular Driving License, Duplicate License, Renewal, International Driving License"
+    ],
+    "lastUpdated": "2026-03-06"
+  },
+  {
+    "id": "lahore-driving-license-bahria-town-testing-center",
+    "city": "Lahore",
+    "category": "Driving License",
+    "name": "Bahria Town Testing Center",
+    "area": "Bahria Town",
+    "address": "Bahria Town, Lahore (verify exact address)",
+    "googleMapsLink": "",
+    "hours": "9:00 AM – 12:00 AM (Sunday open)",
+    "requirements": [
+      "Original CNIC",
+      "Required supporting documents for the selected license service",
+      "Photocopies (recommended)"
+    ],
+    "steps": [
+      "Take a token",
+      "Submit documents",
+      "Complete testing if required",
+      "Pay fee and collect receipt"
+    ],
+    "fees": [
+      "Fees vary by service (verify at center)"
+    ],
+    "notes": [
+      "Services available: Learner Permit, Regular Driving License, Duplicate License, Renewal, International Driving License"
+    ],
+    "lastUpdated": "2026-03-06"
+  },
+  {
+    "id": "lahore-driving-license-thokar-niaz-baig-licensing-center",
+    "city": "Lahore",
+    "category": "Driving License",
+    "name": "Licensing Center Thokar Niaz Baig",
+    "area": "Thokar Niaz Baig",
+    "address": "Thokar Niaz Baig, Lahore (verify exact address)",
+    "googleMapsLink": "",
+    "hours": "8:00 AM – 12:00 AM",
+    "requirements": [
+      "Original CNIC",
+      "Required supporting documents for the selected license service",
+      "Photocopies (recommended)"
+    ],
+    "steps": [
+      "Take a token",
+      "Submit documents",
+      "Complete processing",
+      "Pay fee and collect receipt"
+    ],
+    "fees": [
+      "Fees vary by service (verify at center)"
+    ],
+    "notes": [
+      "Services available: Learner Permit, Duplicate License, Renewal, International Driving License"
+    ],
+    "lastUpdated": "2026-03-06"
+  },
+  {
+    "id": "lahore-driving-license-garden-town-khidmat-markaz-testing-center",
+    "city": "Lahore",
+    "category": "Driving License",
+    "name": "Khidmat Markaz Garden Town & Testing Center",
+    "area": "Garden Town",
+    "address": "Garden Town, Lahore (verify exact address)",
+    "googleMapsLink": "",
+    "hours": "Verify current hours",
+    "requirements": [
+      "Original CNIC",
+      "Required supporting documents for the selected license service",
+      "Photocopies (recommended)"
+    ],
+    "steps": [
+      "Take a token",
+      "Submit documents",
+      "Complete testing if required",
+      "Pay fee and collect receipt"
+    ],
+    "fees": [
+      "Fees vary by service (verify at center)"
+    ],
+    "notes": [
+      "Services available: Learner Permit, Regular Driving License, Duplicate License, Renewal, International Driving License"
+    ],
+    "lastUpdated": "2026-03-06"
+  },
+  {
+    "id": "lahore-driving-license-wapda-town-khidmat-markaz",
+    "city": "Lahore",
+    "category": "Driving License",
+    "name": "Khidmat Markaz Wapda Town",
+    "area": "Wapda Town",
+    "address": "Wapda Town, Lahore (verify exact address)",
+    "googleMapsLink": "",
+    "hours": "Verify current hours",
+    "requirements": [
+      "Original CNIC",
+      "Required supporting documents for the selected license service",
+      "Photocopies (recommended)"
+    ],
+    "steps": [
+      "Take a token",
+      "Submit documents",
+      "Complete processing or testing if required",
+      "Pay fee and collect receipt"
+    ],
+    "fees": [
+      "Fees vary by service (verify at center)"
+    ],
+    "notes": [
+      "Services available: Learner Permit, Regular Driving License, Duplicate License, Renewal, International Driving License"
+    ],
+    "lastUpdated": "2026-03-06"
+  },
+  {
+  "id": "islamabad-driving-license-itp-shakar-parian",
+  "city": "Islamabad",
+  "category": "Driving License",
+  "name": "ITP Headquarters Driving License Branch",
+  "area": "Shakar Parian / Faizabad",
+  "address": "Near Faizabad Interchange, Shakar Parian, Islamabad",
+  "googleMapsLink": "",
+  "hours": "Mon–Thu 8:30 AM – 3:00 PM | Fri 8:30 AM – 3:00 PM | Sat 9:00 AM – 3:00 PM",
+  "requirements": [
+    "Medical Form-B signed by a medical officer",
+    "Original CNIC",
+    "Copy of CNIC",
+    "2–3 passport-sized photographs"
+  ],
+  "steps": [
+    "Book an online appointment if available",
+    "Bring required documents including Medical Form-B and CNIC",
+    "Submit documents and complete biometric verification",
+    "Take sign and road test if applying for regular driving license",
+    "Pay applicable fee and collect receipt"
+  ],
+  "fees": [
+    "Fees vary depending on license service (verify at center)"
+  ],
+  "notes": [
+    "This is the primary location for road tests and full driving license services in Islamabad.",
+    "Limited appointment slots are available daily.",
+    "Walk-in token system is also available on a first-come-first-serve basis.",
+    "New appointment slots open daily except weekends and public holidays."
+  ],
+  "lastUpdated": "2026-03-09"
+},
+{
+  "id": "islamabad-driving-license-pkm-f6",
+  "city": "Islamabad",
+  "category": "Driving License",
+  "name": "Police Khidmat Markaz F-6/1",
+  "area": "F-6/1",
+  "address": "Agha Khan Road, F-6/1, Islamabad",
+  "googleMapsLink": "",
+  "hours": "24/7",
+  "requirements": [
+    "Original CNIC",
+    "Copy of CNIC",
+    "Medical form if required"
+  ],
+  "steps": [
+    "Visit the PKM center",
+    "Submit documents for learner permit or renewal",
+    "Pay fee and collect receipt"
+  ],
+  "fees": [
+    "Fees vary depending on service"
+  ],
+  "notes": [
+    "Offers services for learner permits and license renewals.",
+    "Operates 24 hours."
+  ],
+  "lastUpdated": "2026-03-09"
+},
+{
+  "id": "islamabad-driving-license-pkm-h11",
+  "city": "Islamabad",
+  "category": "Driving License",
+  "name": "Police Khidmat Markaz CPO H-11",
+  "area": "H-11",
+  "address": "Police Khidmat Markaz, H-11, Islamabad",
+  "googleMapsLink": "",
+  "hours": "8:00 AM – 12:00 PM",
+  "requirements": [
+    "Original CNIC",
+    "Copy of CNIC",
+    "Medical form if required"
+  ],
+  "steps": [
+    "Submit required documents",
+    "Complete sign or road test if scheduled",
+    "Pay applicable fee"
+  ],
+  "fees": [
+    "Fees vary depending on license service"
+  ],
+  "notes": [
+    "Offers sign and road tests along with renewals."
+  ],
+  "lastUpdated": "2026-03-09"
+},
+{
+  "id": "islamabad-driving-license-pkm-g14",
+  "city": "Islamabad",
+  "category": "Driving License",
+  "name": "Police Khidmat Markaz G-14/4",
+  "area": "G-14/4",
+  "address": "Police Khidmat Markaz, G-14/4, Islamabad",
+  "googleMapsLink": "",
+  "hours": "Verify current hours",
+  "requirements": [
+    "Original CNIC",
+    "Copy of CNIC"
+  ],
+  "steps": [
+    "Submit documents",
+    "Complete renewal or learner permit process",
+    "Pay fee"
+  ],
+  "fees": [
+    "Fees vary depending on service"
+  ],
+  "notes": [
+    "Handles renewals, duplicate licenses, and learner permits."
+  ],
+  "lastUpdated": "2026-03-09"
+},
+{
+  "id": "islamabad-driving-license-motorway-police-h8",
+  "city": "Islamabad",
+  "category": "Driving License",
+  "name": "Motorway Police Driving Authority",
+  "area": "H-8/2",
+  "address": "Street 5, H-8/2, Islamabad",
+  "googleMapsLink": "",
+  "hours": "Verify current hours",
+  "requirements": [
+    "Original CNIC",
+    "Copy of CNIC",
+    "Medical form if required"
+  ],
+  "steps": [
+    "Submit documents",
+    "Complete testing if required",
+    "Pay fee"
+  ],
+  "fees": [
+    "Fees vary depending on license type"
+  ],
+  "notes": [
+    "Issues Motorway Police national driving licenses.",
+    "Often preferred for international license conversion."
+  ],
+  "lastUpdated": "2026-03-09"
+},
+{
+  "id": "islamabad-international-driving-permit-g11",
+  "city": "Islamabad",
+  "category": "Driving License",
+  "name": "Citizen Facilitation Center (International Driving Permit)",
+  "area": "G-11/4",
+  "address": "Citizen Facilitation Center, G-11/4, Islamabad",
+  "googleMapsLink": "",
+  "hours": "Verify current hours",
+  "requirements": [
+    "Original CNIC",
+    "Copy of CNIC",
+    "Valid Pakistani driving license",
+    "Passport-sized photographs"
+  ],
+  "steps": [
+    "Submit documents for international driving permit",
+    "Pay applicable fee",
+    "Collect receipt and permit"
+  ],
+  "fees": [
+    "Fees vary depending on permit duration"
+  ],
+  "notes": [
+    "This center specifically handles International Driving Permits."
+  ],
+  "lastUpdated": "2026-03-09"
+}
+
 ]

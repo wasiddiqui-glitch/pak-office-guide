@@ -16,8 +16,8 @@ export default function HomePage() {
     src="/pakistan.png"
     alt="Pakistan"
     style={{
-      width: 80,
-      height: 55,
+      width: 105,
+      height: 70,
       objectFit: "cover",
       borderRadius: 1,
       background: "white",
@@ -49,7 +49,8 @@ export default function HomePage() {
 
       </section>
 
-      <section style={styles.grid2}>
+      
+      <section style={{ ...styles.grid2, marginTop: 15 }}>
         <div style={styles.card}>
           <h2 style={styles.h2}>Cities</h2>
           <div style={styles.grid}>

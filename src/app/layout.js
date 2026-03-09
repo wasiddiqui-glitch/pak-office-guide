@@ -1,4 +1,5 @@
 import BottomNav from "@/components/BottomNav";
+import "./globals.css";
 
 export const metadata = {
   title: "Pakistan Office Guide",
@@ -25,21 +26,8 @@ export default function RootLayout({ children }) {
   a:active {
     transform: translateY(0);
   }
-  /* Page fade-in animation */
-@keyframes pageFadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(4px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+  
 
-.page-transition {
-  animation: pageFadeIn 0.2s ease-out;
-}
 
 html { scroll-behavior: smooth; }
 
