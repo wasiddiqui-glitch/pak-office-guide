@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --webpack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint",
-    "add-office": "node scripts/addOffice.js"
-  },
+  "dev": "next dev --webpack",
+  "build": "next build --webpack",
+  "start": "next start",
+  "lint": "eslint",
+  "add-office": "node scripts/addOffice.js"
+},
   "dependencies": {
     "@prisma/client": "^7.4.2",
     "@upstash/redis": "^1.36.3",
