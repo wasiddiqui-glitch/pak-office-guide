@@ -2,8 +2,26 @@ import BottomNav from "@/components/BottomNav";
 import "./globals.css";
 
 export const metadata = {
-  title: "Pakistan Office Guide",
-  description: "Requirements & steps for government offices in Pakistan.",
+  title: {
+    default: "Pakistan Office Guide",
+    template: "%s | Pakistan Office Guide",
+  },
+  description: "Requirements, steps, fees & hours for government offices in Pakistan. Find NADRA, Passport, Driving License, Utilities and more.",
+  metadataBase: new URL("https://pk-office-guide.vercel.app"),
+  openGraph: {
+    siteName: "Pakistan Office Guide",
+    type: "website",
+    locale: "en_PK",
+  },
+  twitter: {
+    card: "summary",
+  },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#0b6b3a",
 };
 
 export default function RootLayout({ children }) {

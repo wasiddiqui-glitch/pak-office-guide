@@ -4,6 +4,23 @@ import CollapsibleSection from "@/components/CollapsibleSection";
 import { getOfficeById } from "@/lib/offices";
 import { layout, colors } from "@/lib/ui";
 import FavoriteButton from "@/components/FavoriteButton";
+import OpenNowBadge from "@/components/OpenNowBadge";
+import ShareButton from "@/components/ShareButton";
+import SuggestCorrectionButton from "@/components/SuggestCorrectionButton";
+
+export async function generateMetadata({ params }) {
+  const { id } = await params;
+  const office = getOfficeById(id);
+  if (!office) return { title: "Office not found" };
+  return {
+    title: `${office.name} — ${office.city}`,
+    description: `Requirements, steps, and fees for ${office.name} in ${office.city}. ${office.address || ""}`.trim(),
+    openGraph: {
+      title: `${office.name} — ${office.city}`,
+      description: `Find requirements, steps, and fees for ${office.name} in ${office.city}.`,
+    },
+  };
+}
 
 export default async function OfficePage({ params }) {
   const { id } = await params;
@@ -77,10 +94,11 @@ export default async function OfficePage({ params }) {
           <div style={{ display: "grid", gap: 6 }}>
             <h1 style={{ ...layout.h1, fontSize: 22 }}>{office.name}</h1>
 
-            <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+            <div style={{ display: "flex", gap: 8, flexWrap: "wrap", alignItems: "center" }}>
               <span style={layout.badge}>{office.category}</span>
               <span style={layout.badge}>{office.city}</span>
               <span style={layout.badge}>{office.area}</span>
+              <OpenNowBadge hours={office.hours} />
             </div>
           </div>
 
@@ -114,11 +132,18 @@ export default async function OfficePage({ params }) {
             )}
 
             {office.phone && (
+              <a href={`tel:${office.phone}`} style={actionBubble}>
+                📞 Call
+              </a>
+            )}
+
+            {office.phone && (
               <CopyButton text={office.phone} label="Copy phone" style={actionBubble} />
             )}
 
-            {/* Save moved to the right of copy buttons and styled like bubble */}
             <FavoriteButton id={office.id} bubbleStyle={actionBubble} />
+            <ShareButton office={office} style={actionBubble} />
+            <SuggestCorrectionButton office={office} style={actionBubble} />
           </div>
         </div>
 
@@ -242,52 +267,3 @@ export default async function OfficePage({ params }) {
 }
 
 
-const page = {
-  minHeight: "100vh",
-  background: "#0b0f19",
-  color: "#e7ecf5",
-  padding: 18,
-  paddingBottom: 90,
-  fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, Arial",
-};
-
-const topRow = {
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "flex-start",
-  gap: 12,
-};
-
-const title = { margin: 0, fontSize: 24 };
-const sub = { margin: "6px 0 14px 0", color: "#a9b3c7" };
-const h2 = { margin: "0 0 10px 0", fontSize: 16 };
-const small = { color: "#a93c7", fontSize: 13, lineHeight: 1.5 };
-const list = { margin: 0, paddingLeft: 18 };
-
-const card = {
-  padding: 14,
-  borderRadius: 16,
-  background: "#121a2a",
-  border: "1px solid rgba(255,255,255,0.08)",
-  marginBottom: 12,
-};
-
-const button = {
-  display: "inline-flex",
-  justifyContent: "center",
-  alignItems: "center",
-  padding: "12px 12px",
-  borderRadius: 14,
-  border: "1px solid rgba(255,255,255,0.10)",
-  background: "rgba(93,214,255,0.14)",
-  fontWeight: 700,
-};
-
-const pill = {
-  height: "fit-content",
-  border: "1px solid rgba(255,255,255,0.12)",
-  borderRadius: 999,
-  padding: "8px 12px",
-  color: "#a9b3c7",
-  fontSize: 13,
-};

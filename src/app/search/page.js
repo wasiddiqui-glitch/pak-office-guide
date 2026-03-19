@@ -4,18 +4,19 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import offices from "@/data/offices.json";
 import { layout } from "@/lib/ui";
+import { distanceKm, formatDistance } from "@/lib/geo";
+import OpenNowBadge from "@/components/OpenNowBadge";
 
-// --- GREEN THEME (local to this page) ---
 const theme = {
-  ink: "#0b1a12",
-  muted: "#355a45",
-  border: "rgba(0, 80, 40, 0.20)",
-  borderSoft: "rgba(0, 80, 40, 0.14)",
-  softBg: "rgba(0, 120, 60, 0.08)",
-  activeBg: "rgba(0, 120, 60, 0.16)",
-  activeBorder: "rgba(0, 120, 60, 0.35)",
-  highlightBg: "rgba(0, 120, 60, 0.18)",
-  highlightBorder: "rgba(0, 120, 60, 0.28)",
+  ink: "#0b1220",
+  muted: "#334155",
+  border: "rgba(2, 55, 27, 0.16)",
+  borderSoft: "rgba(2, 55, 27, 0.10)",
+  softBg: "rgba(11, 107, 58, 0.08)",
+  activeBg: "rgba(11, 107, 58, 0.16)",
+  activeBorder: "rgba(11, 107, 58, 0.35)",
+  highlightBg: "rgba(11, 107, 58, 0.18)",
+  highlightBorder: "rgba(11, 107, 58, 0.28)",
   white: "#ffffff",
   danger: "#b91c1c",
 };
@@ -44,17 +45,11 @@ function highlight(text, query) {
   const safeText = String(text || "");
   const q = query.trim();
   if (!q) return safeText;
-
   const idx = safeText.toLowerCase().indexOf(q.toLowerCase());
   if (idx === -1) return safeText;
-
-  const before = safeText.slice(0, idx);
-  const match = safeText.slice(idx, idx + q.length);
-  const after = safeText.slice(idx + q.length);
-
   return (
     <>
-      {before}
+      {safeText.slice(0, idx)}
       <span
         style={{
           padding: "0 4px",
@@ -65,14 +60,16 @@ function highlight(text, query) {
           fontWeight: 900,
         }}
       >
-        {match}
+        {safeText.slice(idx, idx + q.length)}
       </span>
-      {after}
+      {safeText.slice(idx + q.length)}
     </>
   );
 }
 
-function ResultCard({ office, query = "" }) {
+function ResultCard({ office, query = "", distKm }) {
+  const distLabel = distKm != null && isFinite(distKm) ? formatDistance(distKm) : null;
+
   return (
     <Link
       href={`/office/${office.id}`}
@@ -84,30 +81,32 @@ function ResultCard({ office, query = "" }) {
         color: "inherit",
       }}
     >
-      <div style={{ display: "flex", justifyContent: "space-between", gap: 10 }}>
+      <div style={{ display: "flex", justifyContent: "space-between", gap: 10, flexWrap: "wrap" }}>
         <div style={{ fontWeight: 900, color: theme.ink }}>
           {highlight(office.name, query)}
         </div>
-        <span
-          style={{
-            padding: "6px 10px",
-            borderRadius: 999,
-            border: `1px solid ${theme.border}`,
-            background: theme.softBg,
-            color: theme.ink,
-            fontSize: 12,
-            fontWeight: 800,
-            height: "fit-content",
-          }}
-        >
-          {office.category}
-        </span>
+        <div style={{ display: "flex", gap: 6, alignItems: "center", flexWrap: "wrap" }}>
+          <OpenNowBadge hours={office.hours} />
+          <span
+            style={{
+              padding: "5px 9px",
+              borderRadius: 999,
+              border: `1px solid ${theme.border}`,
+              background: theme.softBg,
+              color: theme.ink,
+              fontSize: 12,
+              fontWeight: 800,
+            }}
+          >
+            {office.category}
+          </span>
+        </div>
       </div>
 
       <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 6 }}>
         <span
           style={{
-            padding: "6px 10px",
+            padding: "5px 9px",
             borderRadius: 999,
             border: `1px solid ${theme.border}`,
             background: theme.softBg,
@@ -118,11 +117,10 @@ function ResultCard({ office, query = "" }) {
         >
           {office.city}
         </span>
-
         {office.area && (
           <span
             style={{
-              padding: "6px 10px",
+              padding: "5px 9px",
               borderRadius: 999,
               border: `1px solid ${theme.border}`,
               background: theme.softBg,
@@ -132,6 +130,21 @@ function ResultCard({ office, query = "" }) {
             }}
           >
             {office.area}
+          </span>
+        )}
+        {distLabel && (
+          <span
+            style={{
+              padding: "5px 9px",
+              borderRadius: 999,
+              border: "1px solid rgba(11,107,58,0.25)",
+              background: "rgba(11,107,58,0.08)",
+              color: "#0b6b3a",
+              fontSize: 12,
+              fontWeight: 800,
+            }}
+          >
+            📍 {distLabel}
           </span>
         )}
       </div>
@@ -155,11 +168,15 @@ export default function SearchPage() {
   const [aiError, setAiError] = useState("");
   const [aiData, setAiData] = useState(null);
 
+  // Geolocation state
+  const [location, setLocation] = useState(null); // { lat, lng } | null
+  const [locLoading, setLocLoading] = useState(false);
+  const [locError, setLocError] = useState("");
+
   const cities = useMemo(
     () => ["All", ...Array.from(new Set(offices.map((o) => o.city))).sort()],
     []
   );
-
   const categories = useMemo(
     () => ["All", ...Array.from(new Set(offices.map((o) => o.category))).sort()],
     []
@@ -167,7 +184,6 @@ export default function SearchPage() {
 
   const filtered = useMemo(() => {
     const query = q.trim().toLowerCase();
-
     const base = query
       ? offices.filter((o) => {
           const hay = [o.name, o.city, o.area, o.category, o.address]
@@ -178,12 +194,21 @@ export default function SearchPage() {
         })
       : offices;
 
-    return base.filter((o) => {
+    const withFilter = base.filter((o) => {
       const cityOk = city === "All" || o.city === city;
       const catOk = category === "All" || o.category === category;
       return cityOk && catOk;
     });
-  }, [q, city, category]);
+
+    if (location) {
+      return [...withFilter].sort(
+        (a, b) =>
+          distanceKm(a, location.lat, location.lng) -
+          distanceKm(b, location.lat, location.lng)
+      );
+    }
+    return withFilter;
+  }, [q, city, category, location]);
 
   const clearAll = () => {
     setQ("");
@@ -191,29 +216,49 @@ export default function SearchPage() {
     setCategory("All");
   };
 
+  const requestLocation = () => {
+    if (!navigator.geolocation) {
+      setLocError("Geolocation is not supported by your browser.");
+      return;
+    }
+    setLocLoading(true);
+    setLocError("");
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        setLocation({ lat: pos.coords.latitude, lng: pos.coords.longitude });
+        setLocLoading(false);
+      },
+      (err) => {
+        setLocError(
+          err.code === 1
+            ? "Location permission denied. Enable it in your browser settings."
+            : "Could not get your location."
+        );
+        setLocLoading(false);
+      },
+      { timeout: 10000 }
+    );
+  };
+
+  const clearLocation = () => {
+    setLocation(null);
+    setLocError("");
+  };
+
   const runAiSearch = async (e) => {
     e.preventDefault();
     if (!aiQuery.trim()) return;
-
     setAiLoading(true);
     setAiError("");
     setAiData(null);
-
     try {
       const res = await fetch("/api/ai-search", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: aiQuery }),
       });
-
       const json = await res.json();
-
-      if (!res.ok) {
-        throw new Error(json.error || "AI search failed");
-      }
-
+      if (!res.ok) throw new Error(json.error || "AI search failed");
       setAiData(json);
     } catch (err) {
       setAiError(err.message || "Something went wrong");
@@ -230,9 +275,7 @@ export default function SearchPage() {
 
   useEffect(() => {
     const onKey = (e) => {
-      if (e.key === "Escape") {
-        setQ("");
-      }
+      if (e.key === "Escape") setQ("");
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
@@ -265,9 +308,7 @@ export default function SearchPage() {
             marginBottom: 14,
           }}
         >
-          <div style={{ fontWeight: 900, color: theme.ink, marginBottom: 6 }}>
-            AI Search
-          </div>
+          <div style={{ fontWeight: 900, color: theme.ink, marginBottom: 6 }}>AI Search</div>
           <div style={{ color: theme.muted, fontSize: 14, lineHeight: 1.6, marginBottom: 12 }}>
             Try queries like <b>passport office in islamabad</b>,{" "}
             <b>nadra near dha lahore</b>, or <b>electricity bill office rawalpindi</b>.
@@ -290,7 +331,6 @@ export default function SearchPage() {
                 boxShadow: "0 6px 18px rgba(0,0,0,0.06)",
               }}
             />
-
             <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
               <button
                 type="submit"
@@ -307,7 +347,6 @@ export default function SearchPage() {
               >
                 {aiLoading ? "Searching..." : "Run AI Search"}
               </button>
-
               {(aiData || aiError || aiQuery) && (
                 <button
                   type="button"
@@ -322,7 +361,7 @@ export default function SearchPage() {
                     fontWeight: 800,
                   }}
                 >
-                  Clear AI Search
+                  Clear
                 </button>
               )}
             </div>
@@ -345,17 +384,10 @@ export default function SearchPage() {
                 <div style={{ fontWeight: 900, color: theme.ink, marginBottom: 8 }}>
                   AI detected
                 </div>
-
                 <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-                  <span style={layout.badge}>
-                    City: {aiData.filters?.city || "—"}
-                  </span>
-                  <span style={layout.badge}>
-                    Category: {aiData.filters?.category || "—"}
-                  </span>
-                  <span style={layout.badge}>
-                    Area: {aiData.filters?.area || "—"}
-                  </span>
+                  <span style={layout.badge}>City: {aiData.filters?.city || "—"}</span>
+                  <span style={layout.badge}>Category: {aiData.filters?.category || "—"}</span>
+                  <span style={layout.badge}>Area: {aiData.filters?.area || "—"}</span>
                   <span style={layout.badge}>
                     Keywords:{" "}
                     {(aiData.filters?.keywords || []).length > 0
@@ -364,12 +396,10 @@ export default function SearchPage() {
                   </span>
                 </div>
               </div>
-
               <div style={{ color: theme.muted, fontSize: 13 }}>
-                AI found{" "}
-                <b style={{ color: theme.ink }}>{aiData.results?.length || 0}</b> result(s).
+                AI found <b style={{ color: theme.ink }}>{aiData.results?.length || 0}</b>{" "}
+                result(s).
               </div>
-
               <div style={{ display: "grid", gap: 12 }}>
                 {aiData.results?.length > 0 ? (
                   aiData.results.map((office) => (
@@ -391,7 +421,7 @@ export default function SearchPage() {
           )}
         </div>
 
-        {/* Manual Search input */}
+        {/* Manual search input */}
         <input
           value={q}
           onChange={(e) => setQ(e.target.value)}
@@ -413,14 +443,10 @@ export default function SearchPage() {
 
         {/* Quick filter chips */}
         <div style={{ marginTop: 10 }}>
-          <div style={{ color: theme.muted, fontSize: 12, marginBottom: 6 }}>
-            Quick filters
-          </div>
-
+          <div style={{ color: theme.muted, fontSize: 12, marginBottom: 6 }}>Quick filters</div>
           <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
             {cities
               .filter((c) => c !== "All")
-              .slice(0, 6)
               .map((c) => (
                 <Chip
                   key={c}
@@ -429,10 +455,8 @@ export default function SearchPage() {
                   onClick={() => setCity(city === c ? "All" : c)}
                 />
               ))}
-
             {categories
               .filter((c) => c !== "All")
-              .slice(0, 6)
               .map((c) => (
                 <Chip
                   key={c}
@@ -444,16 +468,84 @@ export default function SearchPage() {
           </div>
         </div>
 
+        {/* Near me bar */}
+        <div
+          style={{
+            marginTop: 12,
+            display: "flex",
+            alignItems: "center",
+            gap: 10,
+            flexWrap: "wrap",
+          }}
+        >
+          {!location ? (
+            <button
+              onClick={requestLocation}
+              disabled={locLoading}
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 6,
+                borderRadius: 999,
+                padding: "9px 14px",
+                border: `1px solid ${theme.border}`,
+                background: theme.softBg,
+                color: theme.ink,
+                cursor: locLoading ? "default" : "pointer",
+                fontWeight: 800,
+                fontSize: 13,
+              }}
+            >
+              {locLoading ? "Getting location…" : "📍 Sort by distance"}
+            </button>
+          ) : (
+            <div
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 8,
+                borderRadius: 999,
+                padding: "9px 14px",
+                border: `1px solid rgba(11,107,58,0.30)`,
+                background: "rgba(11,107,58,0.10)",
+                color: "#0b6b3a",
+                fontWeight: 800,
+                fontSize: 13,
+              }}
+            >
+              📍 Sorted by distance
+              <button
+                onClick={clearLocation}
+                style={{
+                  background: "none",
+                  border: "none",
+                  cursor: "pointer",
+                  color: "#0b6b3a",
+                  fontWeight: 900,
+                  fontSize: 14,
+                  padding: "0 2px",
+                  lineHeight: 1,
+                }}
+              >
+                ✕
+              </button>
+            </div>
+          )}
+          {locError && (
+            <div style={{ color: theme.danger, fontSize: 13 }}>{locError}</div>
+          )}
+        </div>
+
         {/* Summary */}
-        <div style={{ marginTop: 12, color: theme.muted, fontSize: 13 }}>
-          Showing <b style={{ color: theme.ink }}>{filtered.length}</b> manual result(s) out of{" "}
+        <div style={{ marginTop: 10, color: theme.muted, fontSize: 13 }}>
+          Showing <b style={{ color: theme.ink }}>{filtered.length}</b> result(s) out of{" "}
           <b style={{ color: theme.ink }}>{offices.length}</b>.
         </div>
 
         <div style={{ height: 12 }} />
 
-        {/* Manual results */}
-        <div style={{ display: "grid", gap: 12 }}>
+        {/* Results */}
+        <div style={{ display: "grid", gap: 16 }}>
           {filtered.length === 0 ? (
             <div style={layout.card}>
               <div style={{ fontWeight: 900, marginBottom: 6, color: theme.ink }}>
@@ -479,7 +571,14 @@ export default function SearchPage() {
               </button>
             </div>
           ) : (
-            filtered.map((o) => <ResultCard key={o.id} office={o} query={q} />)
+            filtered.map((o) => (
+              <ResultCard
+                key={o.id}
+                office={o}
+                query={q}
+                distKm={location ? distanceKm(o, location.lat, location.lng) : null}
+              />
+            ))
           )}
         </div>
       </div>

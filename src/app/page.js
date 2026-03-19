@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import offices from "@/data/offices.json";
 import { layout } from "@/lib/ui";
 
@@ -12,17 +13,13 @@ export default function HomePage() {
       <header style={styles.header}>
         <div>
         <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 8 }}>
-  <img
+  <Image
     src="/pakistan.png"
-    alt="Pakistan"
-    style={{
-      width: 105,
-      height: 70,
-      objectFit: "cover",
-      borderRadius: 1,
-      background: "white",
-      padding: 3,
-    }}
+    alt="Pakistan flag"
+    width={105}
+    height={70}
+    style={{ objectFit: "cover", borderRadius: 1, background: "white", padding: 3 }}
+    priority
   />
   <div>
     <h1 style={styles.title}>Pakistan Office Guide</h1>
@@ -44,6 +41,9 @@ export default function HomePage() {
           </Link>
           <Link href="/cities" style={layout.buttonSoft}>
             Browse Cities
+          </Link>
+          <Link href="/categories" style={layout.buttonSoft}>
+            Browse Categories
           </Link>
         </div>
 
@@ -72,14 +72,15 @@ export default function HomePage() {
           <h2 style={styles.h2}>Categories</h2>
           <div style={styles.grid}>
             {categories.map((cat) => (
-              <div key={cat} style={layout.badge}>
+              <Link
+                key={cat}
+                href={`/category/${encodeURIComponent(cat)}`}
+                style={{ ...layout.badge, textDecoration: "none" }}
+              >
                 {cat}
-              </div>
+              </Link>
             ))}
           </div>
-          <p style={styles.small}>
-            Next: add Passport, Traffic, Utilities, etc.
-          </p>
         </div>
       </section>
       </div>
@@ -99,16 +100,6 @@ const styles = {
   title: { margin: 0, fontSize: 26, letterSpacing: 0.2 },
   sub: { margin: "6px 0 0 0", color: "inherit", opacity: 0.75, fontSize: 14 },
   
-  pillSoft: {
-    border: "1px solid rgba(255,255,255,0.12)",
-    borderRadius: 999,
-    padding: "8px 12px",
-    background: "rgba(255,255,255,0.03)",
-    color: "#a9b3c7",
-    fontSize: 13,
-    width: "fit-content",
-  },
-
   h2: { margin: "0 0 10px 0", fontSize: 16 },
   row: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 },
 
@@ -122,12 +113,5 @@ const styles = {
     gridTemplateColumns: "1fr",
   },
   grid: { display: "grid", gap: 10 },
-  linkCard: {
-    display: "block",
-    padding: 12,
-    borderRadius: 14,
-    border: "1px solid rgba(255,255,255,0.08)",
-    background: "rgba(255,255,255,0.03)",
-  },
 };
 

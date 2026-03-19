@@ -25,7 +25,9 @@
     "notes": [
       "Arrive early for shorter lines"
     ],
-    "lastUpdated": "2026-02-08"
+    "lastUpdated": "2026-02-08",
+    "lat": 31.5119955,
+    "lng": 74.3430178
   },
   {
     "id": "karachi-nadra-defence",
@@ -53,7 +55,9 @@
     "notes": [
       "Bring photocopies to save time"
     ],
-    "lastUpdated": "2026-02-08"
+    "lastUpdated": "2026-02-08",
+    "lat": 24.8146335,
+    "lng": 67.0800032
   },
   {
     "id": "islamabad-passport-g10",
@@ -82,7 +86,9 @@
     "notes": [
       "Check if online fee payment is available before visiting"
     ],
-    "lastUpdated": "2026-02-08"
+    "lastUpdated": "2026-02-08",
+    "lat": 33.6749515,
+    "lng": 73.0154681
   },
   {
     "id": "lahore-passport-garden-town",
@@ -111,7 +117,9 @@
     "notes": [
       "Arrive early; lines can be long"
     ],
-    "lastUpdated": "2026-02-08"
+    "lastUpdated": "2026-02-08",
+    "lat": 31.4965068,
+    "lng": 74.3200821
   },
   {
     "id": "karachi-traffic-licensing-clifton",
@@ -141,7 +149,9 @@
     "notes": [
       "Bring extra photos just in case"
     ],
-    "lastUpdated": "2026-02-08"
+    "lastUpdated": "2026-02-08",
+    "lat": 24.8190552,
+    "lng": 67.0262397
   },
   {
     "id": "islamabad-utility-iesco-customer-service",
@@ -169,7 +179,9 @@
     "notes": [
       "Always take a photo of your complaint/reference number"
     ],
-    "lastUpdated": "2026-02-08"
+    "lastUpdated": "2026-02-08",
+    "lat": 33.6938118,
+    "lng": 73.0651511
   },
   {
     "id": "nadra-lhr-rho-johar-town",
@@ -200,7 +212,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=73%2C%20Trade%20Centre%2C%20Johar%20Town%2C%20Lahore"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=73%2C%20Trade%20Centre%2C%20Johar%20Town%2C%20Lahore",
+    "lat": 31.4705532,
+    "lng": 74.2728823
   },
   {
     "id": "nadra-lhr-zarrar-shaheed",
@@ -231,7 +245,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=12-A%2C%20Nagina%20Centre%2C%20Zarrar%20Shaheed%20Road%2C%20Guldasht%20Town%2C%20Lahore"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=12-A%2C%20Nagina%20Centre%2C%20Zarrar%20Shaheed%20Road%2C%20Guldasht%20Town%2C%20Lahore",
+    "lat": 31.5436819,
+    "lng": 74.4192021
   },
   {
     "id": "nadra-lhr-exec-dha-phase-1",
@@ -262,7 +278,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=124-G%2C%20DHA%20Phase%201%2C%20Lahore"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=124-G%2C%20DHA%20Phase%201%2C%20Lahore",
+    "lat": 31.4828556,
+    "lng": 74.3947939
   },
   {
     "id": "nadra-lhr-jallo-mor",
@@ -292,7 +310,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Jallo%20Mor%2C%20Near%20Macca%20Tower%2C%20G.T.%20Road%2C%20Lahore"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Jallo%20Mor%2C%20Near%20Macca%20Tower%2C%20G.T.%20Road%2C%20Lahore",
+    "lat": 31.5965929,
+    "lng": 74.5000103
   },
   {
     "id": "nadra-lhr-exec-dha-phase-4",
@@ -323,7 +343,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=153-CC%2C%20DHA%20Phase%204%2C%20Lahore"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=153-CC%2C%20DHA%20Phase%204%2C%20Lahore",
+    "lat": 31.461237,
+    "lng": 74.3876385
   },
   {
     "id": "nadra-lhr-samanabad",
@@ -354,7 +376,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=926-N%2C%20Samanabad%2C%20Lahore"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=926-N%2C%20Samanabad%2C%20Lahore",
+    "lat": 31.5403203,
+    "lng": 74.3022952
   },
   {
     "id": "nadra-lhr-secretariat-mall-road",
@@ -385,7 +409,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Secretariat%20Building%2C%20Mall%20Road%2C%20Lahore"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Secretariat%20Building%2C%20Mall%20Road%2C%20Lahore",
+    "lat": 31.5693018,
+    "lng": 74.3060416
   },
   {
     "id": "nadra-lhr-shahdara-saeed-park",
@@ -416,7 +442,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Saeed%20Park%2C%20Near%20Toll%20Plaza%2C%20Shahdara%20Town%2C%20Lahore"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Saeed%20Park%2C%20Near%20Toll%20Plaza%2C%20Shahdara%20Town%2C%20Lahore",
+    "lat": 31.6515149,
+    "lng": 74.2999796
   },
   {
     "id": "nadra-lhr-exec-allama-iqbal-town",
@@ -447,7 +475,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=56%2F16%2C%20Karim%20Block%2C%20Allama%20Iqbal%20Town%2C%20Lahore"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=56%2F16%2C%20Karim%20Block%2C%20Allama%20Iqbal%20Town%2C%20Lahore",
+    "lat": 31.5247304,
+    "lng": 74.2830188
   },
   {
     "id": "nadra-lhr-high-court-mozang",
@@ -477,7 +507,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Lahore%20High%20Court%2C%20Mall%20Road%2C%20Mozang%20Chungi%2C%20Lahore"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Lahore%20High%20Court%2C%20Mall%20Road%2C%20Mozang%20Chungi%2C%20Lahore",
+    "lat": 31.5488201,
+    "lng": 74.3149705
   },
   {
     "id": "nadra-lhr-exec-township-college-road",
@@ -507,7 +539,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Block%20C-2%2C%20College%20Road%2C%20Township%2C%20Lahore"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Block%20C-2%2C%20College%20Road%2C%20Township%2C%20Lahore",
+    "lat": 31.4565063,
+    "lng": 74.3200799
   },
   {
     "id": "nadra-lhr-peco-road-kot-lakhpat",
@@ -538,7 +572,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Peco%20Road%2C%20Kot%20Lakhpat%2C%20Lahore"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Peco%20Road%2C%20Kot%20Lakhpat%2C%20Lahore",
+    "lat": 31.4859439,
+    "lng": 74.3310336
   },
   {
     "id": "nadra-lhr-raiwind-bypass",
@@ -569,7 +605,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Near%20Raiwind%20Bypass%2C%20Lahore"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Near%20Raiwind%20Bypass%2C%20Lahore",
+    "lat": 31.2443583,
+    "lng": 74.2138126
   },
   {
     "id": "nadra-lhr-protectorate-model-town",
@@ -600,7 +638,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=117%2C%20Block%20G%2C%20Model%20Town%2C%20Lahore"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=117%2C%20Block%20G%2C%20Model%20Town%2C%20Lahore",
+    "lat": 31.4859439,
+    "lng": 74.3310336
   },
   {
     "id": "nadra-lhr-chung-multan-road",
@@ -630,7 +670,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Multan%20Road%2C%20Chung%2C%20Lahore"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Multan%20Road%2C%20Chung%2C%20Lahore",
+    "lat": 31.4325834,
+    "lng": 74.1743479
   },
   {
     "id": "nadra-khi-provincial-hq-machs",
@@ -660,7 +702,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=29-E%2C%20Miran%20Muhammad%20Shah%20Road%2C%20MACHS%2C%20Karachi"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=29-E%2C%20Miran%20Muhammad%20Shah%20Road%2C%20MACHS%2C%20Karachi",
+    "lat": 24.8749853,
+    "lng": 67.0890558
   },
   {
     "id": "nadra-khi-mega-dha-phase-1",
@@ -690,7 +734,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Service%20Road%2C%2018th%20East%20Street%2C%20Phase%201%2C%20DHA%2C%20Karachi"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Service%20Road%2C%2018th%20East%20Street%2C%20Phase%201%2C%20DHA%2C%20Karachi",
+    "lat": 24.84122,
+    "lng": 67.0674901
   },
   {
     "id": "nadra-khi-mega-north-nazimabad",
@@ -720,7 +766,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Plot%20No%20D15%2F1%2C%20Euro%20Twin%20Tower%2C%20Block%20L%2C%20North%20Nazimabad%20Town%2C%20Karachi"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Plot%20No%20D15%2F1%2C%20Euro%20Twin%20Tower%2C%20Block%20L%2C%20North%20Nazimabad%20Town%2C%20Karachi",
+    "lat": 24.9462966,
+    "lng": 67.0512724
   },
   {
     "id": "nadra-khi-mega-siemens-site",
@@ -750,7 +798,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Siemens%20Chowrangi%2C%20SITE%20Area%2C%20Karachi"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Siemens%20Chowrangi%2C%20SITE%20Area%2C%20Karachi",
+    "lat": 24.9060048,
+    "lng": 67.0059109
   },
   {
     "id": "nadra-khi-exec-shahrah-e-quaideen",
@@ -781,7 +831,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Plot%20no.%2085-C%2C%20Saleem%20Tower%2C%20Khudadad%20Colony%2C%20Karachi"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Plot%20no.%2085-C%2C%20Saleem%20Tower%2C%20Khudadad%20Colony%2C%20Karachi",
+    "lat": 24.8774266,
+    "lng": 67.0463278
   },
   {
     "id": "nadra-khi-exec-clifton-quality-arcade",
@@ -812,7 +864,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=B-7%2C%20Quality%20Arcade%20near%20Shawn%20Circle%2C%20Clifton%2C%20Karachi"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=B-7%2C%20Quality%20Arcade%20near%20Shawn%20Circle%2C%20Clifton%2C%20Karachi",
+    "lat": 24.8190552,
+    "lng": 67.0262397
   },
   {
     "id": "nadra-khi-exec-saddar-passport",
@@ -843,7 +897,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Near%20Saddar%20Passport%20Office%2C%20Karachi"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Near%20Saddar%20Passport%20Office%2C%20Karachi",
+    "lat": 24.8605712,
+    "lng": 67.0317406
   },
   {
     "id": "nadra-khi-exec-kcci-saddar",
@@ -874,7 +930,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Karachi%20Chamber%20of%20Commerce%20Building%2C%20Saddar%20Town%2C%20Karachi"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Karachi%20Chamber%20of%20Commerce%20Building%2C%20Saddar%20Town%2C%20Karachi",
+    "lat": 24.8605712,
+    "lng": 67.0317406
   },
   {
     "id": "nadra-khi-gulistan-e-jauhar-block-15",
@@ -904,7 +962,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Block%2015%20near%20Income%20Building%2C%20Gulistan-e-Johar%2C%20Karachi"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Block%2015%20near%20Income%20Building%2C%20Gulistan-e-Johar%2C%20Karachi",
+    "lat": 24.9093636,
+    "lng": 67.1084783
   },
   {
     "id": "nadra-khi-safoora-goth",
@@ -935,7 +995,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Plot%205%20Block%20B%2C%20Race%20Course%20Club%2C%20Safoora%20Goth%2C%20Karachi"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Plot%205%20Block%20B%2C%20Race%20Course%20Club%2C%20Safoora%20Goth%2C%20Karachi",
+    "lat": 24.9392946,
+    "lng": 67.1561264
   },
   {
     "id": "nadra-khi-awami-markaz-shahrah-e-faisal",
@@ -966,7 +1028,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Awami%20Markaz%2C%20Shahrah-e-Faisal%2C%20Karachi"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Awami%20Markaz%2C%20Shahrah-e-Faisal%2C%20Karachi",
+    "lat": 24.8700183,
+    "lng": 67.0878386
   },
   {
     "id": "nadra-khi-lyari-chakiwara",
@@ -997,7 +1061,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=UC-10%2C%20Mullah%20Fazal%20Hall%2C%20Chakiwara%20Road%20near%20Al-Jameel%20Hotel%2C%20Lyari%2C%20Karachi"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=UC-10%2C%20Mullah%20Fazal%20Hall%2C%20Chakiwara%20Road%20near%20Al-Jameel%20Hotel%2C%20Lyari%2C%20Karachi",
+    "lat": 24.8655486,
+    "lng": 66.9981936
   },
   {
     "id": "nadra-khi-orangi-town-no-5",
@@ -1028,7 +1094,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Town%20Administrator%20Office%2C%20Orangi%20Town%20No.%205%2C%20Karachi"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Town%20Administrator%20Office%2C%20Orangi%20Town%20No.%205%2C%20Karachi",
+    "lat": 24.9461056,
+    "lng": 67.0128813
   },
   {
     "id": "nadra-khi-surjani-town-sector-4a",
@@ -1059,7 +1127,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=KDA%20Building%2C%20Sector%204-A%2C%20Surjani%20Town%2C%20Karachi"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=KDA%20Building%2C%20Sector%204-A%2C%20Surjani%20Town%2C%20Karachi",
+    "lat": 25.0770299,
+    "lng": 67.073576
   },
   {
     "id": "nadra-khi-soldier-bazar-garden-west",
@@ -1090,7 +1160,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=UC-13%2C%20Garden%20West%2C%20Karachi"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=UC-13%2C%20Garden%20West%2C%20Karachi",
+    "lat": 24.8812747,
+    "lng": 67.0297272
   },
   {
     "id": "nadra-khi-liaquatabad-nazimabad-3",
@@ -1121,7 +1193,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Liaquatabad%20Town%20Office%2C%20KMC%20Building%2C%20Nazimabad-3%2C%20Karachi"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Liaquatabad%20Town%20Office%2C%20KMC%20Building%2C%20Nazimabad-3%2C%20Karachi",
+    "lat": 24.9166896,
+    "lng": 67.0270075
   },
   {
     "id": "nadra-khi-landhi-3half-babar-market",
@@ -1152,7 +1226,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=UC-07%20Office%20Building%2C%2037%2FC%20near%20Babar%20Market%2C%20Landhi%203%C2%BD%2C%20Karachi"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=UC-07%20Office%20Building%2C%2037%2FC%20near%20Babar%20Market%2C%20Landhi%203%C2%BD%2C%20Karachi",
+    "lat": 24.8351918,
+    "lng": 67.1774095
   },
   {
     "id": "nadra-khi-malir-rafi-mall",
@@ -1183,7 +1259,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Rafi%20Mall%20Building%2C%20National%20Highway%20near%20Malir%20Court%2C%20Malir%2C%20Karachi"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Rafi%20Mall%20Building%2C%20National%20Highway%20near%20Malir%20Court%2C%20Malir%2C%20Karachi",
+    "lat": 24.8773046,
+    "lng": 67.1902424
   },
   {
     "id": "nadra-khi-korangi-no4-old-kda",
@@ -1214,7 +1292,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=UC%20Office%2C%20Old%20KDA%20Building%20near%20Sultan%20Clinic%2C%20Korangi%20No.4%2C%20Karachi"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=UC%20Office%2C%20Old%20KDA%20Building%20near%20Sultan%20Clinic%2C%20Korangi%20No.4%2C%20Karachi",
+    "lat": 24.8206928,
+    "lng": 67.1403735
   },
   {
     "id": "nadra-khi-gulshan-e-hadeed-phase-1",
@@ -1245,7 +1325,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=UC-6%20Building%2C%20Gulshan-e-Hadeed%20Phase-1%2C%20Near%20Bank%20AL-Habib%2C%20Bin%20Qasim%20Town%2C%20Karachi"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=UC-6%20Building%2C%20Gulshan-e-Hadeed%20Phase-1%2C%20Near%20Bank%20AL-Habib%2C%20Bin%20Qasim%20Town%2C%20Karachi",
+    "lat": 24.8699988,
+    "lng": 67.3600518
   },
   {
     "id": "nadra-khi-shah-faisal-colony-water-board",
@@ -1276,7 +1358,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=KMC%20Office%2C%20Water%20Board%20Shah%20Faisal%20Colony%2C%20Shah%20Faisal%20Town%2C%20Karachi"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=KMC%20Office%2C%20Water%20Board%20Shah%20Faisal%20Colony%2C%20Shah%20Faisal%20Town%2C%20Karachi",
+    "lat": 24.8824896,
+    "lng": 67.16246
   },
   {
     "id": "nadra-khi-memon-goth-gadap",
@@ -1307,7 +1391,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=UC-01%2C%20Murad%20Memon%20Goth%2C%20Gadap%20Town%2C%20Karachi"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=UC-01%2C%20Murad%20Memon%20Goth%2C%20Gadap%20Town%2C%20Karachi",
+    "lat": 25.000475,
+    "lng": 67.1317241
   },
   {
     "id": "nadra-khi-saudabad-student-bakery",
@@ -1338,7 +1424,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=UC-03%20Building%2C%20Saudabad%20near%20Student%20Bakery%2C%20Malir%2C%20Karachi"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=UC-03%20Building%2C%20Saudabad%20near%20Student%20Bakery%2C%20Malir%2C%20Karachi",
+    "lat": 24.9010045,
+    "lng": 67.2033252
   },
   {
     "id": "nadra-isl-mega-service-centre-blue-area-109-jinnah",
@@ -1368,7 +1456,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=109%20Jinnah%20Ave%2C%20Block%20I%20G-7%2F2%2C%20Blue%20Area%2C%20Islamabad"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=109%20Jinnah%20Ave%2C%20Block%20I%20G-7%2F2%2C%20Blue%20Area%2C%20Islamabad",
+    "lat": 33.7220531,
+    "lng": 73.0787936
   },
   {
     "id": "nadra-isl-hq-g5-2",
@@ -1398,7 +1488,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=State%20Bank%20of%20Pakistan%20Building%2C%20Shahrah-i-Jamhuriat%2C%20G-5%2F2%2C%20Islamabad"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=State%20Bank%20of%20Pakistan%20Building%2C%20Shahrah-i-Jamhuriat%2C%20G-5%2F2%2C%20Islamabad",
+    "lat": 33.6938118,
+    "lng": 73.0651511
   },
   {
     "id": "nadra-isl-rho-g10-4-mauve-area",
@@ -1428,7 +1520,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Mauve%20Area%2C%20Plot%20%2330%2C%20Sector%20G-10%2F4%2C%20Islamabad"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Mauve%20Area%2C%20Plot%20%2330%2C%20Sector%20G-10%2F4%2C%20Islamabad",
+    "lat": 33.6717006,
+    "lng": 73.0196942
   },
   {
     "id": "nadra-isl-e-sahulat-bhara-kahu",
@@ -1458,7 +1552,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Abdullah%20Town%2C%20Near%20BOP%2C%20Main%20Murree%20Road%2C%20Bhera%20Pull%2C%20Bhara%20Kahu%2C%20Islamabad"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Abdullah%20Town%2C%20Near%20BOP%2C%20Main%20Murree%20Road%2C%20Bhera%20Pull%2C%20Bhara%20Kahu%2C%20Islamabad",
+    "lat": 33.7366096,
+    "lng": 73.1885646
   },
   {
     "id": "nadra-isl-mega-khyber-plaza-blue-area",
@@ -1488,7 +1584,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Khyber%20Plaza%2C%20Blue%20Area%2C%20Islamabad"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Khyber%20Plaza%2C%20Blue%20Area%2C%20Islamabad",
+    "lat": 33.7220531,
+    "lng": 73.0787936
   },
   {
     "id": "nadra-isl-taramri-gulzar-arcade",
@@ -1518,7 +1616,9 @@
       "Bring extra copies of documents",
       "Always verify requirements before visiting"
     ],
-    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=1st%20Floor%2C%20Gulzar%20Arcade%2C%20Near%20HBS%20Medical%20%26%20Dental%20College%2C%20Lehtrar%20Road%2C%20Taramri%2C%20Islamabad"
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=1st%20Floor%2C%20Gulzar%20Arcade%2C%20Near%20HBS%20Medical%20%26%20Dental%20College%2C%20Lehtrar%20Road%2C%20Taramri%2C%20Islamabad",
+    "lat": 33.6427079,
+    "lng": 73.1600944
   },
   {
     "id": "1772557550880",
@@ -1539,7 +1639,9 @@
     "fees": [
       "N/A"
     ],
-    "lastUpdated": "2026-03-03"
+    "lastUpdated": "2026-03-03",
+    "lat": 31.4082303,
+    "lng": 74.1405709
   },
   {
     "id": "lahore-driving-license-manawan-ctpl",
@@ -1569,7 +1671,9 @@
     "notes": [
       "Services available: Learner Permit, Regular Driving License, Duplicate License, Renewal License, International Driving License"
     ],
-    "lastUpdated": "2026-03-06"
+    "lastUpdated": "2026-03-06",
+    "lat": 31.5915639,
+    "lng": 74.4588846
   },
   {
     "id": "lahore-driving-license-greater-iqbal-park-testing-center",
@@ -1597,7 +1701,9 @@
     "notes": [
       "Services available: Learner Permit, Regular Driving License, Duplicate License, Renewal, International Driving License"
     ],
-    "lastUpdated": "2026-03-06"
+    "lastUpdated": "2026-03-06",
+    "lat": 31.5656822,
+    "lng": 74.3141829
   },
   {
     "id": "lahore-driving-license-railway-station-booth",
@@ -1626,7 +1732,9 @@
     "notes": [
       "Services available: Learner Permit, Duplicate License, Renewal, International Driving License"
     ],
-    "lastUpdated": "2026-03-06"
+    "lastUpdated": "2026-03-06",
+    "lat": 31.5722982,
+    "lng": 74.3361528
   },
   {
     "id": "lahore-driving-license-pkm-mayo-hospital-booth",
@@ -1655,7 +1763,9 @@
     "notes": [
       "Services available: Learner Permit, Duplicate License, Renewal, International Driving License"
     ],
-    "lastUpdated": "2026-03-06"
+    "lastUpdated": "2026-03-06",
+    "lat": 31.5712116,
+    "lng": 74.3161258
   },
   {
     "id": "lahore-driving-license-lahore-chamber-of-commerce-booth",
@@ -1683,7 +1793,9 @@
     "notes": [
       "Services available: Learner Permit, Duplicate License, Renewal, International Driving License"
     ],
-    "lastUpdated": "2026-03-06"
+    "lastUpdated": "2026-03-06",
+    "lat": 31.5656822,
+    "lng": 74.3141829
   },
   {
     "id": "lahore-driving-license-samanabad-booth",
@@ -1711,7 +1823,9 @@
     "notes": [
       "Services available: Learner Permit, Duplicate License, Renewal, International Driving License"
     ],
-    "lastUpdated": "2026-03-06"
+    "lastUpdated": "2026-03-06",
+    "lat": 31.5403203,
+    "lng": 74.3022952
   },
   {
     "id": "lahore-driving-license-liberty-khidmat-markaz-testing-center",
@@ -1740,7 +1854,9 @@
       "Services available: Learner Permit, Regular Driving License, Duplicate License, Renewal, International Driving License",
       "Location assistance may be needed; verify before visit"
     ],
-    "lastUpdated": "2026-03-06"
+    "lastUpdated": "2026-03-06",
+    "lat": 31.5132863,
+    "lng": 74.3447981
   },
   {
     "id": "lahore-driving-license-dha-testing-center",
@@ -1768,7 +1884,9 @@
     "notes": [
       "Services available: Learner Permit, Regular Driving License, Duplicate License, Renewal, International Driving License"
     ],
-    "lastUpdated": "2026-03-06"
+    "lastUpdated": "2026-03-06",
+    "lat": 31.5123688,
+    "lng": 74.4367709
   },
   {
     "id": "lahore-driving-license-cantt-booth",
@@ -1796,7 +1914,9 @@
     "notes": [
       "Services available: Learner Permit, Duplicate License, Renewal, International Driving License"
     ],
-    "lastUpdated": "2026-03-06"
+    "lastUpdated": "2026-03-06",
+    "lat": 31.4841751,
+    "lng": 74.4164317
   },
   {
     "id": "lahore-driving-license-raiwind-pajiyan-chowk-booth",
@@ -1824,7 +1944,9 @@
     "notes": [
       "Services available: Learner Permit, Duplicate License, Renewal, International Driving License"
     ],
-    "lastUpdated": "2026-03-06"
+    "lastUpdated": "2026-03-06",
+    "lat": 31.5656822,
+    "lng": 74.3141829
   },
   {
     "id": "lahore-driving-license-zahid-gondal-shaheed-cto-office",
@@ -1852,7 +1974,9 @@
     "notes": [
       "Services available: Learner Permit, Duplicate License, Renewal, International Driving License"
     ],
-    "lastUpdated": "2026-03-06"
+    "lastUpdated": "2026-03-06",
+    "lat": 31.5656822,
+    "lng": 74.3141829
   },
   {
     "id": "lahore-driving-license-police-khidmat-markaz-kahna",
@@ -1880,7 +2004,9 @@
     "notes": [
       "Services available: Learner Permit, Duplicate License, Renewal, International Driving License, Regular Driving License"
     ],
-    "lastUpdated": "2026-03-06"
+    "lastUpdated": "2026-03-06",
+    "lat": 31.3523363,
+    "lng": 74.3725612
   },
   {
     "id": "lahore-driving-license-town-hall-facilitation-center",
@@ -1908,7 +2034,9 @@
     "notes": [
       "Services available: Learner Permit, Duplicate License, Renewal, International Driving License"
     ],
-    "lastUpdated": "2026-03-06"
+    "lastUpdated": "2026-03-06",
+    "lat": 31.5685154,
+    "lng": 74.3055915
   },
   {
     "id": "lahore-driving-license-high-court-facilitation-center",
@@ -1936,7 +2064,9 @@
     "notes": [
       "Services available: Learner Permit, Duplicate License, Renewal, International Driving License"
     ],
-    "lastUpdated": "2026-03-06"
+    "lastUpdated": "2026-03-06",
+    "lat": 31.5631902,
+    "lng": 74.3143305
   },
   {
     "id": "lahore-driving-license-ichhra-booth",
@@ -1964,7 +2094,9 @@
     "notes": [
       "Services available: Learner Permit, Regular Driving License, Duplicate License, Renewal, International Driving License"
     ],
-    "lastUpdated": "2026-03-06"
+    "lastUpdated": "2026-03-06",
+    "lat": 31.5289089,
+    "lng": 74.322554
   },
   {
     "id": "lahore-driving-license-moon-market-facilitation-center",
@@ -1992,7 +2124,9 @@
     "notes": [
       "Services available: Learner Permit, Duplicate License, Renewal, International Driving License"
     ],
-    "lastUpdated": "2026-03-06"
+    "lastUpdated": "2026-03-06",
+    "lat": 31.4750943,
+    "lng": 74.3059706
   },
   {
     "id": "lahore-driving-license-arfa-karim-testing-center",
@@ -2020,7 +2154,9 @@
     "notes": [
       "Services available: Learner Permit, Regular Driving License, Duplicate License, Renewal, International Driving License"
     ],
-    "lastUpdated": "2026-03-06"
+    "lastUpdated": "2026-03-06",
+    "lat": 31.4757045,
+    "lng": 74.3425832
   },
   {
     "id": "lahore-driving-license-bahria-town-testing-center",
@@ -2048,7 +2184,9 @@
     "notes": [
       "Services available: Learner Permit, Regular Driving License, Duplicate License, Renewal, International Driving License"
     ],
-    "lastUpdated": "2026-03-06"
+    "lastUpdated": "2026-03-06",
+    "lat": 31.358067,
+    "lng": 74.1824132
   },
   {
     "id": "lahore-driving-license-thokar-niaz-baig-licensing-center",
@@ -2076,7 +2214,9 @@
     "notes": [
       "Services available: Learner Permit, Duplicate License, Renewal, International Driving License"
     ],
-    "lastUpdated": "2026-03-06"
+    "lastUpdated": "2026-03-06",
+    "lat": 31.4810169,
+    "lng": 74.2382381
   },
   {
     "id": "lahore-driving-license-garden-town-khidmat-markaz-testing-center",
@@ -2104,7 +2244,9 @@
     "notes": [
       "Services available: Learner Permit, Regular Driving License, Duplicate License, Renewal, International Driving License"
     ],
-    "lastUpdated": "2026-03-06"
+    "lastUpdated": "2026-03-06",
+    "lat": 31.5021586,
+    "lng": 74.32635
   },
   {
     "id": "lahore-driving-license-wapda-town-khidmat-markaz",
@@ -2132,177 +2274,1172 @@
     "notes": [
       "Services available: Learner Permit, Regular Driving License, Duplicate License, Renewal, International Driving License"
     ],
-    "lastUpdated": "2026-03-06"
+    "lastUpdated": "2026-03-06",
+    "lat": 31.4368776,
+    "lng": 74.2699814
   },
   {
-  "id": "islamabad-driving-license-itp-shakar-parian",
-  "city": "Islamabad",
-  "category": "Driving License",
-  "name": "ITP Headquarters Driving License Branch",
-  "area": "Shakar Parian / Faizabad",
-  "address": "Near Faizabad Interchange, Shakar Parian, Islamabad",
-  "googleMapsLink": "",
-  "hours": "Mon–Thu 8:30 AM – 3:00 PM | Fri 8:30 AM – 3:00 PM | Sat 9:00 AM – 3:00 PM",
-  "requirements": [
-    "Medical Form-B signed by a medical officer",
-    "Original CNIC",
-    "Copy of CNIC",
-    "2–3 passport-sized photographs"
-  ],
-  "steps": [
-    "Book an online appointment if available",
-    "Bring required documents including Medical Form-B and CNIC",
-    "Submit documents and complete biometric verification",
-    "Take sign and road test if applying for regular driving license",
-    "Pay applicable fee and collect receipt"
-  ],
-  "fees": [
-    "Fees vary depending on license service (verify at center)"
-  ],
-  "notes": [
-    "This is the primary location for road tests and full driving license services in Islamabad.",
-    "Limited appointment slots are available daily.",
-    "Walk-in token system is also available on a first-come-first-serve basis.",
-    "New appointment slots open daily except weekends and public holidays."
-  ],
-  "lastUpdated": "2026-03-09"
-},
-{
-  "id": "islamabad-driving-license-pkm-f6",
-  "city": "Islamabad",
-  "category": "Driving License",
-  "name": "Police Khidmat Markaz F-6/1",
-  "area": "F-6/1",
-  "address": "Agha Khan Road, F-6/1, Islamabad",
-  "googleMapsLink": "",
-  "hours": "24/7",
-  "requirements": [
-    "Original CNIC",
-    "Copy of CNIC",
-    "Medical form if required"
-  ],
-  "steps": [
-    "Visit the PKM center",
-    "Submit documents for learner permit or renewal",
-    "Pay fee and collect receipt"
-  ],
-  "fees": [
-    "Fees vary depending on service"
-  ],
-  "notes": [
-    "Offers services for learner permits and license renewals.",
-    "Operates 24 hours."
-  ],
-  "lastUpdated": "2026-03-09"
-},
-{
-  "id": "islamabad-driving-license-pkm-h11",
-  "city": "Islamabad",
-  "category": "Driving License",
-  "name": "Police Khidmat Markaz CPO H-11",
-  "area": "H-11",
-  "address": "Police Khidmat Markaz, H-11, Islamabad",
-  "googleMapsLink": "",
-  "hours": "8:00 AM – 12:00 PM",
-  "requirements": [
-    "Original CNIC",
-    "Copy of CNIC",
-    "Medical form if required"
-  ],
-  "steps": [
-    "Submit required documents",
-    "Complete sign or road test if scheduled",
-    "Pay applicable fee"
-  ],
-  "fees": [
-    "Fees vary depending on license service"
-  ],
-  "notes": [
-    "Offers sign and road tests along with renewals."
-  ],
-  "lastUpdated": "2026-03-09"
-},
-{
-  "id": "islamabad-driving-license-pkm-g14",
-  "city": "Islamabad",
-  "category": "Driving License",
-  "name": "Police Khidmat Markaz G-14/4",
-  "area": "G-14/4",
-  "address": "Police Khidmat Markaz, G-14/4, Islamabad",
-  "googleMapsLink": "",
-  "hours": "Verify current hours",
-  "requirements": [
-    "Original CNIC",
-    "Copy of CNIC"
-  ],
-  "steps": [
-    "Submit documents",
-    "Complete renewal or learner permit process",
-    "Pay fee"
-  ],
-  "fees": [
-    "Fees vary depending on service"
-  ],
-  "notes": [
-    "Handles renewals, duplicate licenses, and learner permits."
-  ],
-  "lastUpdated": "2026-03-09"
-},
-{
-  "id": "islamabad-driving-license-motorway-police-h8",
-  "city": "Islamabad",
-  "category": "Driving License",
-  "name": "Motorway Police Driving Authority",
-  "area": "H-8/2",
-  "address": "Street 5, H-8/2, Islamabad",
-  "googleMapsLink": "",
-  "hours": "Verify current hours",
-  "requirements": [
-    "Original CNIC",
-    "Copy of CNIC",
-    "Medical form if required"
-  ],
-  "steps": [
-    "Submit documents",
-    "Complete testing if required",
-    "Pay fee"
-  ],
-  "fees": [
-    "Fees vary depending on license type"
-  ],
-  "notes": [
-    "Issues Motorway Police national driving licenses.",
-    "Often preferred for international license conversion."
-  ],
-  "lastUpdated": "2026-03-09"
-},
-{
-  "id": "islamabad-international-driving-permit-g11",
-  "city": "Islamabad",
-  "category": "Driving License",
-  "name": "Citizen Facilitation Center (International Driving Permit)",
-  "area": "G-11/4",
-  "address": "Citizen Facilitation Center, G-11/4, Islamabad",
-  "googleMapsLink": "",
-  "hours": "Verify current hours",
-  "requirements": [
-    "Original CNIC",
-    "Copy of CNIC",
-    "Valid Pakistani driving license",
-    "Passport-sized photographs"
-  ],
-  "steps": [
-    "Submit documents for international driving permit",
-    "Pay applicable fee",
-    "Collect receipt and permit"
-  ],
-  "fees": [
-    "Fees vary depending on permit duration"
-  ],
-  "notes": [
-    "This center specifically handles International Driving Permits."
-  ],
-  "lastUpdated": "2026-03-09"
-}
-
+    "id": "islamabad-driving-license-itp-shakar-parian",
+    "city": "Islamabad",
+    "category": "Driving License",
+    "name": "ITP Headquarters Driving License Branch",
+    "area": "Shakar Parian / Faizabad",
+    "address": "Near Faizabad Interchange, Shakar Parian, Islamabad",
+    "googleMapsLink": "",
+    "hours": "Mon–Thu 8:30 AM – 3:00 PM | Fri 8:30 AM – 3:00 PM | Sat 9:00 AM – 3:00 PM",
+    "requirements": [
+      "Medical Form-B signed by a medical officer",
+      "Original CNIC",
+      "Copy of CNIC",
+      "2–3 passport-sized photographs"
+    ],
+    "steps": [
+      "Book an online appointment if available",
+      "Bring required documents including Medical Form-B and CNIC",
+      "Submit documents and complete biometric verification",
+      "Take sign and road test if applying for regular driving license",
+      "Pay applicable fee and collect receipt"
+    ],
+    "fees": [
+      "Fees vary depending on license service (verify at center)"
+    ],
+    "notes": [
+      "This is the primary location for road tests and full driving license services in Islamabad.",
+      "Limited appointment slots are available daily.",
+      "Walk-in token system is also available on a first-come-first-serve basis.",
+      "New appointment slots open daily except weekends and public holidays."
+    ],
+    "lastUpdated": "2026-03-09",
+    "lat": 33.6938118,
+    "lng": 73.0651511
+  },
+  {
+    "id": "islamabad-driving-license-pkm-f6",
+    "city": "Islamabad",
+    "category": "Driving License",
+    "name": "Police Khidmat Markaz F-6/1",
+    "area": "F-6/1",
+    "address": "Agha Khan Road, F-6/1, Islamabad",
+    "googleMapsLink": "",
+    "hours": "24/7",
+    "requirements": [
+      "Original CNIC",
+      "Copy of CNIC",
+      "Medical form if required"
+    ],
+    "steps": [
+      "Visit the PKM center",
+      "Submit documents for learner permit or renewal",
+      "Pay fee and collect receipt"
+    ],
+    "fees": [
+      "Fees vary depending on service"
+    ],
+    "notes": [
+      "Offers services for learner permits and license renewals.",
+      "Operates 24 hours."
+    ],
+    "lastUpdated": "2026-03-09",
+    "lat": 33.7248641,
+    "lng": 73.0736222
+  },
+  {
+    "id": "islamabad-driving-license-pkm-h11",
+    "city": "Islamabad",
+    "category": "Driving License",
+    "name": "Police Khidmat Markaz CPO H-11",
+    "area": "H-11",
+    "address": "Police Khidmat Markaz, H-11, Islamabad",
+    "googleMapsLink": "",
+    "hours": "8:00 AM – 12:00 PM",
+    "requirements": [
+      "Original CNIC",
+      "Copy of CNIC",
+      "Medical form if required"
+    ],
+    "steps": [
+      "Submit required documents",
+      "Complete sign or road test if scheduled",
+      "Pay applicable fee"
+    ],
+    "fees": [
+      "Fees vary depending on license service"
+    ],
+    "notes": [
+      "Offers sign and road tests along with renewals."
+    ],
+    "lastUpdated": "2026-03-09",
+    "lat": 33.6543909,
+    "lng": 73.0091541
+  },
+  {
+    "id": "islamabad-driving-license-pkm-g14",
+    "city": "Islamabad",
+    "category": "Driving License",
+    "name": "Police Khidmat Markaz G-14/4",
+    "area": "G-14/4",
+    "address": "Police Khidmat Markaz, G-14/4, Islamabad",
+    "googleMapsLink": "",
+    "hours": "Verify current hours",
+    "requirements": [
+      "Original CNIC",
+      "Copy of CNIC"
+    ],
+    "steps": [
+      "Submit documents",
+      "Complete renewal or learner permit process",
+      "Pay fee"
+    ],
+    "fees": [
+      "Fees vary depending on service"
+    ],
+    "notes": [
+      "Handles renewals, duplicate licenses, and learner permits."
+    ],
+    "lastUpdated": "2026-03-09",
+    "lat": 33.6409433,
+    "lng": 72.9528009
+  },
+  {
+    "id": "islamabad-driving-license-motorway-police-h8",
+    "city": "Islamabad",
+    "category": "Driving License",
+    "name": "Motorway Police Driving Authority",
+    "area": "H-8/2",
+    "address": "Street 5, H-8/2, Islamabad",
+    "googleMapsLink": "",
+    "hours": "Verify current hours",
+    "requirements": [
+      "Original CNIC",
+      "Copy of CNIC",
+      "Medical form if required"
+    ],
+    "steps": [
+      "Submit documents",
+      "Complete testing if required",
+      "Pay fee"
+    ],
+    "fees": [
+      "Fees vary depending on license type"
+    ],
+    "notes": [
+      "Issues Motorway Police national driving licenses.",
+      "Often preferred for international license conversion."
+    ],
+    "lastUpdated": "2026-03-09",
+    "lat": 33.6803071,
+    "lng": 73.0620483
+  },
+  {
+    "id": "islamabad-international-driving-permit-g11",
+    "city": "Islamabad",
+    "category": "Driving License",
+    "name": "Citizen Facilitation Center (International Driving Permit)",
+    "area": "G-11/4",
+    "address": "Citizen Facilitation Center, G-11/4, Islamabad",
+    "googleMapsLink": "",
+    "hours": "Verify current hours",
+    "requirements": [
+      "Original CNIC",
+      "Copy of CNIC",
+      "Valid Pakistani driving license",
+      "Passport-sized photographs"
+    ],
+    "steps": [
+      "Submit documents for international driving permit",
+      "Pay applicable fee",
+      "Collect receipt and permit"
+    ],
+    "fees": [
+      "Fees vary depending on permit duration"
+    ],
+    "notes": [
+      "This center specifically handles International Driving Permits."
+    ],
+    "lastUpdated": "2026-03-09",
+    "lat": 33.6679515,
+    "lng": 73.0053324
+  },
+  {
+    "id": "rawalpindi-nadra-saddar",
+    "city": "Rawalpindi",
+    "category": "NADRA",
+    "name": "NADRA Registration Center (Saddar)",
+    "area": "Saddar",
+    "address": "Saddar, Rawalpindi",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=NADRA+Registration+Center+Saddar+Rawalpindi",
+    "phone": "051-9272422",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Submit documents at the counter",
+      "Biometrics and photo capture",
+      "Receive receipt and collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra photocopies"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 33.600253,
+    "lng": 73.0529866
+  },
+  {
+    "id": "rawalpindi-nadra-westridge",
+    "city": "Rawalpindi",
+    "category": "NADRA",
+    "name": "NADRA Registration Center (Westridge)",
+    "area": "Westridge",
+    "address": "Westridge, Rawalpindi",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=NADRA+Registration+Center+Westridge+Rawalpindi",
+    "phone": null,
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Submit documents at the counter",
+      "Biometrics and photo capture",
+      "Receive receipt and collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA fees apply (verify at center)"
+    ],
+    "notes": [
+      "Bring extra photocopies of all documents"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 33.5838753,
+    "lng": 73.0337978
+  },
+  {
+    "id": "rawalpindi-nadra-chaklala",
+    "city": "Rawalpindi",
+    "category": "NADRA",
+    "name": "NADRA Registration Center (Chaklala)",
+    "area": "Chaklala",
+    "address": "Chaklala, Rawalpindi",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=NADRA+Registration+Center+Chaklala+Rawalpindi",
+    "phone": null,
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Submit documents at the counter",
+      "Biometrics and photo capture",
+      "Receive receipt and collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early — this center can get busy"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 33.6009169,
+    "lng": 73.0964464
+  },
+  {
+    "id": "rawalpindi-passport-office",
+    "city": "Rawalpindi",
+    "category": "Passport",
+    "name": "Regional Passport Office Rawalpindi",
+    "area": "Murree Road",
+    "address": "Murree Road, Rawalpindi",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Regional+Passport+Office+Rawalpindi",
+    "phone": "051-9272601",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://dgip.gov.pk/",
+    "requirements": [
+      "Original CNIC",
+      "Copy of CNIC (both sides)",
+      "Old passport (for renewal)",
+      "2 passport-size photos (white background)",
+      "Completed application form"
+    ],
+    "steps": [
+      "Download and fill the passport application form from dgip.gov.pk",
+      "Pay the fee at any authorized bank",
+      "Visit the office with all documents",
+      "Biometrics and photo capture",
+      "Collect passport within stated timeline (or via courier)"
+    ],
+    "fees": [
+      "Normal (30 days): PKR 3,000",
+      "Urgent (7 days): PKR 5,000",
+      "Rush (2 days): PKR 8,000"
+    ],
+    "notes": [
+      "Book an appointment via the DGIP website where possible",
+      "Urgent and rush processing available for extra fee",
+      "Bring original documents — photocopies alone are not accepted"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 33.6166795,
+    "lng": 73.0338213
+  },
+  {
+    "id": "rawalpindi-driving-license-saddar",
+    "city": "Rawalpindi",
+    "category": "Driving License",
+    "name": "Driving License Office (Saddar)",
+    "area": "Saddar",
+    "address": "Traffic Police Office, Saddar, Rawalpindi",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Driving+License+Office+Saddar+Rawalpindi",
+    "phone": null,
+    "hours": "Mon–Sat 9:00 AM – 3:00 PM",
+    "website": null,
+    "requirements": [
+      "Original CNIC",
+      "Copy of CNIC",
+      "Learner permit (if applying for first license)",
+      "Medical certificate",
+      "2 passport-size photos"
+    ],
+    "steps": [
+      "Visit with all required documents",
+      "Written / road test (for new applicants)",
+      "Pay the fee",
+      "Biometrics and photo capture",
+      "Receive license within 1–2 weeks"
+    ],
+    "fees": [
+      "PKR 1,000 – 1,500 (verify current rate)"
+    ],
+    "notes": [
+      "Bring originals of all documents",
+      "New applicants must pass a driving test"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 33.600253,
+    "lng": 73.0529866
+  },
+  {
+    "id": "rawalpindi-wapda-office",
+    "city": "Rawalpindi",
+    "category": "Utilities",
+    "name": "LESCO / IESCO Customer Service Center (Rawalpindi)",
+    "area": "Saddar",
+    "address": "IESCO Head Office, G-8/1, near Saddar, Rawalpindi",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=IESCO+Head+Office+Rawalpindi",
+    "phone": "051-9252623",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://iesco.com.pk/",
+    "requirements": [
+      "Consumer number (on electricity bill)",
+      "Original CNIC",
+      "Bill copy (if disputing a bill)"
+    ],
+    "steps": [
+      "Take a token at the entrance",
+      "Wait for your number",
+      "Present your issue / documents at the counter",
+      "Receive reference number or resolution"
+    ],
+    "fees": [
+      "No fee for bill inquiries or complaints"
+    ],
+    "notes": [
+      "IESCO serves Rawalpindi and Islamabad regions",
+      "New connections require additional paperwork"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 33.600253,
+    "lng": 73.0529866
+  },
+  {
+    "id": "peshawar-nadra-saddar",
+    "city": "Peshawar",
+    "category": "NADRA",
+    "name": "NADRA Registration Center (Saddar)",
+    "area": "Saddar",
+    "address": "Saddar, Peshawar",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=NADRA+Registration+Center+Saddar+Peshawar",
+    "phone": "091-9212640",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Submit documents at the counter",
+      "Biometrics and photo capture",
+      "Receive receipt and collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA fees apply (verify at center)"
+    ],
+    "notes": [
+      "Bring extra photocopies",
+      "Arrive early to avoid long queues"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 33.9974749,
+    "lng": 71.5400231
+  },
+  {
+    "id": "peshawar-nadra-hayatabad",
+    "city": "Peshawar",
+    "category": "NADRA",
+    "name": "NADRA Registration Center (Hayatabad)",
+    "area": "Hayatabad",
+    "address": "Hayatabad, Peshawar",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=NADRA+Registration+Center+Hayatabad+Peshawar",
+    "phone": null,
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Submit documents at the counter",
+      "Biometrics and photo capture",
+      "Receive receipt and collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA fees apply (verify at center)"
+    ],
+    "notes": [
+      "Hayatabad center serves the western residential area of Peshawar"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 33.9767168,
+    "lng": 71.4372584
+  },
+  {
+    "id": "peshawar-nadra-university-town",
+    "city": "Peshawar",
+    "category": "NADRA",
+    "name": "NADRA Registration Center (University Town)",
+    "area": "University Town",
+    "address": "University Town, Peshawar",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=NADRA+Registration+Center+University+Town+Peshawar",
+    "phone": null,
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Submit documents at the counter",
+      "Biometrics and photo capture",
+      "Receive receipt and collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA fees apply (verify at center)"
+    ],
+    "notes": [
+      "Bring extra photocopies of all documents"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 33.9941425,
+    "lng": 71.4967131
+  },
+  {
+    "id": "peshawar-passport-office",
+    "city": "Peshawar",
+    "category": "Passport",
+    "name": "Regional Passport Office Peshawar",
+    "area": "Saddar",
+    "address": "Saddar Road, near Shahi Bagh, Peshawar",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Regional+Passport+Office+Peshawar",
+    "phone": "091-9210082",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://dgip.gov.pk/",
+    "requirements": [
+      "Original CNIC",
+      "Copy of CNIC (both sides)",
+      "Old passport (for renewal)",
+      "2 passport-size photos (white background)",
+      "Completed application form"
+    ],
+    "steps": [
+      "Download and fill the passport application form from dgip.gov.pk",
+      "Pay the fee at any authorized bank",
+      "Visit the office with all documents",
+      "Biometrics and photo capture",
+      "Collect passport within stated timeline (or via courier)"
+    ],
+    "fees": [
+      "Normal (30 days): PKR 3,000",
+      "Urgent (7 days): PKR 5,000",
+      "Rush (2 days): PKR 8,000"
+    ],
+    "notes": [
+      "Book an appointment via the DGIP website where possible",
+      "Bring original documents — photocopies alone are not accepted"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 33.9974749,
+    "lng": 71.5400231
+  },
+  {
+    "id": "peshawar-driving-license",
+    "city": "Peshawar",
+    "category": "Driving License",
+    "name": "Driving License Authority (DLA) Peshawar",
+    "area": "Ring Road",
+    "address": "DLA Complex, Ring Road, Peshawar",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Driving+License+Authority+Peshawar",
+    "phone": "091-9224040",
+    "hours": "Mon–Sat 9:00 AM – 3:00 PM",
+    "website": null,
+    "requirements": [
+      "Original CNIC",
+      "Copy of CNIC",
+      "Learner permit (for new applicants)",
+      "Medical certificate",
+      "2 passport-size photos"
+    ],
+    "steps": [
+      "Visit the DLA office with all documents",
+      "Written and road test (for new applicants)",
+      "Pay the applicable fee",
+      "Biometrics",
+      "License issued within 1–2 weeks"
+    ],
+    "fees": [
+      "PKR 1,000 – 1,500 depending on license type (verify)"
+    ],
+    "notes": [
+      "New applicants must pass written and road tests",
+      "Bring originals of all documents"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 33.9960881,
+    "lng": 71.4438113
+  },
+  {
+    "id": "peshawar-pesco-office",
+    "city": "Peshawar",
+    "category": "Utilities",
+    "name": "PESCO Customer Service Center",
+    "area": "Warsak Road",
+    "address": "PESCO Head Office, Warsak Road, Peshawar",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=PESCO+Head+Office+Peshawar",
+    "phone": "091-9213500",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://www.pesco.gov.pk/",
+    "requirements": [
+      "Consumer number (on electricity bill)",
+      "Original CNIC",
+      "Bill copy (if disputing)"
+    ],
+    "steps": [
+      "Take a token at the entrance",
+      "Wait for your number",
+      "Present your issue / documents at the counter",
+      "Receive reference number or resolution"
+    ],
+    "fees": [
+      "No fee for bill inquiries or complaints"
+    ],
+    "notes": [
+      "PESCO (Peshawar Electric Supply Company) serves KPK province",
+      "New connections require site survey"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 34.0284173,
+    "lng": 71.5337562
+  },
+  {
+    "id": "multan-nadra-gulgasht",
+    "city": "Multan",
+    "category": "NADRA",
+    "name": "NADRA Registration Center (Gulgasht Colony)",
+    "area": "Gulgasht Colony",
+    "address": "Gulgasht Colony, Multan",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=NADRA+Registration+Center+Gulgasht+Colony+Multan",
+    "phone": "061-9200332",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Submit documents at the counter",
+      "Biometrics and photo capture",
+      "Receive receipt and collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra photocopies"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 30.230254,
+    "lng": 71.4741124
+  },
+  {
+    "id": "multan-nadra-cantt",
+    "city": "Multan",
+    "category": "NADRA",
+    "name": "NADRA Registration Center (Cantt)",
+    "area": "Cantt",
+    "address": "Cantonment Area, Multan",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=NADRA+Registration+Center+Cantt+Multan",
+    "phone": null,
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Submit documents at the counter",
+      "Biometrics and photo capture",
+      "Receive receipt and collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA fees apply (verify at center)"
+    ],
+    "notes": [
+      "Bring extra photocopies of all documents"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 30.1804746,
+    "lng": 71.4446702
+  },
+  {
+    "id": "multan-nadra-new-multan",
+    "city": "Multan",
+    "category": "NADRA",
+    "name": "NADRA Registration Center (New Multan)",
+    "area": "New Multan",
+    "address": "New Multan, Multan",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=NADRA+Registration+Center+New+Multan",
+    "phone": null,
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Submit documents at the counter",
+      "Biometrics and photo capture",
+      "Receive receipt and collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA fees apply (verify at center)"
+    ],
+    "notes": [
+      "Bring extra photocopies of all documents"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 30.1902681,
+    "lng": 71.5125227
+  },
+  {
+    "id": "multan-passport-office",
+    "city": "Multan",
+    "category": "Passport",
+    "name": "Regional Passport Office Multan",
+    "area": "Nawan Sheher",
+    "address": "Nawan Sheher, near Multan Cricket Stadium, Multan",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Regional+Passport+Office+Multan",
+    "phone": "061-9200101",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://dgip.gov.pk/",
+    "requirements": [
+      "Original CNIC",
+      "Copy of CNIC (both sides)",
+      "Old passport (for renewal)",
+      "2 passport-size photos (white background)",
+      "Completed application form"
+    ],
+    "steps": [
+      "Download and fill the passport application form from dgip.gov.pk",
+      "Pay the fee at any authorized bank",
+      "Visit the office with all documents",
+      "Biometrics and photo capture",
+      "Collect passport within stated timeline (or via courier)"
+    ],
+    "fees": [
+      "Normal (30 days): PKR 3,000",
+      "Urgent (7 days): PKR 5,000",
+      "Rush (2 days): PKR 8,000"
+    ],
+    "notes": [
+      "Book an appointment via the DGIP website where possible",
+      "Bring original documents"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 30.0696303,
+    "lng": 71.2052477
+  },
+  {
+    "id": "multan-driving-license",
+    "city": "Multan",
+    "category": "Driving License",
+    "name": "Driving License Authority (DLA) Multan",
+    "area": "Cantt",
+    "address": "DLA Office, Cantt, Multan",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Driving+License+Office+Multan",
+    "phone": null,
+    "hours": "Mon–Sat 9:00 AM – 3:00 PM",
+    "website": null,
+    "requirements": [
+      "Original CNIC",
+      "Copy of CNIC",
+      "Learner permit (for new applicants)",
+      "Medical certificate",
+      "2 passport-size photos"
+    ],
+    "steps": [
+      "Visit with all required documents",
+      "Written / road test (for new applicants)",
+      "Pay the fee",
+      "Biometrics and photo capture",
+      "License issued within 1–2 weeks"
+    ],
+    "fees": [
+      "PKR 1,000 – 1,500 depending on license type (verify)"
+    ],
+    "notes": [
+      "Bring originals of all documents"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 30.1804746,
+    "lng": 71.4446702
+  },
+  {
+    "id": "multan-mepco-office",
+    "city": "Multan",
+    "category": "Utilities",
+    "name": "MEPCO Customer Service Center",
+    "area": "Qasim Bela",
+    "address": "MEPCO Head Office, Qasim Bela Road, Multan",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=MEPCO+Head+Office+Multan",
+    "phone": "061-9220014",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://www.mepco.com.pk/",
+    "requirements": [
+      "Consumer number (on electricity bill)",
+      "Original CNIC",
+      "Bill copy (if disputing)"
+    ],
+    "steps": [
+      "Take a token at the entrance",
+      "Wait for your number",
+      "Present your issue / documents at the counter",
+      "Receive reference number or resolution"
+    ],
+    "fees": [
+      "No fee for bill inquiries or complaints"
+    ],
+    "notes": [
+      "MEPCO serves Multan and South Punjab",
+      "New connection applications processed here"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 30.191932,
+    "lng": 71.399159
+  },
+  {
+    "id": "faisalabad-nadra-ghulam-muhammad-abad",
+    "city": "Faisalabad",
+    "category": "NADRA",
+    "name": "NADRA Registration Center (Ghulam Muhammad Abad)",
+    "area": "Ghulam Muhammad Abad",
+    "address": "Ghulam Muhammad Abad, Faisalabad",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=NADRA+Registration+Center+Ghulam+Muhammad+Abad+Faisalabad",
+    "phone": "041-9220101",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Submit documents at the counter",
+      "Biometrics and photo capture",
+      "Receive receipt and collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early to avoid long queues",
+      "Bring extra photocopies"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 31.4454194,
+    "lng": 73.0473995
+  },
+  {
+    "id": "faisalabad-nadra-peoples-colony",
+    "city": "Faisalabad",
+    "category": "NADRA",
+    "name": "NADRA Registration Center (Peoples Colony)",
+    "area": "Peoples Colony",
+    "address": "Peoples Colony, Faisalabad",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=NADRA+Registration+Center+Peoples+Colony+Faisalabad",
+    "phone": null,
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Submit documents at the counter",
+      "Biometrics and photo capture",
+      "Receive receipt and collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA fees apply (verify at center)"
+    ],
+    "notes": [
+      "Bring extra photocopies of all documents"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 31.3985559,
+    "lng": 73.0957195
+  },
+  {
+    "id": "faisalabad-nadra-madina-town",
+    "city": "Faisalabad",
+    "category": "NADRA",
+    "name": "NADRA Registration Center (Madina Town)",
+    "area": "Madina Town",
+    "address": "Madina Town, Faisalabad",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=NADRA+Registration+Center+Madina+Town+Faisalabad",
+    "phone": null,
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Submit documents at the counter",
+      "Biometrics and photo capture",
+      "Receive receipt and collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA fees apply (verify at center)"
+    ],
+    "notes": [
+      "Bring extra photocopies of all documents"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 31.4161545,
+    "lng": 73.1202728
+  },
+  {
+    "id": "faisalabad-passport-office",
+    "city": "Faisalabad",
+    "category": "Passport",
+    "name": "Regional Passport Office Faisalabad",
+    "area": "Civil Lines",
+    "address": "Civil Lines, Faisalabad",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Regional+Passport+Office+Faisalabad",
+    "phone": "041-9220201",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://dgip.gov.pk/",
+    "requirements": [
+      "Original CNIC",
+      "Copy of CNIC (both sides)",
+      "Old passport (for renewal)",
+      "2 passport-size photos (white background)",
+      "Completed application form"
+    ],
+    "steps": [
+      "Download and fill the passport application form from dgip.gov.pk",
+      "Pay the fee at any authorized bank",
+      "Visit the office with all documents",
+      "Biometrics and photo capture",
+      "Collect passport within stated timeline (or via courier)"
+    ],
+    "fees": [
+      "Normal (30 days): PKR 3,000",
+      "Urgent (7 days): PKR 5,000",
+      "Rush (2 days): PKR 8,000"
+    ],
+    "notes": [
+      "Book an appointment via the DGIP website where possible"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 31.4492728,
+    "lng": 73.0829841
+  },
+  {
+    "id": "faisalabad-driving-license",
+    "city": "Faisalabad",
+    "category": "Driving License",
+    "name": "Driving License Authority (DLA) Faisalabad",
+    "area": "Ghulam Muhammad Abad",
+    "address": "DLA Office, Ghulam Muhammad Abad, Faisalabad",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Driving+License+Office+Faisalabad",
+    "phone": null,
+    "hours": "Mon–Sat 9:00 AM – 3:00 PM",
+    "website": null,
+    "requirements": [
+      "Original CNIC",
+      "Copy of CNIC",
+      "Learner permit (for new applicants)",
+      "Medical certificate",
+      "2 passport-size photos"
+    ],
+    "steps": [
+      "Visit with all required documents",
+      "Written / road test (for new applicants)",
+      "Pay the fee",
+      "Biometrics and photo capture",
+      "License issued within 1–2 weeks"
+    ],
+    "fees": [
+      "PKR 1,000 – 1,500 depending on license type (verify)"
+    ],
+    "notes": [
+      "Bring originals of all documents",
+      "New applicants must pass written and road tests"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 31.4454194,
+    "lng": 73.0473995
+  },
+  {
+    "id": "faisalabad-fesco-office",
+    "city": "Faisalabad",
+    "category": "Utilities",
+    "name": "FESCO Customer Service Center",
+    "area": "Gulberg Colony",
+    "address": "FESCO Head Office, Gulberg Colony, Faisalabad",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=FESCO+Head+Office+Faisalabad",
+    "phone": "041-9220444",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://www.fesco.com.pk/",
+    "requirements": [
+      "Consumer number (on electricity bill)",
+      "Original CNIC",
+      "Bill copy (if disputing)"
+    ],
+    "steps": [
+      "Take a token at the entrance",
+      "Wait for your number",
+      "Present your issue / documents at the counter",
+      "Receive reference number or resolution"
+    ],
+    "fees": [
+      "No fee for bill inquiries or complaints"
+    ],
+    "notes": [
+      "FESCO serves Faisalabad and surrounding districts"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 31.4220558,
+    "lng": 73.0923253
+  },
+  {
+    "id": "quetta-nadra-zarghoon-road",
+    "city": "Quetta",
+    "category": "NADRA",
+    "name": "NADRA Registration Center (Zarghoon Road)",
+    "area": "Zarghoon Road",
+    "address": "Zarghoon Road, Quetta",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=NADRA+Registration+Center+Zarghoon+Road+Quetta",
+    "phone": "081-9202231",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Submit documents at the counter",
+      "Biometrics and photo capture",
+      "Receive receipt and collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA fees apply (verify at center)"
+    ],
+    "notes": [
+      "Arrive early — center can get busy in the morning"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 30.1802791,
+    "lng": 66.9988213
+  },
+  {
+    "id": "quetta-nadra-satellite-town",
+    "city": "Quetta",
+    "category": "NADRA",
+    "name": "NADRA Registration Center (Satellite Town)",
+    "area": "Satellite Town",
+    "address": "Satellite Town, Quetta",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=NADRA+Registration+Center+Satellite+Town+Quetta",
+    "phone": null,
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://www.nadra.gov.pk/",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Copy of CNIC",
+      "Supporting documents (if applicable)"
+    ],
+    "steps": [
+      "Take a token / queue number",
+      "Submit documents at the counter",
+      "Biometrics and photo capture",
+      "Receive receipt and collection timeline"
+    ],
+    "fees": [
+      "Standard NADRA fees apply (verify at center)"
+    ],
+    "notes": [
+      "Bring extra photocopies of all documents"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 30.1662363,
+    "lng": 67.0015186
+  },
+  {
+    "id": "quetta-passport-office",
+    "city": "Quetta",
+    "category": "Passport",
+    "name": "Regional Passport Office Quetta",
+    "area": "Jinnah Road",
+    "address": "Jinnah Road, near Commissioner Office, Quetta",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Regional+Passport+Office+Quetta",
+    "phone": "081-9202101",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://dgip.gov.pk/",
+    "requirements": [
+      "Original CNIC",
+      "Copy of CNIC (both sides)",
+      "Old passport (for renewal)",
+      "2 passport-size photos (white background)",
+      "Completed application form"
+    ],
+    "steps": [
+      "Download and fill the passport application form from dgip.gov.pk",
+      "Pay the fee at any authorized bank",
+      "Visit the office with all documents",
+      "Biometrics and photo capture",
+      "Collect passport within stated timeline (or via courier)"
+    ],
+    "fees": [
+      "Normal (30 days): PKR 3,000",
+      "Urgent (7 days): PKR 5,000",
+      "Rush (2 days): PKR 8,000"
+    ],
+    "notes": [
+      "Bring original documents — photocopies alone are not accepted"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 30.2053404,
+    "lng": 67.017739
+  },
+  {
+    "id": "quetta-driving-license",
+    "city": "Quetta",
+    "category": "Driving License",
+    "name": "Driving License Office Quetta",
+    "area": "Jinnah Road",
+    "address": "Traffic Police Complex, Jinnah Road, Quetta",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Driving+License+Office+Quetta",
+    "phone": null,
+    "hours": "Mon–Sat 9:00 AM – 3:00 PM",
+    "website": null,
+    "requirements": [
+      "Original CNIC",
+      "Copy of CNIC",
+      "Learner permit (for new applicants)",
+      "Medical certificate",
+      "2 passport-size photos"
+    ],
+    "steps": [
+      "Visit with all required documents",
+      "Written / road test (for new applicants)",
+      "Pay the fee",
+      "Biometrics and photo capture",
+      "License issued within 1–2 weeks"
+    ],
+    "fees": [
+      "PKR 1,000 – 1,500 depending on license type (verify)"
+    ],
+    "notes": [
+      "Bring originals of all documents"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 30.2053404,
+    "lng": 67.017739
+  },
+  {
+    "id": "quetta-qesco-office",
+    "city": "Quetta",
+    "category": "Utilities",
+    "name": "QESCO Customer Service Center",
+    "area": "Zarghoon Road",
+    "address": "QESCO Head Office, Zarghoon Road, Quetta",
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=QESCO+Head+Office+Quetta",
+    "phone": "081-9202300",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "website": "https://www.qesco.com.pk/",
+    "requirements": [
+      "Consumer number (on electricity bill)",
+      "Original CNIC",
+      "Bill copy (if disputing)"
+    ],
+    "steps": [
+      "Take a token at the entrance",
+      "Wait for your number",
+      "Present your issue / documents at the counter",
+      "Receive reference number or resolution"
+    ],
+    "fees": [
+      "No fee for bill inquiries or complaints"
+    ],
+    "notes": [
+      "QESCO (Quetta Electric Supply Company) serves Balochistan"
+    ],
+    "lastUpdated": "2026-03-19",
+    "lat": 30.1802791,
+    "lng": 66.9988213
+  }
 ]

@@ -12,6 +12,10 @@ export function getOfficesByCity(city) {
   return offices.filter((o) => o.city.toLowerCase() === city.toLowerCase());
 }
 
+export function getOfficesByCategory(category) {
+  return offices.filter((o) => o.category.toLowerCase() === category.toLowerCase());
+}
+
 export function getOfficeById(id) {
   return offices.find((o) => o.id === id);
 }

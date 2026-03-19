@@ -1,9 +1,13 @@
 import OpenAI from "openai";
 import offices from "@/data/offices.json";
 
-const client = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+if (!process.env.OPENAI_API_KEY) {
+  console.warn("OPENAI_API_KEY is not set — AI search will use keyword fallback only.");
+}
+
+const client = process.env.OPENAI_API_KEY
+  ? new OpenAI({ apiKey: process.env.OPENAI_API_KEY })
+  : null;
 
 const KNOWN_CATEGORIES = [
   "NADRA",
@@ -127,40 +131,16 @@ export async function POST(req) {
     let filters;
 
     try {
-      const response = await client.responses.create({
-        model: "gpt-5-mini",
-        text: {
-          format: {
-            type: "json_schema",
-            name: "search_filters",
-            schema: {
-              type: "object",
-              additionalProperties: false,
-              properties: {
-                city: {
-                  type: ["string", "null"],
-                },
-                category: {
-                  type: ["string", "null"],
-                },
-                area: {
-                  type: ["string", "null"],
-                },
-                keywords: {
-                  type: "array",
-                  items: { type: "string" },
-                },
-              },
-              required: ["city", "category", "area", "keywords"],
-            },
-            strict: true,
-          },
-        },
-        input: [
+      if (!client) throw new Error("No API key");
+      const response = await client.chat.completions.create({
+        model: "gpt-4o-mini",
+        response_format: { type: "json_object" },
+        messages: [
           {
             role: "system",
             content: `
 You extract structured search filters for a Pakistan public office finder.
+Respond with a JSON object only — no extra text.
 
 Rules:
 - Do not invent offices.
@@ -173,6 +153,8 @@ Rules:
 - police verification -> Police
 - Keep keywords short and useful.
 - If missing, return null for city/category/area and [] for keywords.
+
+Return format: {"city": string|null, "category": string|null, "area": string|null, "keywords": string[]}
             `.trim(),
           },
           {
@@ -182,7 +164,7 @@ Rules:
         ],
       });
 
-      const raw = response.output_text;
+      const raw = response.choices[0].message.content;
       filters = sanitizeFilters(JSON.parse(raw));
     } catch (err) {
       console.error("Structured AI parse failed, using fallback:", err);
