@@ -18,8 +18,8 @@ export default function SuggestCorrectionButton({ office, style = {} }) {
   };
 
   return (
-    <button onClick={suggest} style={{ cursor: "pointer", ...style }}>
-      ✏️ Suggest correction
+    <button onClick={suggest} style={{ cursor: "pointer", ...style }} title="Opens WhatsApp">
+      ✏️ Suggest correction via WhatsApp
     </button>
   );
 }

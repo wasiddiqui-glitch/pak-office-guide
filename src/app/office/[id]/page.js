@@ -48,18 +48,28 @@ export default async function OfficePage({ params }) {
     `${office.name} ${office.address} ${office.city}`
   )}`;
 
-  // Reusable "bubble" style (matches your Open in Maps pill-card)
-  const actionBubble = {
-  ...layout.card,
-  padding: "10px 14px",
-  textDecoration: "none",
-  display: "inline-flex",
-  alignItems: "center",
-  justifyContent: "center",   // ✅ center content
-  gap: 8,
-  borderRadius: 999,          // ✅ more pill-like
-  minWidth: 125,              // ✅ makes buttons consistent width
-};
+  const actionPrimary = {
+    ...layout.buttonPrimary,
+    padding: "10px 16px",
+    borderRadius: 999,
+    fontSize: 14,
+    gap: 6,
+    textDecoration: "none",
+  };
+
+  const actionOutline = {
+    ...layout.card,
+    padding: "10px 14px",
+    textDecoration: "none",
+    display: "inline-flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 8,
+    borderRadius: 999,
+    fontSize: 14,
+    background: "transparent",
+    cursor: "pointer",
+  };
 
   return (
     <main className="page-transition" style={layout.page}>
@@ -121,29 +131,27 @@ export default async function OfficePage({ params }) {
             marginBottom: 12,
           }}
         >
-          {/* ALL actions in ONE row (wraps nicely on small screens) */}
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10, alignItems: "center" }}>
-            <a href={maps} target="_blank" rel="noreferrer" style={actionBubble}>
+            {/* Primary */}
+            <a href={maps} target="_blank" rel="noreferrer" style={actionPrimary}>
               📍 Open in Maps
             </a>
 
+            {/* Address copy — outline */}
             {office.address && (
-              <CopyButton text={office.address} label="Copy address" style={actionBubble} />
+              <CopyButton text={office.address} label="Copy address" style={actionOutline} />
             )}
 
+            {/* Phone as plain link — browser detects and offers call/save */}
             {office.phone && (
-              <a href={`tel:${office.phone}`} style={actionBubble}>
-                📞 Call
+              <a href={`tel:${office.phone}`} style={actionOutline}>
+                📞 {office.phone}
               </a>
             )}
 
-            {office.phone && (
-              <CopyButton text={office.phone} label="Copy phone" style={actionBubble} />
-            )}
-
-            <FavoriteButton id={office.id} bubbleStyle={actionBubble} />
-            <ShareButton office={office} style={actionBubble} />
-            <SuggestCorrectionButton office={office} style={actionBubble} />
+            <ShareButton office={office} style={actionOutline} />
+            <FavoriteButton id={office.id} bubbleStyle={actionOutline} />
+            <SuggestCorrectionButton office={office} style={actionOutline} />
           </div>
         </div>
 

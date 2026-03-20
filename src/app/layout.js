@@ -1,4 +1,5 @@
 import BottomNav from "@/components/BottomNav";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata = {
@@ -54,6 +55,7 @@ html { scroll-behavior: smooth; }
 
         {children}
         <BottomNav />
+        <Analytics />
       </body>
     </html>
   );

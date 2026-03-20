@@ -8,9 +8,10 @@ export default function BottomNav() {
 
   const items = [
     { href: "/", label: "Home" },
-    { href: "/cities", label: "Cities" },
+    { href: "/guides", label: "Guides" },
     { href: "/search", label: "Search" },
-    { href: "/favorites", label: "Favorites" }, // ✅ new
+    { href: "/cities", label: "Cities" },
+    { href: "/favorites", label: "Saved" },
   ];
 
   return (
@@ -41,7 +42,7 @@ const navWrap = {
   bottom: 14,
   width: "min(900px, calc(100% - 28px))",
   display: "grid",
-  gridTemplateColumns: "repeat(4, 1fr)", // ✅ was 3, now 4
+  gridTemplateColumns: "repeat(5, 1fr)",
   gap: 8,
   padding: 8,
   borderRadius: 20,

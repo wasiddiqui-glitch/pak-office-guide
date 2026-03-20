@@ -39,6 +39,9 @@ export default function HomePage() {
           <Link href="/search" style={layout.buttonPrimary}>
             Search
           </Link>
+          <Link href="/guides" style={layout.buttonPrimary}>
+            Guides
+          </Link>
           <Link href="/cities" style={layout.buttonSoft}>
             Browse Cities
           </Link>
@@ -101,7 +104,7 @@ const styles = {
   sub: { margin: "6px 0 0 0", color: "inherit", opacity: 0.75, fontSize: 14 },
   
   h2: { margin: "0 0 10px 0", fontSize: 16 },
-  row: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 },
+  row: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, gridAutoRows: "auto" },
 
   small: { margin: "10px 0 0 0", opacity: 0.75, fontSize: 13, lineHeight: 1.5 },
 

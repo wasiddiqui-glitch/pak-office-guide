@@ -5,9 +5,10 @@ import { isOpenNow } from "@/lib/hours";
 
 export default function OpenNowBadge({ hours, style = {} }) {
   const status = useMemo(() => isOpenNow(hours), [hours]);
-  if (!status) return null;
+  // Only show the badge when the office is open — no need to stamp "Closed" on every card
+  if (status !== "open") return null;
 
-  const open = status === "open";
+  const open = true;
   return (
     <span
       style={{

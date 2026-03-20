@@ -39,14 +39,21 @@ export default function CollapsibleSection({
 
         <span
           style={{
-            ...layout.pill,
-            padding: "6px 10px",
-            fontSize: 12,
+            width: 24,
+            height: 24,
+            display: "inline-flex",
+            alignItems: "center",
+            justifyContent: "center",
+            borderRadius: "50%",
+            border: `1px solid rgba(255,255,255,0.12)`,
+            fontSize: 18,
             lineHeight: 1,
             userSelect: "none",
+            color: colors.muted,
+            flexShrink: 0,
           }}
         >
-          {open ? "Hide" : "Show"}
+          {open ? "−" : "+"}
         </span>
       </button>
 

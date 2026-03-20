@@ -1,0 +1,857 @@
+[
+  {
+    "slug": "renew-cnic-pakistan",
+    "title": "How to Renew Your CNIC",
+    "emoji": "🪪",
+    "summary": "Your CNIC has expired or is expiring soon. Here's exactly what to bring, what to expect, and how long it takes at any NADRA office.",
+    "category": "NADRA",
+    "city": null,
+    "estimatedTime": "1–3 hours",
+    "totalFees": "PKR 350–1,500",
+    "lastUpdated": "2026-03-20",
+    "relatedOfficeCategory": "NADRA",
+    "requirements": [
+      "Original expired or expiring CNIC",
+      "Photocopies of your CNIC (front and back)",
+      "If your address has changed: utility bill or property documents for the new address",
+      "If your name has changed: marriage certificate or court affidavit"
+    ],
+    "steps": [
+      {
+        "title": "Check if you need to go in person",
+        "body": "NADRA's online portal (id.nadra.gov.pk) lets you initiate a renewal and pay fees online, but you still need to visit a NADRA office for biometrics (fingerprints and photo). So yes — you do need to go in person."
+      },
+      {
+        "title": "Gather your documents",
+        "body": "Bring your original expired/expiring CNIC plus photocopies. If anything has changed (address, name, marital status), bring supporting documents. Bring extra photocopies — NADRA sometimes needs more than you expect."
+      },
+      {
+        "title": "Go to your nearest NADRA office",
+        "body": "Find your closest NADRA office using the Search page. Arrive early — NADRA offices get crowded by mid-morning. The token system typically opens at 9:00 AM."
+      },
+      {
+        "title": "Take a token and wait",
+        "body": "At the office, take a numbered token from the machine near the entrance. Wait for your number to be called. Seating is available. Busy offices can take 1–2 hours."
+      },
+      {
+        "title": "Submit your documents at the counter",
+        "body": "Hand over your original CNIC and any supporting documents. The staff will verify everything and enter your details into the system."
+      },
+      {
+        "title": "Biometrics and photo",
+        "body": "You'll have your fingerprints scanned and a new photo taken at the counter. This is quick — usually 5 minutes."
+      },
+      {
+        "title": "Pay the fee and collect your receipt",
+        "body": "Choose your delivery category: Normal (30 days, PKR 350), Urgent (7 days, PKR 750), or Executive (2 days, PKR 1,500). Pay at the office or via the bank challan. Keep your receipt — it has your tracking number."
+      },
+      {
+        "title": "Track and collect",
+        "body": "Track your CNIC status at id.nadra.gov.pk using your receipt number. Once ready, collect in person or opt for home delivery (additional fee)."
+      }
+    ],
+    "tips": [
+      "Arrive before 9 AM — queues build up quickly after 10 AM",
+      "Bring more photocopies than you think you need",
+      "The Executive (2-day) option is worth it if you're travelling soon",
+      "NADRA offices are closed on Saturdays and Sundays",
+      "You can renew up to 1 year before expiry — don't wait until it expires"
+    ],
+    "faqs": [
+      {
+        "q": "Can someone else collect my CNIC on my behalf?",
+        "a": "No. Biometrics require you to be physically present. Someone else cannot complete the renewal for you."
+      },
+      {
+        "q": "What if my CNIC expired years ago?",
+        "a": "The process is the same. Bring your expired CNIC. If you've completely lost it, you'll need to apply for a duplicate instead."
+      },
+      {
+        "q": "Can I change my address during renewal?",
+        "a": "Yes. Bring a utility bill or property document showing your new address. There is no extra fee for address change during renewal."
+      },
+      {
+        "q": "Is there home delivery?",
+        "a": "Yes, NADRA offers home delivery for an additional fee. Ask at the counter or select it on the online portal."
+      }
+    ]
+  },
+  {
+    "slug": "get-new-passport-pakistan",
+    "title": "How to Get a New Passport",
+    "emoji": "📗",
+    "summary": "Applying for your first passport or renewing an expired one. Covers documents, fees, and how to avoid common delays.",
+    "category": "Passport",
+    "city": null,
+    "estimatedTime": "2–4 hours at office",
+    "totalFees": "PKR 4,500–12,000",
+    "lastUpdated": "2026-03-20",
+    "relatedOfficeCategory": "Passport",
+    "requirements": [
+      "Original CNIC (or B-Form / Birth Certificate for minors)",
+      "CNIC photocopy (front and back)",
+      "Old passport if renewing (original + photocopy of first page)",
+      "Completed passport application form (available at office or dgip.gov.pk)",
+      "Bank challan showing fee payment (pay at designated banks beforehand)",
+      "2 recent passport-size photographs (white background)"
+    ],
+    "steps": [
+      {
+        "title": "Pay the fee at a bank first",
+        "body": "Unlike most offices, passport offices require you to pay at a bank before you submit. Go to any branch of HBL, UBL, ABL, or MCB and deposit the fee using the passport challan form. Keep the original stamped challan — the office won't accept you without it."
+      },
+      {
+        "title": "Fill out the application form",
+        "body": "Get the form from the passport office counter or download it from dgip.gov.pk. Fill it in block letters. Double-check your name spelling — it must match your CNIC exactly, or your passport will be rejected."
+      },
+      {
+        "title": "Book a token online (recommended)",
+        "body": "Most passport offices now use the online token system at dgip.gov.pk. Book your slot in advance to avoid waiting 2–3 hours in the walk-in queue."
+      },
+      {
+        "title": "Visit the passport office",
+        "body": "Bring all your documents: CNIC original + copy, application form, bank challan, photos, and old passport (if renewing). Arrive on time for your token slot."
+      },
+      {
+        "title": "Submit documents at the counter",
+        "body": "Staff will verify your documents, check your form, and scan your CNIC. They'll staple your photos and challan to the form. You'll get a receipt with an application number."
+      },
+      {
+        "title": "Biometrics",
+        "body": "Your fingerprints will be scanned and a new photo taken at the office. This takes about 5 minutes."
+      },
+      {
+        "title": "Track and collect",
+        "body": "Track status at dgip.gov.pk using your application number. Once ready (Normal: 30 days, Urgent: 7 days, Executive: 2 days), collect in person from the same office or arrange home delivery."
+      }
+    ],
+    "tips": [
+      "Your name on the form must match your CNIC exactly — even one letter difference causes rejection",
+      "Pay the bank challan the day before so you're not rushing on the day",
+      "The Executive (2-day) option is worth it if you have an upcoming flight",
+      "Dress formally — your passport photo is taken at the office, not brought from outside",
+      "Minors under 18 need a parent or guardian present"
+    ],
+    "faqs": [
+      {
+        "q": "Can I apply online without visiting?",
+        "a": "No. Biometrics (fingerprints and photo) must be done in person. You can book a slot online and fill the form online, but the visit is mandatory."
+      },
+      {
+        "q": "My passport is damaged. What do I do?",
+        "a": "Bring the damaged passport along with all standard documents. You'll apply for a renewal — the process is the same, but you may be asked about the damage."
+      },
+      {
+        "q": "Can I renew at a different city's office?",
+        "a": "Yes. You can visit any passport office in Pakistan regardless of which city is on your CNIC."
+      },
+      {
+        "q": "What if my CNIC and old passport have different name spellings?",
+        "a": "You'll need to resolve the CNIC name first (via NADRA), then apply for the passport. The passport office will reject mismatched names."
+      }
+    ]
+  },
+  {
+    "slug": "get-driving-license-pakistan",
+    "title": "How to Get a Driving License",
+    "emoji": "🚗",
+    "summary": "First-time applicants and renewals. Covers learner's permit, the driving test, and what to bring to the District Transport Office.",
+    "category": "Driving License",
+    "city": null,
+    "estimatedTime": "Half day (tests + processing)",
+    "totalFees": "PKR 200–900",
+    "lastUpdated": "2026-03-20",
+    "relatedOfficeCategory": "Driving License",
+    "requirements": [
+      "Original CNIC",
+      "CNIC photocopy (front and back)",
+      "Medical fitness certificate (from a registered doctor — many DTO offices have a doctor on site)",
+      "Learner's license if upgrading to permanent (must have held it for at least 6 weeks)",
+      "2–4 passport-size photographs",
+      "Fee payment receipt"
+    ],
+    "steps": [
+      {
+        "title": "Get a medical fitness certificate",
+        "body": "You need a certificate from a registered doctor confirming you are physically fit to drive. Many District Transport Offices (DTO) have a doctor on premises — you can get it done there on the same day for a small fee (PKR 100–200)."
+      },
+      {
+        "title": "Visit your local DTO office",
+        "body": "Go to the District Transport Office in your city. Find it using the Driving License category on the Search page. Bring all documents. Offices generally open at 9 AM."
+      },
+      {
+        "title": "Submit documents and pay the fee",
+        "body": "For a learner's license: PKR 200. For a permanent license: PKR 900 (5 years). Pay at the fee window and get a receipt."
+      },
+      {
+        "title": "Written test (for new learner's license)",
+        "body": "If you're applying for a learner's license for the first time, you'll take a short written/verbal road rules test. It covers basic traffic signs and rules. It's not difficult — read up on Pakistan's traffic rules beforehand."
+      },
+      {
+        "title": "Driving test (for permanent license)",
+        "body": "If you've completed your 6-week learner's period and are applying for a permanent license, you'll take a practical driving test in the DTO's test area. The tester checks basic control, parking, and following road signs."
+      },
+      {
+        "title": "Collect your license",
+        "body": "If approved, a temporary paper license may be issued on the same day. The smart card (Smart Driving License) is printed and delivered — collection times vary by city, usually 1–2 weeks."
+      }
+    ],
+    "tips": [
+      "Hold your learner's license for at least 6 weeks before applying for the permanent — they check the issue date",
+      "Practice reversing and parking — the DTO test often includes these",
+      "Arrive early; DTO offices process a limited number of applicants per day",
+      "The doctor on site is usually faster and cheaper than going to a separate clinic",
+      "Smart license cards are now issued via Punjab IT Board / DGTO — ask the DTO about collection"
+    ],
+    "faqs": [
+      {
+        "q": "Can I drive with a learner's license alone?",
+        "a": "No. A learner's license requires you to be accompanied by a licensed driver at all times while driving."
+      },
+      {
+        "q": "My license expired. Do I need to retake the test?",
+        "a": "Usually not if it expired recently. Visit the DTO with your expired license and CNIC — in most cases it's a simple renewal without retesting."
+      },
+      {
+        "q": "Can I get a license for multiple vehicle types?",
+        "a": "Yes. You can apply for separate categories — motorcycle, car, heavy vehicle — each requiring its own test and fee."
+      },
+      {
+        "q": "Is there an age requirement?",
+        "a": "Yes. Minimum age is 18 for a car license and 16 for a motorcycle license in most provinces."
+      }
+    ]
+  },
+  {
+    "slug": "transfer-property-ownership-lahore",
+    "title": "How to Transfer Property Ownership in Lahore",
+    "emoji": "🏠",
+    "summary": "Buying or selling property in Lahore? This guide walks through every office, every form, and the correct order of steps to complete an Intiqal (ownership transfer).",
+    "category": "Land",
+    "city": "Lahore",
+    "estimatedTime": "Several days to weeks",
+    "totalFees": "Stamp duty + CVT + registration fee (varies by property value)",
+    "lastUpdated": "2026-03-20",
+    "relatedOfficeCategory": "Land",
+    "requirements": [
+      "Original sale deed / agreement to sell",
+      "Fard (property ownership record) from PLRA — must be recent (within 30 days)",
+      "Original CNICs of both buyer and seller",
+      "CNIC photocopies of both parties",
+      "2 witnesses with original CNICs",
+      "Bank draft or pay order for stamp duty (from any bank)",
+      "NOC from housing society or LDA (if applicable)",
+      "Latest paid utility bills for the property"
+    ],
+    "steps": [
+      {
+        "title": "Get the Fard (ownership record) from PLRA",
+        "body": "The Fard is an official document showing the current registered owner of the property. Get it from the Punjab Land Records Authority (PLRA) office or online at plra.punjab.gov.pk. It must be recent — older than 30 days may be rejected. Fee: PKR 200–500."
+      },
+      {
+        "title": "Verify the property is free of encumbrances",
+        "body": "Check that the property has no loans, court orders, or disputes registered against it. The Fard will show this. If there's a bank mortgage, it must be cleared before transfer. Ask the seller for a clearance letter from their bank."
+      },
+      {
+        "title": "Draft the sale deed",
+        "body": "Hire a licensed stamp vendor or lawyer to draft the sale deed. It must include: full property description, agreed sale price, names and CNICs of buyer and seller, and signatures of both parties and two witnesses."
+      },
+      {
+        "title": "Pay stamp duty at a bank",
+        "body": "Stamp duty in Punjab is 3% of the property value (for properties above PKR 4 million). Capital Value Tax (CVT) is an additional 2%. Buy a bank draft or pay order from any bank made payable to the relevant Sub-Registrar. Keep the original challan."
+      },
+      {
+        "title": "Visit the Sub-Registrar office",
+        "body": "Both the buyer and seller must be physically present at the Sub-Registrar office in the district where the property is located. Bring all documents: Fard, sale deed, CNICs of both parties + witnesses, and the bank challan."
+      },
+      {
+        "title": "Registration and biometrics",
+        "body": "The Sub-Registrar will verify all documents. Both buyer, seller, and witnesses will have their fingerprints scanned (biometric verification against NADRA database). The deed is then officially registered."
+      },
+      {
+        "title": "Mutation (Intiqal) at the Patwari office",
+        "body": "After registration, apply for Intiqal (mutation) at the local Patwari office. The Patwari will inspect the property and update the official land record in your name. This can take 2–4 weeks. Follow up regularly."
+      },
+      {
+        "title": "Get your updated Fard",
+        "body": "Once Intiqal is complete, get a new Fard from PLRA showing you as the registered owner. This is your proof of ownership. Keep it safe."
+      }
+    ],
+    "tips": [
+      "Never hand over payment until the sale deed is registered at the Sub-Registrar — unregistered agreements have little legal standing",
+      "Hire a local property lawyer (wakeel) — PKR 10,000–30,000 is worth it for a transaction of this size",
+      "The Fard must be in the seller's exact name — discrepancies cause rejection and delays",
+      "Follow up on the Intiqal at the Patwari office every few days — it doesn't move on its own",
+      "Verify the property's dimensions on-site before signing anything",
+      "Check for unpaid property tax (rates) — these transfer with the property"
+    ],
+    "faqs": [
+      {
+        "q": "Can a power of attorney (POA) be used instead of the seller being present?",
+        "a": "Yes, but the POA must be registered and notarized. The Sub-Registrar will verify it carefully. An unregistered POA is not accepted."
+      },
+      {
+        "q": "What is the difference between registry and Intiqal?",
+        "a": "Registry (at the Sub-Registrar) is the legal transfer of the deed. Intiqal (mutation) is the update of the government land record to show the new owner. Both are required — registry alone is not enough."
+      },
+      {
+        "q": "How long does the whole process take?",
+        "a": "Typically 2–6 weeks if documents are in order. Delays usually happen at the Patwari/Intiqal stage."
+      },
+      {
+        "q": "Is it possible to do this without a lawyer?",
+        "a": "Technically yes, but not recommended. A lawyer catches issues with the deed, Fard discrepancies, or encumbrances before you commit. The fee is small relative to the transaction."
+      }
+    ]
+  },
+  {
+    "slug": "nicop-overseas-pakistanis",
+    "title": "How to Get a NICOP (for Overseas Pakistanis)",
+    "emoji": "✈️",
+    "summary": "Living abroad and need your NICOP renewed or applied for the first time? Covers how to do it from outside Pakistan through NADRA E-Sahulat and Pakistani embassies.",
+    "category": "NADRA",
+    "city": null,
+    "estimatedTime": "30 minutes online + delivery time",
+    "totalFees": "USD 20–50 depending on category",
+    "lastUpdated": "2026-03-20",
+    "relatedOfficeCategory": "NADRA",
+    "requirements": [
+      "Pakistani CNIC (or previous NICOP if renewing)",
+      "Valid foreign country passport or residence permit",
+      "Proof of overseas residence (utility bill, lease, or employment letter)",
+      "Recent passport-size photograph (white background)",
+      "Online NADRA account at id.nadra.gov.pk"
+    ],
+    "steps": [
+      {
+        "title": "Understand what NICOP is",
+        "body": "NICOP (National Identity Card for Overseas Pakistanis) is the version of the CNIC issued to Pakistani nationals living abroad. It works as ID for property transactions, banking, and travel to Pakistan. It is separate from your CNIC but linked to the same identity record."
+      },
+      {
+        "title": "Apply online via NADRA's portal",
+        "body": "Go to id.nadra.gov.pk and create an account. Select 'NICOP' from the services menu. Fill in your details, upload the required documents, and pay the fee online using a credit/debit card. The portal accepts international payments."
+      },
+      {
+        "title": "Visit a Pakistani embassy or NADRA desk (if biometrics required)",
+        "body": "First-time NICOP applicants or those whose biometrics have changed must visit a Pakistani embassy or consulate for fingerprint scanning. NADRA has desks at many Pakistani diplomatic missions — check nadra.gov.pk for your nearest location."
+      },
+      {
+        "title": "Renewal (existing NICOP holders)",
+        "body": "If you're renewing and your biometrics are already in the NADRA system, you can complete the entire process online without visiting an embassy. NADRA will mail the card to your overseas address."
+      },
+      {
+        "title": "Track and receive",
+        "body": "Track your application at id.nadra.gov.pk. Delivery takes 3–6 weeks by international courier. You can also choose to pick it up from a Pakistani embassy or have a family member collect it in Pakistan."
+      }
+    ],
+    "tips": [
+      "Renew your NICOP before your overseas trip to Pakistan — having a valid NICOP speeds up immigration",
+      "NICOP holders can use the e-Gate at major Pakistani airports",
+      "If your CNIC has expired back in Pakistan, renew that first — NICOP is linked to your CNIC record",
+      "Keep a digital scan of your NICOP and CNIC stored securely online",
+      "The NADRA app (available on iOS and Android) can help manage your application"
+    ],
+    "faqs": [
+      {
+        "q": "Can I use my NICOP instead of a visa to enter Pakistan?",
+        "a": "Yes. NICOP holders do not need a visa to enter Pakistan. It serves as your travel document for entry."
+      },
+      {
+        "q": "I have dual nationality. Do I need a NICOP?",
+        "a": "Yes, if you are a Pakistani national living abroad, NICOP is the correct document for you regardless of whether you hold another country's passport."
+      },
+      {
+        "q": "What if I was born abroad and never had a CNIC?",
+        "a": "You can still apply for a NICOP. You'll need your parent's CNIC, your birth certificate, and your foreign passport. The process may require an embassy visit."
+      },
+      {
+        "q": "Is NICOP accepted for property transactions in Pakistan?",
+        "a": "Yes. A valid NICOP is accepted in place of a CNIC for property registration, banking, and most official transactions in Pakistan."
+      }
+    ]
+  },
+  {
+    "slug": "fbr-ntn-registration",
+    "title": "How to Register for an NTN (FBR)",
+    "emoji": "🧾",
+    "summary": "An NTN (National Tax Number) is required for filing taxes, opening a business account, and many government contracts. Here is how to get one.",
+    "category": "FBR",
+    "city": null,
+    "estimatedTime": "30 minutes online",
+    "totalFees": "Free",
+    "lastUpdated": "2026-03-20",
+    "relatedOfficeCategory": null,
+    "requirements": [
+      "Original CNIC",
+      "Active mobile number (registered on your CNIC)",
+      "Personal email address",
+      "Bank account number (optional but recommended)",
+      "Employment details or business address (if applicable)"
+    ],
+    "steps": [
+      {
+        "title": "Go to the FBR IRIS portal",
+        "body": "Visit iris.fbr.gov.pk — this is FBR's official online tax portal. All NTN registrations are done here. You do not need to visit an FBR office for a basic individual NTN."
+      },
+      {
+        "title": "Click Registration for Unregistered Person",
+        "body": "On the IRIS login page, click the link that says \"Registration for Unregistered Person\". This opens the NTN application form for new registrants."
+      },
+      {
+        "title": "Fill in your CNIC and basic details",
+        "body": "Enter your CNIC number, date of birth, and mobile number. An OTP will be sent to your mobile for verification. You must use the number registered against your CNIC with NADRA."
+      },
+      {
+        "title": "Complete the registration form",
+        "body": "Fill in your personal details: name, address, employment type (salaried, business, freelancer, etc.), and bank account details if you have them. Double-check everything — mistakes require a formal correction request later."
+      },
+      {
+        "title": "Submit and receive your NTN",
+        "body": "Submit the form. Your NTN is generated instantly and sent to your email and mobile number. Your CNIC number itself becomes your NTN for individual taxpayers — IRIS will confirm this."
+      },
+      {
+        "title": "File your first tax return",
+        "body": "Having an NTN alone is not enough — you must file an annual tax return to appear on the Active Taxpayer List (ATL). Log in to IRIS each year before October 31 and file your return. Being on the ATL reduces withholding tax on bank transactions, property, and vehicles."
+      }
+    ],
+    "tips": [
+      "Your CNIC number is your NTN for individuals — you do not get a separate number",
+      "Filing a nil return still keeps you on the Active Taxpayer List",
+      "Being on the ATL saves you money — lower withholding tax on property, cars, and bank accounts",
+      "The deadline for annual return filing is October 31 each year",
+      "Freelancers earning in foreign currency can claim tax credits — file even if you think you owe nothing"
+    ],
+    "faqs": [
+      {
+        "q": "Do I need an NTN if I am salaried and my employer deducts tax?",
+        "a": "Yes. Even if tax is deducted at source, you should register and file a return. It keeps you on the ATL which lowers withholding tax on many transactions."
+      },
+      {
+        "q": "Is there a fee for NTN registration?",
+        "a": "No. NTN registration on IRIS is completely free."
+      },
+      {
+        "q": "What if my mobile number is not registered on my CNIC?",
+        "a": "You will not receive the OTP. Visit a Telenor, Jazz, Zong, or Ufone franchise to update your SIM biometric registration, or use a number that is already registered on your CNIC."
+      },
+      {
+        "q": "Can a freelancer register as an individual or do they need a business NTN?",
+        "a": "Freelancers can register as individuals. A business NTN (for a sole proprietorship or company) is separate and needed if you want a business bank account or formal invoicing."
+      }
+    ]
+  },
+  {
+    "slug": "new-vehicle-registration",
+    "title": "How to Register a New Vehicle",
+    "emoji": "🚘",
+    "summary": "Bought a new car from a dealership? Registration must be done within 30 days of purchase. Here is the complete process through Excise and Taxation.",
+    "category": "Excise",
+    "city": null,
+    "estimatedTime": "1–2 hours at office",
+    "totalFees": "Token tax + registration fee (varies by engine size)",
+    "lastUpdated": "2026-03-20",
+    "relatedOfficeCategory": "Excise",
+    "requirements": [
+      "Original computerized sales invoice from the dealership",
+      "Dealership delivery letter",
+      "Original CNIC of the owner",
+      "CNIC photocopy",
+      "Customs clearance certificate (for imported vehicles)",
+      "Insurance certificate",
+      "Bank draft or fee payment receipt for token tax and registration fee"
+    ],
+    "steps": [
+      {
+        "title": "Get your documents from the dealership",
+        "body": "The dealership should hand you a sales invoice and a delivery letter. These are mandatory for registration. If the vehicle is imported, you also need a customs clearance certificate (PSW/MCC). Make sure the chassis number on the invoice matches the vehicle."
+      },
+      {
+        "title": "Get the vehicle insured",
+        "body": "Third-party insurance is mandatory before registration. You can get it from any insurance company — it typically costs PKR 3,000–8,000 per year. Bring the insurance certificate to the Excise office."
+      },
+      {
+        "title": "Calculate and pay your token tax",
+        "body": "Token tax is based on engine capacity (cc). Pay via bank challan at a designated bank, or online through Punjab/Sindh/KPK e-services portals. Keep the original stamped challan."
+      },
+      {
+        "title": "Visit your Excise and Taxation office",
+        "body": "Go to the Excise and Taxation office in the district where you live (not where the dealership is). Bring all documents. Most offices open at 9 AM and process registration on a first-come basis."
+      },
+      {
+        "title": "Submit documents at the counter",
+        "body": "Hand over the sales invoice, delivery letter, CNIC, insurance certificate, and fee challan. Staff will enter the vehicle details into the system and verify the chassis number against the national database."
+      },
+      {
+        "title": "Vehicle inspection (if required)",
+        "body": "Some offices require physical inspection of the vehicle — they verify the chassis and engine numbers match the documents. Bring the vehicle on the day if possible."
+      },
+      {
+        "title": "Collect number plates and registration book",
+        "body": "A temporary registration may be issued the same day. The official registration book (log book) and embossed number plates are typically ready within 2–4 weeks. You will be notified by SMS."
+      }
+    ],
+    "tips": [
+      "Register within 30 days of purchase — late registration attracts a penalty",
+      "Bring the vehicle for inspection on the day to avoid a second trip",
+      "The chassis number on your invoice must exactly match the vehicle — check before leaving the dealership",
+      "Online registration is now available in Punjab via the Excise Punjab app",
+      "Keep the registration book in the vehicle at all times once received"
+    ],
+    "faqs": [
+      {
+        "q": "Can I drive the car before it is registered?",
+        "a": "Technically no, but dealers typically provide a temporary gate pass valid for a few days. Register as soon as possible."
+      },
+      {
+        "q": "What if I live in a different city than where I bought the car?",
+        "a": "Register at the Excise office in your home district (where your CNIC address is), not where the dealership is located."
+      },
+      {
+        "q": "How much is the token tax?",
+        "a": "It varies by province and engine size. As a rough guide in Punjab: up to 1000cc PKR 1,500/yr, 1001–1300cc PKR 4,000/yr, above 1300cc higher rates apply. Check the Excise Punjab website for the latest schedule."
+      }
+    ]
+  },
+  {
+    "slug": "used-vehicle-transfer",
+    "title": "How to Transfer a Used Vehicle",
+    "emoji": "🔑",
+    "summary": "Buying or selling a used car? The ownership must be officially transferred at the Excise office. Here is how to do it correctly and avoid common scams.",
+    "category": "Excise",
+    "city": null,
+    "estimatedTime": "1–3 hours at office",
+    "totalFees": "Transfer fee + token tax arrears (if any)",
+    "lastUpdated": "2026-03-20",
+    "relatedOfficeCategory": "Excise",
+    "requirements": [
+      "Original registration book (log book) of the vehicle",
+      "Original CNICs of both buyer and seller",
+      "CNIC photocopies of both parties",
+      "Signed transfer form (available at Excise office)",
+      "Fee payment receipt for transfer charges",
+      "NOC from previous district if vehicle is registered in a different city",
+      "Insurance certificate in buyer's name"
+    ],
+    "steps": [
+      {
+        "title": "Verify the vehicle before buying",
+        "body": "Before any money changes hands: check the registration book matches the chassis and engine numbers on the vehicle. Run the vehicle number plate on the Punjab/Sindh Excise portal to confirm the registered owner. Check for outstanding token tax, fines, or court orders against the vehicle."
+      },
+      {
+        "title": "Get a NOC if the vehicle is from another district",
+        "body": "If the seller's vehicle is registered in a different city, they must get a No Objection Certificate (NOC) from their Excise office first. Without it, the buyer's district office cannot process the transfer."
+      },
+      {
+        "title": "Visit the Excise office together",
+        "body": "Both buyer and seller must be physically present at the Excise office in the buyer's district. Bring all documents. Some offices allow a representative with a signed authority letter, but both CNICs are still required."
+      },
+      {
+        "title": "Fill out the transfer form",
+        "body": "Obtain the vehicle transfer form at the counter. Both parties sign it. Staff verify the signatures against CNICs."
+      },
+      {
+        "title": "Clear any outstanding token tax",
+        "body": "Any unpaid token tax from previous years must be cleared by the seller before transfer. The Excise system will show the outstanding amount. The buyer and seller should agree on who pays this beforehand."
+      },
+      {
+        "title": "Pay the transfer fee",
+        "body": "Pay the transfer fee via bank challan. Fees vary by province and vehicle type — typically PKR 1,000–5,000."
+      },
+      {
+        "title": "Collect updated registration book",
+        "body": "The registration book is updated with the new owner's name and CNIC. This may take a few days. A receipt is issued immediately. Do not drive without the original registration book."
+      }
+    ],
+    "tips": [
+      "Never pay full amount until the transfer is complete at the Excise office",
+      "Check outstanding token tax before agreeing on price — it becomes your liability after transfer",
+      "Run the registration number online to verify ownership before the meeting",
+      "Take photos of the chassis and engine number before and after handover",
+      "A vehicle with a court order or police hold cannot be transferred — the system will reject it"
+    ],
+    "faqs": [
+      {
+        "q": "Can I transfer without the seller being present?",
+        "a": "Usually no. Some offices accept a signed authority letter plus CNIC copy, but this varies by district. The safest route is both parties present."
+      },
+      {
+        "q": "What if the log book is lost?",
+        "a": "The seller must apply for a duplicate registration book first. This takes a few weeks. Do not complete the purchase without a valid log book."
+      },
+      {
+        "q": "How do I check if a vehicle has a police hold or court order?",
+        "a": "Run the registration number on the Punjab Excise portal (punjab.gov.pk/excise) or Sindh Excise portal. A hold will show in the system and the transfer will be blocked."
+      }
+    ]
+  },
+  {
+    "slug": "nikah-nama-registration",
+    "title": "How to Register Your Nikah Nama",
+    "emoji": "💍",
+    "summary": "Your nikah must be officially registered with NADRA to get a computerized marriage certificate. Here is how to do it — including what to do if it was never registered.",
+    "category": "NADRA",
+    "city": null,
+    "estimatedTime": "1–2 hours",
+    "totalFees": "PKR 200–500",
+    "lastUpdated": "2026-03-20",
+    "relatedOfficeCategory": "NADRA",
+    "requirements": [
+      "Original Nikah Nama (signed by nikah registrar, bride, groom, and witnesses)",
+      "Original CNICs of both husband and wife",
+      "CNIC photocopies of both parties",
+      "CNICs of two witnesses who were present at the nikah",
+      "CNIC of the nikah registrar (Nikah Khwan)"
+    ],
+    "steps": [
+      {
+        "title": "Ensure your nikah was conducted by a licensed Nikah Registrar",
+        "body": "In Pakistan, nikah must be performed by a Union Council-licensed Nikah Registrar (Nikah Khwan). If your nikah was not conducted by a licensed registrar, the Nikah Nama may not be accepted for registration. Verify the registrar's license number on the document."
+      },
+      {
+        "title": "Get the original Nikah Nama from your Nikah Registrar",
+        "body": "The Nikah Registrar keeps a copy and gives you the original. Make sure it has the official stamp and signatures of the registrar, both parties, and two male witnesses (or one male and two female witnesses as applicable)."
+      },
+      {
+        "title": "Register at your Union Council",
+        "body": "The Nikah Nama must first be submitted to the Union Council (UC) of the area where the nikah took place. The UC will issue a registration number and stamp the document. This is a legal requirement under the Muslim Family Laws Ordinance 1961."
+      },
+      {
+        "title": "Visit NADRA for the computerized certificate",
+        "body": "With the UC-registered Nikah Nama, visit a NADRA office. Submit the original Nikah Nama, both CNICs, and photocopies. NADRA will issue a Computerized Marriage Certificate (CMC) which is required for most official purposes."
+      },
+      {
+        "title": "Update your CNIC marital status (optional)",
+        "body": "You can also update your marital status on your CNIC at NADRA at the same visit. Bring your Nikah Nama as supporting documentation."
+      }
+    ],
+    "tips": [
+      "Register the Nikah Nama as soon as possible — delays complicate the process",
+      "The Computerized Marriage Certificate (CMC) from NADRA is what most institutions ask for — the handwritten Nikah Nama alone is often not sufficient",
+      "For overseas Pakistanis: the CMC can be attested by the Ministry of Foreign Affairs for use abroad",
+      "If the nikah was years ago and never registered, you can still register — visit the Union Council with witnesses and be prepared to explain the delay"
+    ],
+    "faqs": [
+      {
+        "q": "Is registration of nikah mandatory by law?",
+        "a": "Yes. Under the Muslim Family Laws Ordinance 1961, registration of nikah is compulsory in Pakistan. Non-registration can complicate inheritance, divorce, child custody, and visa applications."
+      },
+      {
+        "q": "We got married abroad. How do we register in Pakistan?",
+        "a": "Get your foreign marriage certificate attested by the Pakistani Embassy in that country, then by the Ministry of Foreign Affairs in Pakistan, and finally submit to NADRA for a CMC."
+      },
+      {
+        "q": "Can my wife add her husband's name to her CNIC after marriage?",
+        "a": "Yes. With the CMC, your wife can update her CNIC at NADRA to include her husband's name. This is optional but required for some visa and passport applications."
+      }
+    ]
+  },
+  {
+    "slug": "police-character-certificate",
+    "title": "How to Get a Police Character Certificate",
+    "emoji": "👮",
+    "summary": "Required for overseas employment, visa applications, and many government jobs. Here is how to apply and what to expect.",
+    "category": "Police",
+    "city": null,
+    "estimatedTime": "1–2 weeks total",
+    "totalFees": "PKR 200–500",
+    "lastUpdated": "2026-03-20",
+    "relatedOfficeCategory": "Police",
+    "requirements": [
+      "Original CNIC",
+      "CNIC photocopy",
+      "Application form (available at the District Police Office or SSP office)",
+      "Fee payment receipt (bank challan)",
+      "2 passport-size photographs",
+      "If for overseas use: appointment letter or visa application reference"
+    ],
+    "steps": [
+      {
+        "title": "Determine which office to approach",
+        "body": "For local use (job applications within Pakistan): apply at your local District Police Office (DPO) or SSP office. For overseas use or attestation: apply at the SSP office in your district, and the certificate will then need to be attested by the Ministry of Interior and Ministry of Foreign Affairs."
+      },
+      {
+        "title": "Pay the fee via bank challan",
+        "body": "Purchase a challan form from the District Police Office or designated bank. Pay PKR 200–500 depending on your province. Keep the original stamped challan."
+      },
+      {
+        "title": "Fill out the application form",
+        "body": "Get the character certificate application form from the police office. Fill in your full name (as on CNIC), address, purpose, and destination country (if overseas). Attach 2 passport photos."
+      },
+      {
+        "title": "Submit at the SSP or DPO office",
+        "body": "Submit the completed form, fee challan, CNIC copy, and photos at the character certificate counter. You will receive a receipt with a reference number."
+      },
+      {
+        "title": "Police verification",
+        "body": "A local police official will visit your home address (as on your CNIC) for verification. Be available, or inform a family member. This typically takes 3–7 days."
+      },
+      {
+        "title": "Collect the certificate",
+        "body": "Once verification is complete, collect the certificate from the issuing office using your receipt. For overseas purposes, take it for attestation to the Ministry of Interior (Islamabad) and then Ministry of Foreign Affairs."
+      },
+      {
+        "title": "Attestation for overseas use (if required)",
+        "body": "Most countries require the certificate to be attested by the Ministry of Foreign Affairs (MOFA). Visit MOFA in Islamabad or their regional offices in Lahore and Karachi. After MOFA, some countries also require attestation by their embassy in Pakistan."
+      }
+    ],
+    "tips": [
+      "Make sure your CNIC address is current — police verification goes to that address",
+      "Start this process at least 3–4 weeks before you need it, especially for overseas use",
+      "MOFA attestation adds another 3–7 days — factor this into your timeline",
+      "Some countries accept an online-issued character certificate — check your employer's requirements",
+      "Keep 3–4 certified copies — some employers need the original plus copies"
+    ],
+    "faqs": [
+      {
+        "q": "How long is a character certificate valid?",
+        "a": "Most character certificates are valid for 6 months from the date of issue. Check your employer or embassy requirements as some specify the date of issue must be within 3 months."
+      },
+      {
+        "q": "Can I apply from outside Pakistan?",
+        "a": "Yes. Overseas Pakistanis can apply through the Pakistani Embassy in their country of residence, or authorize a family member in Pakistan to apply on their behalf with a signed authority letter."
+      },
+      {
+        "q": "What if there is a past FIR or case against me?",
+        "a": "Any past criminal record will show in the police verification. A resolved or acquitted case may still appear — consult a lawyer before applying if you have concerns."
+      }
+    ]
+  },
+  {
+    "slug": "birth-certificate-registration",
+    "title": "How to Register a Birth Certificate",
+    "emoji": "👶",
+    "summary": "Registering a newborn or getting a delayed birth registration. Required for school enrollment, CNIC, passport, and almost everything else.",
+    "category": "NADRA",
+    "city": null,
+    "estimatedTime": "1–2 hours (on time) / several days (delayed)",
+    "totalFees": "Free within 60 days / PKR 200–1,000 for delayed",
+    "lastUpdated": "2026-03-20",
+    "relatedOfficeCategory": "NADRA",
+    "requirements": [
+      "Hospital birth certificate or discharge slip (for newborns)",
+      "Original CNICs of both parents",
+      "CNIC photocopies of both parents",
+      "Parents' Nikah Nama or Computerized Marriage Certificate",
+      "B-Form of older siblings (if applicable)",
+      "For delayed registration: affidavit and additional witness statements may be required"
+    ],
+    "steps": [
+      {
+        "title": "Register within 60 days (strongly recommended)",
+        "body": "Birth registration in Pakistan must be done within 60 days of birth. Registration within this window is free and straightforward. After 60 days it becomes a \"delayed registration\" which requires more documentation and has a fee."
+      },
+      {
+        "title": "Get the hospital birth slip",
+        "body": "The hospital or clinic where the birth occurred issues a birth slip or certificate. This is your primary document. If born at home, you will need a midwife certificate or a sworn affidavit."
+      },
+      {
+        "title": "Visit your Union Council (for B-Form)",
+        "body": "Go to the Union Council (UC) of your area. Submit the hospital slip, both parents' CNICs, and Nikah Nama. The UC will register the birth in their records and issue a Birth Registration Certificate (BRC)."
+      },
+      {
+        "title": "Visit NADRA for the B-Form",
+        "body": "With the UC-issued BRC, visit a NADRA office. NADRA issues the Child Registration Certificate (CRC), commonly called the B-Form. This is the official government document for children under 18."
+      },
+      {
+        "title": "Delayed registration (born more than 60 days ago)",
+        "body": "If more than 60 days have passed, the UC will require additional documentation: a sworn affidavit, witness statements from family members, and possibly a letter from a local council member. Visit the UC first to understand exactly what they need."
+      }
+    ],
+    "tips": [
+      "Register within 60 days — it is free and fast. After that, it becomes much more complicated",
+      "The B-Form is needed to get the child's passport, enroll in school, and eventually get a CNIC at age 18",
+      "Keep the original B-Form safe — replacing it requires a full application again",
+      "Overseas Pakistanis can register their child's birth at a Pakistani Embassy",
+      "If one parent is a foreign national, additional documentation is required — ask NADRA beforehand"
+    ],
+    "faqs": [
+      {
+        "q": "What if my child was born at home and I have no hospital slip?",
+        "a": "You will need a sworn affidavit from the parents and ideally a midwife certificate or letter from a local health worker. The Union Council will guide you on the specific documents required for home births."
+      },
+      {
+        "q": "My child is now 10 years old and was never registered. Is it too late?",
+        "a": "No. Delayed registration is possible at any age but requires more paperwork. Visit your Union Council with both parents' CNICs, Nikah Nama, and any existing documents. An affidavit and witness statements will be needed."
+      },
+      {
+        "q": "Does my child need a B-Form to get a passport?",
+        "a": "Yes. The B-Form is required for a child's passport application. Without it, you cannot get a Pakistani passport for your child."
+      }
+    ]
+  },
+  {
+    "slug": "secp-business-registration",
+    "title": "How to Register a Business (SECP)",
+    "emoji": "🏢",
+    "summary": "Starting a company in Pakistan? Sole proprietorships, private limited companies, and SMCs are all registered differently. Here is what applies to you.",
+    "category": "SECP",
+    "city": null,
+    "estimatedTime": "1–3 days online",
+    "totalFees": "PKR 1,000–15,000 depending on company type",
+    "lastUpdated": "2026-03-20",
+    "relatedOfficeCategory": null,
+    "requirements": [
+      "Original CNIC of all directors/owners",
+      "Proposed company name (have 2–3 alternatives ready in case first choice is taken)",
+      "Registered business address in Pakistan",
+      "Memorandum and Articles of Association (for Pvt Ltd — templates available on SECP portal)",
+      "Email address and mobile number for each director",
+      "Initial paid-up capital amount (minimum PKR 100,000 for Pvt Ltd)"
+    ],
+    "steps": [
+      {
+        "title": "Choose your business structure",
+        "body": "Sole Proprietorship: simplest, one owner, registered at FBR/local council — not through SECP. Private Limited Company (Pvt Ltd): separate legal entity, 2+ directors, registered at SECP — best for startups and growth. Single Member Company (SMC): like Pvt Ltd but one director only. Choose based on your needs — Pvt Ltd is best if you want investment or multiple co-founders."
+      },
+      {
+        "title": "For sole proprietorship: register with FBR and local authority",
+        "body": "A sole proprietorship is NOT registered with SECP. Register your NTN with FBR (see NTN guide), open a business bank account in your business name, and register with your local Chamber of Commerce if needed. This is the fastest and cheapest route."
+      },
+      {
+        "title": "For Pvt Ltd / SMC: use the SECP eServices portal",
+        "body": "Go to eservices.secp.gov.pk and create an account. Click \"Incorporate a Company\" and follow the steps. You will need to: check name availability, fill company details, upload CNICs of all directors, and upload the Memorandum and Articles of Association."
+      },
+      {
+        "title": "Check company name availability",
+        "body": "Use the name search tool on the SECP portal before applying. Your proposed name cannot be identical or confusingly similar to an existing company, cannot contain restricted words (bank, trust, etc. without approval), and should ideally end in \"(Pvt.) Ltd.\""
+      },
+      {
+        "title": "Pay the registration fee",
+        "body": "Fee is based on authorized capital: PKR 100,000–500,000 capital costs PKR 1,000 filing fee. Above PKR 500,000 the fee increases on a sliding scale. Pay via online banking through the SECP portal."
+      },
+      {
+        "title": "Receive your Certificate of Incorporation",
+        "body": "SECP typically processes applications within 1–3 business days. Once approved, you receive a Certificate of Incorporation (CoI) by email. This is your company's birth certificate — keep it safe."
+      },
+      {
+        "title": "Post-incorporation steps",
+        "body": "After incorporation: register for NTN on IRIS as a company (separate from your personal NTN), open a business bank account (bring CoI + CNIC of all directors), register for Sales Tax with FBR if your annual revenue exceeds PKR 12.5 million, and file annual returns with SECP each year."
+      }
+    ],
+    "tips": [
+      "Have 3 company name options ready — the first one is often taken",
+      "Use SECP's standard Memorandum and Articles of Association template — drafting a custom one requires a lawyer",
+      "A Pvt Ltd company requires at least 2 directors — a spouse or family member can be the second director",
+      "Your company NTN is different from your personal NTN — register both if you have a Pvt Ltd",
+      "File your annual return with SECP every year or face penalties — set a calendar reminder"
+    ],
+    "faqs": [
+      {
+        "q": "What is the difference between a sole proprietorship and a Pvt Ltd?",
+        "a": "A sole proprietorship is you personally — there is no legal separation between you and the business. A Pvt Ltd is a separate legal entity: it can own assets, sign contracts, and if the company fails your personal assets are protected (limited liability)."
+      },
+      {
+        "q": "Can a foreigner register a company in Pakistan?",
+        "a": "Yes. Foreign nationals can be directors and shareholders. Additional documentation is required including a notarized passport copy. Contact SECP directly for the latest requirements."
+      },
+      {
+        "q": "Do I need a physical office address?",
+        "a": "Yes. SECP requires a registered business address in Pakistan. Some co-working spaces offer registered address services if you do not have a physical office yet."
+      },
+      {
+        "q": "How long does it take?",
+        "a": "Online registration via eServices typically takes 1–3 business days if your documents are in order. Name reservation adds 1–2 days if done separately."
+      }
+    ]
+  }
+]

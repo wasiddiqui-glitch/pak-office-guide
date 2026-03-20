@@ -3441,5 +3441,141 @@
     "lastUpdated": "2026-03-19",
     "lat": 30.1802791,
     "lng": 66.9988213
+  },
+  {
+    "id": "sialkot-nadra-main",
+    "city": "Sialkot",
+    "category": "NADRA",
+    "name": "NADRA Registration Center (Sialkot)",
+    "area": "Cantonment",
+    "address": "Paris Road, Sialkot Cantonment",
+    "googleMapsLink": "",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "requirements": [
+      "Original CNIC / B-Form",
+      "Supporting documents (if needed)",
+      "Photocopies (recommended)"
+    ],
+    "steps": [
+      "Arrive early and take a token",
+      "Submit documents at counter",
+      "Biometrics/photo (if needed)",
+      "Collect receipt and processing timeline"
+    ],
+    "fees": [
+      "Normal: PKR 350",
+      "Urgent: PKR 750",
+      "Executive: PKR 1500"
+    ],
+    "notes": [
+      "Arrive early for shorter queues",
+      "Bring originals and photocopies"
+    ],
+    "lastUpdated": "2026-03-20",
+    "lat": 32.4945,
+    "lng": 74.5229
+  },
+  {
+    "id": "sialkot-passport-office",
+    "city": "Sialkot",
+    "category": "Passport",
+    "name": "Passport Office Sialkot",
+    "area": "Shahabpura",
+    "address": "Shahabpura Road, Sialkot",
+    "googleMapsLink": "",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM",
+    "requirements": [
+      "Original CNIC",
+      "CNIC photocopy",
+      "Old passport (for renewal)",
+      "Passport application form",
+      "Bank challan (fee payment)"
+    ],
+    "steps": [
+      "Pay fee at designated bank",
+      "Fill application form",
+      "Submit at passport office with documents",
+      "Biometrics and photo capture",
+      "Collect within 5–30 days depending on category"
+    ],
+    "fees": [
+      "Normal (30 days): PKR 4500",
+      "Urgent (7 days): PKR 8000",
+      "Executive (2 days): PKR 12000"
+    ],
+    "notes": [
+      "Online token system available at dgip.gov.pk",
+      "Bring all originals and photocopies"
+    ],
+    "lastUpdated": "2026-03-20",
+    "lat": 32.4927,
+    "lng": 74.5312
+  },
+  {
+    "id": "sialkot-driving-license",
+    "city": "Sialkot",
+    "category": "Driving License",
+    "name": "District Transport Office Sialkot",
+    "area": "Cantonment",
+    "address": "Cantt Area, Sialkot",
+    "googleMapsLink": "",
+    "hours": "Mon–Fri 9:00 AM – 3:00 PM",
+    "requirements": [
+      "Original CNIC",
+      "CNIC photocopy",
+      "Medical certificate",
+      "Learner license (if upgrading)",
+      "Passport-size photos"
+    ],
+    "steps": [
+      "Visit DTO office",
+      "Submit documents and fee",
+      "Pass written test (for new applicants)",
+      "Pass driving test",
+      "License issued or collected within a few days"
+    ],
+    "fees": [
+      "Learner license: PKR 200",
+      "Permanent license: PKR 900 (5-year)"
+    ],
+    "notes": [
+      "Book test slot in advance",
+      "Smart driving licenses issued via DGTO Punjab"
+    ],
+    "lastUpdated": "2026-03-20",
+    "lat": 32.498,
+    "lng": 74.526
+  },
+  {
+    "id": "sialkot-utility-mepco",
+    "city": "Sialkot",
+    "category": "Utilities",
+    "name": "MEPCO Customer Service Center (Sialkot)",
+    "area": "Sialkot City",
+    "address": "The Mall, Sialkot",
+    "googleMapsLink": "",
+    "hours": "Mon–Fri 9:00 AM – 4:00 PM",
+    "requirements": [
+      "Latest electricity bill",
+      "Original CNIC",
+      "Meter number or connection reference"
+    ],
+    "steps": [
+      "Visit MEPCO office",
+      "Explain issue at customer service desk",
+      "Submit any required documents",
+      "Receive complaint/reference number"
+    ],
+    "fees": [
+      "No fee for complaints",
+      "New connection fees vary by load"
+    ],
+    "notes": [
+      "For online complaints visit mepco.com.pk",
+      "Bring latest bill for reference"
+    ],
+    "lastUpdated": "2026-03-20",
+    "lat": 32.4907,
+    "lng": 74.536
   }
 ]

@@ -553,6 +553,12 @@ export default function SearchPage() {
               </div>
               <div style={{ color: theme.muted, lineHeight: 1.6 }}>
                 Try a different keyword, or set City/Category back to <b>All</b>.
+                {q && (
+                  <div style={{ marginTop: 8 }}>
+                    If you&apos;re looking for a city we haven&apos;t added yet, use the{" "}
+                    <b>Suggest correction</b> button on any office page to let us know.
+                  </div>
+                )}
               </div>
               <div style={{ height: 10 }} />
               <button
