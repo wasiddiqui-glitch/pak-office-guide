@@ -1,0 +1,882 @@
+[
+  {
+    "id": "pak-embassy-washington",
+    "name": "Embassy of Pakistan",
+    "city": "Washington D.C.",
+    "country": "United States",
+    "region": "North America",
+    "address": "3517 International Court NW, Washington D.C. 20008",
+    "phone": "+1-202-243-6500",
+    "website": "embassyofpakistanusa.org",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM; Consular: 9:00 AM – 1:00 PM",
+    "nadraDesk": true,
+    "passportServices": true,
+    "nicopServices": true,
+    "services": [
+      "Passport issuance and renewal",
+      "NICOP application and renewal (NADRA desk on-site)",
+      "POC (Pakistan Origin Card) biometrics",
+      "Document attestation and apostille endorsement",
+      "Police character certificate (PCC) processing",
+      "Birth, marriage, and death certificate registration",
+      "Power of Attorney attestation",
+      "Visa assistance for family members"
+    ],
+    "requirements": [
+      "Valid appointment (book online — walk-ins not accepted)",
+      "Current Pakistani passport (original + 1 photocopy)",
+      "2 recent passport-size photographs (white background)",
+      "Completed application form (download from embassy website)",
+      "Fee in money order or cashier's check (personal checks not accepted)",
+      "Additional documents depending on service (see notes)"
+    ],
+    "steps": [
+      "Book an appointment online via the embassy website — walk-ins are not accepted",
+      "Download and complete the relevant application form before your visit",
+      "Arrive 10 minutes before your appointment with all originals and photocopies",
+      "Submit documents at the consular counter and pay the required fee",
+      "For NICOP/passport biometrics, the NADRA officer will take your fingerprints and photo on-site",
+      "Collect your receipt with the processing timeline",
+      "Passport and NICOP are couriered to your US address or available for pick-up"
+    ],
+    "fees": [
+      "Passport (5 years): USD 100",
+      "Passport (10 years): USD 130",
+      "Emergency Travel Document: USD 50",
+      "NICOP (new or renewal): USD 20–50 depending on category",
+      "POC Card: USD 100–150",
+      "Document attestation: USD 15 per document",
+      "Police character certificate: USD 25"
+    ],
+    "notes": [
+      "All fees must be paid by money order or cashier's check made payable to 'Embassy of Pakistan' — no cash or personal checks",
+      "For NICOP: bring your Pakistani CNIC and proof of US residence (utility bill, lease, or state ID)",
+      "For PCC: submit a request letter, copy of passport, and copy of CNIC — takes 4–6 weeks",
+      "Document attestation requires original documents plus one photocopy",
+      "Parking is available near the embassy — allow extra time for security checks"
+    ],
+    "lastUpdated": "2026-03-22"
+  },
+  {
+    "id": "pak-consulate-newyork",
+    "name": "Consulate General of Pakistan",
+    "city": "New York",
+    "country": "United States",
+    "region": "North America",
+    "address": "12 East 65th Street, New York, NY 10065",
+    "phone": "+1-212-879-5800",
+    "website": "pakistanconsulateny.org",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM; Consular: 9:00 AM – 12:30 PM",
+    "nadraDesk": true,
+    "passportServices": true,
+    "nicopServices": true,
+    "services": [
+      "Passport issuance and renewal",
+      "NICOP application and renewal (NADRA desk on-site)",
+      "POC (Pakistan Origin Card) biometrics",
+      "Document attestation",
+      "Police character certificate (PCC) processing",
+      "Birth, marriage, and death certificate registration",
+      "Power of Attorney attestation"
+    ],
+    "requirements": [
+      "Valid appointment (book online — walk-ins not accepted)",
+      "Current Pakistani passport (original + 1 photocopy)",
+      "2 recent passport-size photographs (white background)",
+      "Completed application form",
+      "Fee by money order or cashier's check",
+      "Proof of New York/tri-state area residence (for consulate jurisdiction)"
+    ],
+    "steps": [
+      "Book an appointment online — only residents of New York, New Jersey, and Connecticut are served at this consulate",
+      "Complete the application form for your specific service before arriving",
+      "Arrive at the consulate at your appointment time with all documents",
+      "Submit documents and pay the fee at the consular window",
+      "NADRA officer handles NICOP/POC biometrics on-site",
+      "Receive a receipt with collection or courier timeline"
+    ],
+    "fees": [
+      "Passport (5 years): USD 100",
+      "Passport (10 years): USD 130",
+      "Emergency Travel Document: USD 50",
+      "NICOP: USD 20–50",
+      "POC Card: USD 100–150",
+      "Document attestation: USD 15 per document",
+      "Police character certificate: USD 25"
+    ],
+    "notes": [
+      "Jurisdiction: New York, New Jersey, and Connecticut — if you live outside these states, visit a different consulate or the embassy in Washington",
+      "Located in Manhattan's Upper East Side near Central Park — subway accessible",
+      "Consular service hours are morning only — arrive early",
+      "All fees by money order or cashier's check payable to 'Consulate General of Pakistan'"
+    ],
+    "lastUpdated": "2026-03-22"
+  },
+  {
+    "id": "pak-consulate-houston",
+    "name": "Consulate General of Pakistan",
+    "city": "Houston",
+    "country": "United States",
+    "region": "North America",
+    "address": "11850 Jones Road, Houston, TX 77070",
+    "phone": "+1-281-890-2223",
+    "website": "pakistanconsulatechouston.org",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM; Consular: 9:00 AM – 1:00 PM",
+    "nadraDesk": true,
+    "passportServices": true,
+    "nicopServices": true,
+    "services": [
+      "Passport issuance and renewal",
+      "NICOP application and renewal (NADRA desk on-site)",
+      "POC (Pakistan Origin Card) biometrics",
+      "Document attestation",
+      "Police character certificate (PCC) processing",
+      "Birth, marriage, and death certificate registration",
+      "Power of Attorney attestation"
+    ],
+    "requirements": [
+      "Valid appointment",
+      "Current Pakistani passport (original + 1 photocopy)",
+      "2 passport-size photographs (white background)",
+      "Completed application form",
+      "Fee by money order or cashier's check",
+      "Proof of residence within the consulate's jurisdiction (Texas, Oklahoma, Louisiana, Arkansas, Mississippi)"
+    ],
+    "steps": [
+      "Confirm you are within the Houston consulate's jurisdiction (Texas and surrounding states)",
+      "Book appointment online via the consulate website",
+      "Fill out application forms in advance — download from the website",
+      "Visit the consulate with all originals, copies, photos, and fee payment",
+      "Submit at the consular counter; NADRA desk handles NICOP/POC biometrics",
+      "Collect receipt with processing time estimate"
+    ],
+    "fees": [
+      "Passport (5 years): USD 100",
+      "Passport (10 years): USD 130",
+      "Emergency Travel Document: USD 50",
+      "NICOP: USD 20–50",
+      "POC Card: USD 100–150",
+      "Document attestation: USD 15 per document"
+    ],
+    "notes": [
+      "Jurisdiction: Texas, Oklahoma, Louisiana, Arkansas, and Mississippi",
+      "Located in northwest Houston — drive or use ride-share as there is no direct public transit",
+      "Large Pakistani community in Houston — this consulate is often busy; book appointments well in advance",
+      "Free parking available on-site"
+    ],
+    "lastUpdated": "2026-03-22"
+  },
+  {
+    "id": "pak-consulate-losangeles",
+    "name": "Consulate General of Pakistan",
+    "city": "Los Angeles",
+    "country": "United States",
+    "region": "North America",
+    "address": "10850 Wilshire Blvd, Suite 1250, Los Angeles, CA 90024",
+    "phone": "+1-310-441-5114",
+    "website": "pakistanconsulatelosangeles.org",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM; Consular: 9:30 AM – 12:30 PM",
+    "nadraDesk": false,
+    "passportServices": true,
+    "nicopServices": true,
+    "services": [
+      "Passport issuance and renewal",
+      "NICOP application (forwarded to NADRA — no on-site biometrics)",
+      "Document attestation",
+      "Police character certificate (PCC) processing",
+      "Birth, marriage, and death certificate registration",
+      "Power of Attorney attestation"
+    ],
+    "requirements": [
+      "Valid appointment",
+      "Current Pakistani passport (original + 1 photocopy)",
+      "2 passport-size photographs (white background)",
+      "Completed application form",
+      "Fee by money order (payable to Consulate General of Pakistan)",
+      "Proof of residence within the consulate's jurisdiction"
+    ],
+    "steps": [
+      "Book an appointment online — this consulate serves California, Nevada, Arizona, Hawaii, and the Pacific territories",
+      "Download and complete the application form for your service before visiting",
+      "Visit the consulate at your appointment time with all documents and fee",
+      "Note: there is no NADRA desk at this location — NICOP applications are forwarded to the nearest NADRA center or you must complete biometrics at a different mission",
+      "Submit documents and receive processing timeline"
+    ],
+    "fees": [
+      "Passport (5 years): USD 100",
+      "Passport (10 years): USD 130",
+      "Emergency Travel Document: USD 50",
+      "NICOP application fee: USD 20–50 (biometrics may require a separate visit)",
+      "Document attestation: USD 15 per document"
+    ],
+    "notes": [
+      "No NADRA desk on-site — NICOP first-time applicants requiring biometrics should contact the consulate about alternate arrangements",
+      "Jurisdiction: California, Nevada, Arizona, Hawaii, and US Pacific territories",
+      "Located in Westwood, Los Angeles — street and paid parking available nearby",
+      "Consular hours are shorter than general office hours — plan your visit accordingly"
+    ],
+    "lastUpdated": "2026-03-22"
+  },
+  {
+    "id": "pak-embassy-ottawa",
+    "name": "High Commission of Pakistan",
+    "city": "Ottawa",
+    "country": "Canada",
+    "region": "North America",
+    "address": "10 Range Road, Ottawa, Ontario K1N 8J3",
+    "phone": "+1-613-238-7881",
+    "website": "pakmission.ca",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM; Consular: 9:00 AM – 1:00 PM",
+    "nadraDesk": true,
+    "passportServices": true,
+    "nicopServices": true,
+    "services": [
+      "Passport issuance and renewal",
+      "NICOP application and renewal (NADRA desk on-site)",
+      "POC (Pakistan Origin Card) biometrics",
+      "Document attestation",
+      "Police character certificate (PCC) processing",
+      "Birth, marriage, and death certificate registration",
+      "Power of Attorney attestation",
+      "Pakistani visa facilitation for non-Pakistani spouses and children"
+    ],
+    "requirements": [
+      "Valid appointment (book via the High Commission website)",
+      "Current Pakistani passport (original + 1 photocopy)",
+      "2 recent passport-size photographs (white background)",
+      "Completed application form",
+      "Fee by bank draft or money order payable to 'High Commission of Pakistan'",
+      "Proof of Ontario residence (for Ottawa jurisdiction)"
+    ],
+    "steps": [
+      "Confirm jurisdiction — the Ottawa High Commission primarily serves Ontario residents; those in western provinces should use the Toronto consulate",
+      "Book an appointment online via the High Commission website",
+      "Fill out application forms before your appointment",
+      "Visit with original documents, photocopies, photos, and payment",
+      "NADRA desk staff handle NICOP and POC biometrics on-site",
+      "Receive receipt with processing timeline; documents returned by courier"
+    ],
+    "fees": [
+      "Passport (5 years): CAD 120",
+      "Passport (10 years): CAD 155",
+      "Emergency Travel Document: CAD 60",
+      "NICOP: USD 20–50 equivalent",
+      "POC Card: USD 100–150 equivalent",
+      "Document attestation: CAD 20 per document"
+    ],
+    "notes": [
+      "Jurisdiction covers Ontario and eastern Canada — BC, Alberta, Saskatchewan, Manitoba residents should visit the Toronto consulate",
+      "Located in Ottawa's diplomatic area, near embassies of other countries",
+      "Bank draft or money order only — no cash or personal cheques",
+      "Allow extra time for parking in the diplomatic district"
+    ],
+    "lastUpdated": "2026-03-22"
+  },
+  {
+    "id": "pak-consulate-toronto",
+    "name": "Consulate General of Pakistan",
+    "city": "Toronto",
+    "country": "Canada",
+    "region": "North America",
+    "address": "4881 Yonge Street, Suite 910, Toronto, Ontario M2N 6B7",
+    "phone": "+1-416-250-1255",
+    "website": "pakistanconsulate.ca",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM; Consular: 9:00 AM – 12:30 PM",
+    "nadraDesk": true,
+    "passportServices": true,
+    "nicopServices": true,
+    "services": [
+      "Passport issuance and renewal",
+      "NICOP application and renewal (NADRA desk on-site)",
+      "POC (Pakistan Origin Card) biometrics",
+      "Document attestation",
+      "Police character certificate (PCC) processing",
+      "Birth, marriage, and death certificate registration",
+      "Power of Attorney attestation"
+    ],
+    "requirements": [
+      "Valid appointment",
+      "Current Pakistani passport (original + 1 photocopy)",
+      "2 recent passport-size photographs (white background)",
+      "Completed application form",
+      "Fee by bank draft or money order",
+      "Proof of residence in western Canadian provinces (BC, Alberta, Saskatchewan, Manitoba) or Ontario if High Commission is booked"
+    ],
+    "steps": [
+      "Book an appointment online — this consulate serves western Canadian provinces and can serve Ontario residents as well",
+      "Complete all forms before arriving",
+      "Visit with documents, photos, and fee payment",
+      "NADRA desk on-site handles biometrics for NICOP and POC applications",
+      "Receive a receipt; documents are returned by courier to your Canadian address"
+    ],
+    "fees": [
+      "Passport (5 years): CAD 120",
+      "Passport (10 years): CAD 155",
+      "Emergency Travel Document: CAD 60",
+      "NICOP: USD 20–50 equivalent",
+      "POC Card: USD 100–150 equivalent",
+      "Document attestation: CAD 20 per document"
+    ],
+    "notes": [
+      "Located on Yonge Street in North York — accessible by TTC subway (North York Centre station)",
+      "Serves the largest Pakistani community in Canada — book appointments weeks in advance during peak season",
+      "Bank draft or money order payable to 'Consulate General of Pakistan' — no cash",
+      "Bring extra copies of all documents; originals will be returned"
+    ],
+    "lastUpdated": "2026-03-22"
+  },
+  {
+    "id": "pak-hc-london",
+    "name": "High Commission of Pakistan",
+    "city": "London",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "address": "35-36 Lowndes Square, London SW1X 9JN",
+    "phone": "+44-20-7664-9200",
+    "website": "phclondon.org",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM; Consular: 9:00 AM – 1:00 PM",
+    "nadraDesk": true,
+    "passportServices": true,
+    "nicopServices": true,
+    "services": [
+      "Passport issuance and renewal",
+      "NICOP application and renewal (NADRA desk on-site)",
+      "POC (Pakistan Origin Card) biometrics",
+      "Document attestation",
+      "Police character certificate (PCC) processing",
+      "Birth, marriage, and death registration",
+      "Power of Attorney attestation",
+      "Overseas Pakistanis investment facilitation"
+    ],
+    "requirements": [
+      "Valid appointment (online booking required)",
+      "Current Pakistani passport (original + 1 photocopy)",
+      "2 recent passport-size photographs (white background)",
+      "Completed application form downloaded from the High Commission website",
+      "Fee by bank draft, postal order, or card (verify current accepted methods)",
+      "Proof of UK address for jurisdiction confirmation"
+    ],
+    "steps": [
+      "Book appointment online via the PHC London website — essential as walk-ins are not accepted",
+      "Download and fill in the relevant form for your service (passport, NICOP, attestation, etc.)",
+      "Travel to the High Commission in Knightsbridge — nearest Tube is Knightsbridge (Piccadilly line)",
+      "Present at the consular counter, submit documents, and pay the fee",
+      "NADRA desk processes NICOP and POC applications on-site with biometric capture",
+      "Documents and passports returned by Royal Mail tracked delivery to your UK address"
+    ],
+    "fees": [
+      "Passport (5 years): GBP 80",
+      "Passport (10 years): GBP 100",
+      "Emergency Travel Document: GBP 40",
+      "NICOP: USD 20–50 equivalent in GBP",
+      "POC Card: USD 100–150 equivalent in GBP",
+      "Document attestation: GBP 15 per document",
+      "Police character certificate: GBP 20"
+    ],
+    "notes": [
+      "The UK has one of the largest Pakistani diaspora communities — appointments can book out 2–4 weeks ahead, especially in summer",
+      "Located in Knightsbridge — use the Tube to avoid parking difficulties in central London",
+      "The NADRA counter may have separate opening hours from the main consular section — call ahead",
+      "For PCC: allow 6–8 weeks; the request is processed by Pakistani police through the Ministry of Interior"
+    ],
+    "lastUpdated": "2026-03-22"
+  },
+  {
+    "id": "pak-consulate-manchester",
+    "name": "Consulate General of Pakistan",
+    "city": "Manchester",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "address": "19 St James Road, Edgeley, Stockport SK3 9AX",
+    "phone": "+44-161-477-7800",
+    "website": "pakistanconsulatemanchester.org.uk",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM; Consular: 9:00 AM – 12:30 PM",
+    "nadraDesk": true,
+    "passportServices": true,
+    "nicopServices": true,
+    "services": [
+      "Passport issuance and renewal",
+      "NICOP application and renewal (NADRA desk on-site)",
+      "POC (Pakistan Origin Card) biometrics",
+      "Document attestation",
+      "Police character certificate (PCC) processing",
+      "Birth, marriage, and death registration",
+      "Power of Attorney attestation"
+    ],
+    "requirements": [
+      "Valid appointment",
+      "Current Pakistani passport (original + 1 photocopy)",
+      "2 recent passport-size photographs (white background)",
+      "Completed application form",
+      "Fee by bank draft or postal order",
+      "Proof of residence in northern England or Scotland (jurisdiction)"
+    ],
+    "steps": [
+      "Book an appointment online — this consulate serves Pakistani community in northern England, Scotland, and Wales",
+      "Fill out required forms before your visit",
+      "Travel to Edgeley, Stockport (close to Manchester) — parking available",
+      "Submit documents and fee at the consular counter",
+      "NADRA desk on-site processes NICOP and POC biometrics",
+      "Documents returned by tracked Royal Mail to your UK address"
+    ],
+    "fees": [
+      "Passport (5 years): GBP 80",
+      "Passport (10 years): GBP 100",
+      "Emergency Travel Document: GBP 40",
+      "NICOP: USD 20–50 equivalent",
+      "Document attestation: GBP 15 per document"
+    ],
+    "notes": [
+      "Jurisdiction: northern England (Yorkshire, Lancashire, Greater Manchester, etc.), Scotland, and Wales",
+      "Located in Stockport, Greater Manchester — accessible by Metrolink or driving",
+      "Stockport area has a large Pakistani community — one of the busiest consulates in the UK per capita",
+      "Book several weeks in advance, especially around Eid holidays when demand spikes"
+    ],
+    "lastUpdated": "2026-03-22"
+  },
+  {
+    "id": "pak-embassy-berlin",
+    "name": "Embassy of Pakistan",
+    "city": "Berlin",
+    "country": "Germany",
+    "region": "Europe",
+    "address": "Schaperstrasse 29, 10719 Berlin",
+    "phone": "+49-30-2124430",
+    "website": "pakemb-germany.de",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM; Consular: 9:00 AM – 12:00 PM",
+    "nadraDesk": true,
+    "passportServices": true,
+    "nicopServices": true,
+    "services": [
+      "Passport issuance and renewal",
+      "NICOP application and renewal (NADRA desk on-site)",
+      "POC (Pakistan Origin Card) biometrics",
+      "Document attestation and legalisation",
+      "Police character certificate (PCC) processing",
+      "Birth, marriage, and death certificate registration",
+      "Power of Attorney attestation"
+    ],
+    "requirements": [
+      "Valid appointment (email or online booking)",
+      "Current Pakistani passport (original + 1 photocopy)",
+      "2 recent passport-size photographs (white background)",
+      "Completed application form",
+      "Fee in cash (Euros) or bank transfer — verify current accepted payment methods",
+      "Proof of German/Austrian/Swiss residence for jurisdiction"
+    ],
+    "steps": [
+      "Book an appointment by email or via the embassy website — walk-ins not accepted",
+      "Download and complete the application form for your specific service",
+      "Travel to Charlottenburg-Wilmersdorf district in Berlin — U-Bahn accessible (Spichernstrasse)",
+      "Present original documents and copies at the consular window and pay the fee",
+      "NADRA desk on-site handles biometrics for NICOP and POC",
+      "Passport/documents sent back by secure post or available for pick-up"
+    ],
+    "fees": [
+      "Passport (5 years): EUR 85",
+      "Passport (10 years): EUR 110",
+      "Emergency Travel Document: EUR 45",
+      "NICOP: USD 20–50 equivalent in EUR",
+      "POC Card: USD 100–150 equivalent in EUR",
+      "Document attestation: EUR 15 per document"
+    ],
+    "notes": [
+      "Jurisdiction: Germany, Austria, and Switzerland",
+      "Located near Kurfürstendamm in central Berlin — good public transport connections",
+      "Cash payments in Euros accepted at the consular window; confirm in advance",
+      "Documents being attested may need to be first legalised by the German foreign office (Apostille) before submission"
+    ],
+    "lastUpdated": "2026-03-22"
+  },
+  {
+    "id": "pak-embassy-oslo",
+    "name": "Embassy of Pakistan",
+    "city": "Oslo",
+    "country": "Norway",
+    "region": "Europe",
+    "address": "Sporveisgata 17, 0354 Oslo",
+    "phone": "+47-22-553790",
+    "website": "pakemboslo.no",
+    "hours": "Mon–Fri 9:00 AM – 4:00 PM; Consular: 10:00 AM – 12:30 PM",
+    "nadraDesk": false,
+    "passportServices": true,
+    "nicopServices": true,
+    "services": [
+      "Passport issuance and renewal",
+      "NICOP application (forwarded to NADRA — no on-site biometrics)",
+      "Document attestation",
+      "Police character certificate (PCC) processing",
+      "Birth, marriage, and death certificate registration",
+      "Power of Attorney attestation"
+    ],
+    "requirements": [
+      "Valid appointment",
+      "Current Pakistani passport (original + 1 photocopy)",
+      "2 recent passport-size photographs (white background)",
+      "Completed application form",
+      "Fee in Norwegian Krone (NOK) — verify accepted payment method",
+      "Proof of residence in Norway, Denmark, Iceland, or Finland"
+    ],
+    "steps": [
+      "Book appointment by phone or email — call the embassy during office hours",
+      "Fill in application forms in advance",
+      "Travel to Frogner district in Oslo — accessible by tram or bus",
+      "Submit documents and fee at the consular counter",
+      "Note: no NADRA desk — NICOP first-time applicants requiring biometrics may need to visit the Berlin or London mission, or use the NADRA online portal for renewals",
+      "Documents returned by secure post to your Norwegian address"
+    ],
+    "fees": [
+      "Passport (5 years): NOK 900–1,100",
+      "Passport (10 years): NOK 1,200–1,400",
+      "Emergency Travel Document: NOK 450",
+      "NICOP: USD 20–50 equivalent",
+      "Document attestation: NOK 150 per document"
+    ],
+    "notes": [
+      "Jurisdiction: Norway, Denmark, Iceland, and Finland",
+      "No NADRA desk — biometric services for NICOP are limited; contact the embassy for current arrangements",
+      "Oslo has a significant Pakistani community, particularly in the Grønland area",
+      "Shorter consular hours than other missions — confirm your appointment timing carefully"
+    ],
+    "lastUpdated": "2026-03-22"
+  },
+  {
+    "id": "pak-embassy-abudhabi",
+    "name": "Embassy of Pakistan",
+    "city": "Abu Dhabi",
+    "country": "United Arab Emirates",
+    "region": "Middle East",
+    "address": "Plot 47-48, Sector W10/2, Diplomatic Area, Abu Dhabi",
+    "phone": "+971-2-444-7800",
+    "website": "pakembassyuae.org",
+    "hours": "Mon–Fri 8:00 AM – 4:00 PM; Consular: 8:00 AM – 12:00 PM",
+    "nadraDesk": true,
+    "passportServices": true,
+    "nicopServices": true,
+    "services": [
+      "Passport issuance and renewal",
+      "NICOP application and renewal (NADRA desk on-site)",
+      "POC (Pakistan Origin Card) biometrics",
+      "Document attestation",
+      "Police character certificate (PCC) processing",
+      "Birth, marriage, and death registration",
+      "Power of Attorney attestation",
+      "Overseas employment contract attestation",
+      "CNIC renewal for Pakistani residents in UAE"
+    ],
+    "requirements": [
+      "Valid appointment (online or in-person token system — verify current method)",
+      "Current Pakistani passport (original + 1 photocopy)",
+      "UAE residence visa or entry stamp (original + photocopy)",
+      "2 recent passport-size photographs (white background)",
+      "Completed application form",
+      "Fee in UAE Dirhams (AED) — cash accepted",
+      "Emirates ID (for UAE residents)"
+    ],
+    "steps": [
+      "Book an appointment online or via the embassy phone line; walk-in token systems are sometimes available — verify current procedure",
+      "Bring passport, Emirates ID, residence visa copy, photos, and completed form",
+      "Visit the Diplomatic Area in Abu Dhabi — drive or use taxi as it is not on public bus routes",
+      "Submit documents at the consular counter and pay in AED",
+      "NADRA desk handles NICOP, CNIC renewal, and POC biometrics on-site",
+      "Passport returned within 7–10 working days; NICOP takes 3–5 weeks"
+    ],
+    "fees": [
+      "Passport renewal: AED 300–400",
+      "New passport: AED 350–450",
+      "Emergency Travel Document: AED 150",
+      "NICOP: AED 80–200 depending on category",
+      "Document attestation: AED 50–75 per document",
+      "Employment contract attestation: AED 50"
+    ],
+    "notes": [
+      "One of the busiest Pakistani missions globally — over 1.5 million Pakistanis live in the UAE",
+      "Jurisdiction: Abu Dhabi emirate; Dubai and northern emirates use the Consulate General in Dubai",
+      "Morning consular hours only — arrive early as queues build up quickly",
+      "For employment contract attestation, bring original contract and employer's trade licence copy",
+      "The NADRA desk here also processes CNIC renewals for Pakistanis returning home"
+    ],
+    "lastUpdated": "2026-03-22"
+  },
+  {
+    "id": "pak-consulate-dubai",
+    "name": "Consulate General of Pakistan",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "region": "Middle East",
+    "address": "Khalid Bin Al Waleed Road, Bur Dubai, Dubai",
+    "phone": "+971-4-220-0222",
+    "website": "pakistanconsulatedubai.org",
+    "hours": "Mon–Fri 8:00 AM – 4:00 PM; Consular: 8:00 AM – 12:00 PM",
+    "nadraDesk": true,
+    "passportServices": true,
+    "nicopServices": true,
+    "services": [
+      "Passport issuance and renewal",
+      "NICOP application and renewal (NADRA desk on-site)",
+      "POC (Pakistan Origin Card) biometrics",
+      "Document attestation",
+      "Police character certificate (PCC) processing",
+      "Birth, marriage, and death registration",
+      "Power of Attorney attestation",
+      "Employment contract attestation",
+      "CNIC renewal"
+    ],
+    "requirements": [
+      "Valid appointment or token (verify current system)",
+      "Current Pakistani passport (original + 1 photocopy)",
+      "UAE residence visa (original + photocopy)",
+      "Emirates ID",
+      "2 recent passport-size photographs (white background)",
+      "Completed application form",
+      "Fee in AED (cash)"
+    ],
+    "steps": [
+      "Check the consulate website for the current appointment system — token-based and online systems have both been in use",
+      "Arrive early; consular windows close at noon and queues are long",
+      "Located in Bur Dubai near Meena Bazaar — accessible by Metro (BurJuman station) or taxi",
+      "Submit documents and pay fee at the relevant counter",
+      "NADRA counter processes NICOP, POC, and CNIC biometrics on-site",
+      "Passport/documents ready in 7–10 days; NICOP takes 3–5 weeks"
+    ],
+    "fees": [
+      "Passport renewal: AED 300–400",
+      "New passport: AED 350–450",
+      "Emergency Travel Document: AED 150",
+      "NICOP: AED 80–200",
+      "Document attestation: AED 50–75 per document",
+      "Employment contract attestation: AED 50"
+    ],
+    "notes": [
+      "Jurisdiction: Dubai, Sharjah, Ajman, Umm Al Quwain, Ras Al Khaimah, and Fujairah",
+      "Located in Bur Dubai — this area has a large Pakistani population and the consulate is very busy",
+      "Arrive before 8:00 AM if possible — queues form before opening",
+      "Employment contract attestation is common here given the large number of Pakistani workers in UAE",
+      "The NADRA desk here processes hundreds of CNICs and NICOPs per day — be patient with wait times"
+    ],
+    "lastUpdated": "2026-03-22"
+  },
+  {
+    "id": "pak-embassy-riyadh",
+    "name": "Embassy of Pakistan",
+    "city": "Riyadh",
+    "country": "Saudi Arabia",
+    "region": "Middle East",
+    "address": "Diplomatic Quarter, Riyadh 11693",
+    "phone": "+966-11-480-6200",
+    "website": "pakembassysaudi.com",
+    "hours": "Sun–Thu 8:00 AM – 4:00 PM; Consular: 8:00 AM – 12:00 PM",
+    "nadraDesk": true,
+    "passportServices": true,
+    "nicopServices": true,
+    "services": [
+      "Passport issuance and renewal",
+      "NICOP application and renewal (NADRA desk on-site)",
+      "POC (Pakistan Origin Card) biometrics",
+      "Document attestation",
+      "Police character certificate (PCC) processing",
+      "Birth, marriage, and death registration",
+      "Power of Attorney attestation",
+      "Employment and labour contract attestation",
+      "Hajj/Umrah documentation assistance"
+    ],
+    "requirements": [
+      "Valid appointment or token number",
+      "Current Pakistani passport (original + 1 photocopy)",
+      "Saudi Iqama (residence permit — original + photocopy)",
+      "2 recent passport-size photographs (white background)",
+      "Completed application form",
+      "Fee in Saudi Riyal (SAR) — cash",
+      "Sponsor letter (for some employment-related services)"
+    ],
+    "steps": [
+      "Note: Saudi Arabia operates on a Sunday–Thursday work week — the embassy is closed on Fridays and Saturdays",
+      "Book appointment via phone or through the embassy website",
+      "Travel to the Diplomatic Quarter in Riyadh — drive or use taxi; no public bus service",
+      "Bring Iqama, passport, photos, and fee in SAR cash",
+      "NADRA desk processes NICOP and POC biometrics on-site",
+      "For labour/employment attestation, also bring your employer's CR (commercial registration) copy",
+      "Documents returned by courier or available for collection after processing"
+    ],
+    "fees": [
+      "Passport renewal: SAR 350–450",
+      "Emergency Travel Document: SAR 150",
+      "NICOP: SAR 80–200",
+      "Document attestation: SAR 50–100 per document",
+      "Employment contract attestation: SAR 75",
+      "Hajj/Umrah document processing: SAR 50"
+    ],
+    "notes": [
+      "Over 2 million Pakistanis live in Saudi Arabia — this is one of Pakistan's busiest consular posts",
+      "Saudi Arabia uses a Sunday–Thursday work week — do not visit on a Friday or Saturday",
+      "For employment-related attestations (required by Saudi employers), bring your original contract and employer's CR",
+      "Hajj and Umrah visa facilitation is available through the embassy — apply well ahead of season",
+      "Jurisdiction: Riyadh, central and eastern Saudi Arabia; Jeddah consulate serves western region"
+    ],
+    "lastUpdated": "2026-03-22"
+  },
+  {
+    "id": "pak-consulate-jeddah",
+    "name": "Consulate General of Pakistan",
+    "city": "Jeddah",
+    "country": "Saudi Arabia",
+    "region": "Middle East",
+    "address": "Al Nuzlah Al Yamaniyah District, Jeddah",
+    "phone": "+966-12-699-9999",
+    "website": "pakistanconsulatejeddah.org",
+    "hours": "Sun–Thu 8:00 AM – 4:00 PM; Consular: 8:00 AM – 12:00 PM",
+    "nadraDesk": true,
+    "passportServices": true,
+    "nicopServices": true,
+    "services": [
+      "Passport issuance and renewal",
+      "NICOP application and renewal (NADRA desk on-site)",
+      "POC (Pakistan Origin Card) biometrics",
+      "Document attestation",
+      "Police character certificate (PCC) processing",
+      "Birth, marriage, and death registration",
+      "Power of Attorney attestation",
+      "Employment contract attestation",
+      "Hajj/Umrah documentation assistance"
+    ],
+    "requirements": [
+      "Valid appointment or token number",
+      "Current Pakistani passport (original + 1 photocopy)",
+      "Saudi Iqama (original + photocopy)",
+      "2 recent passport-size photographs (white background)",
+      "Completed application form",
+      "Fee in SAR cash",
+      "Employer sponsor letter (for work-related services)"
+    ],
+    "steps": [
+      "Note: Sunday–Thursday work week applies here as well",
+      "Book appointment via phone or consulate website",
+      "Travel to Al Nuzlah Al Yamaniyah district in Jeddah — best by private car or taxi",
+      "Bring Iqama, passport, photographs, and SAR cash fee",
+      "NADRA desk on-site handles NICOP and POC biometrics",
+      "Employment contract attestation requires employer's trade registration documents",
+      "Collect receipt and follow up on timeline"
+    ],
+    "fees": [
+      "Passport renewal: SAR 350–450",
+      "Emergency Travel Document: SAR 150",
+      "NICOP: SAR 80–200",
+      "Document attestation: SAR 50–100 per document",
+      "Employment contract attestation: SAR 75"
+    ],
+    "notes": [
+      "Jurisdiction: Makkah, Madinah, Jeddah, Taif, and the western region of Saudi Arabia",
+      "Jeddah is a major hub for Pakistani workers in Saudi Arabia — expect high footfall",
+      "Hajj/Umrah season brings extremely heavy demand — plan consular visits well outside peak months",
+      "Sunday–Thursday work week — closed Friday and Saturday",
+      "Saudi Iqama is required for most services; ensure yours is valid before your visit"
+    ],
+    "lastUpdated": "2026-03-22"
+  },
+  {
+    "id": "pak-hc-canberra",
+    "name": "High Commission of Pakistan",
+    "city": "Canberra",
+    "country": "Australia",
+    "region": "Asia-Pacific",
+    "address": "4 Timbarra Crescent, O'Malley ACT 2606",
+    "phone": "+61-2-6290-1676",
+    "website": "pakistan.org.au",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM; Consular: 9:30 AM – 12:30 PM",
+    "nadraDesk": false,
+    "passportServices": true,
+    "nicopServices": true,
+    "services": [
+      "Passport issuance and renewal",
+      "NICOP application (forwarded to NADRA — limited on-site biometrics)",
+      "Document attestation",
+      "Police character certificate (PCC) processing",
+      "Birth, marriage, and death certificate registration",
+      "Power of Attorney attestation"
+    ],
+    "requirements": [
+      "Valid appointment (email booking required)",
+      "Current Pakistani passport (original + 1 photocopy)",
+      "2 recent passport-size photographs (white background)",
+      "Completed application form",
+      "Fee by bank cheque or money order payable to 'High Commission of Pakistan'",
+      "Proof of ACT or surrounding area residence"
+    ],
+    "steps": [
+      "Email the High Commission to request an appointment — online booking may also be available",
+      "Fill out the required forms and download from the website before visiting",
+      "Travel to O'Malley suburb in Canberra — no public transport direct to the area; drive or taxi",
+      "Submit documents and fee at the consular window",
+      "For NICOP: note that no NADRA desk is available; biometric requirements may require you to visit Sydney consulate or make arrangements through NADRA online portal",
+      "Documents returned by Australia Post registered mail"
+    ],
+    "fees": [
+      "Passport (5 years): AUD 130",
+      "Passport (10 years): AUD 170",
+      "Emergency Travel Document: AUD 65",
+      "NICOP application fee: USD 20–50 equivalent",
+      "Document attestation: AUD 25 per document"
+    ],
+    "notes": [
+      "Jurisdiction: ACT, Queensland, South Australia, Western Australia, Northern Territory, and Tasmania",
+      "No NADRA desk — NICOP applicants needing biometrics should visit the Sydney consulate if possible",
+      "Canberra is primarily for ACT residents; most of the Pakistani community is concentrated in Sydney and Melbourne",
+      "Bank cheque or money order only — no cash"
+    ],
+    "lastUpdated": "2026-03-22"
+  },
+  {
+    "id": "pak-consulate-sydney",
+    "name": "Consulate General of Pakistan",
+    "city": "Sydney",
+    "country": "Australia",
+    "region": "Asia-Pacific",
+    "address": "Suite 1801, 1 Market Street, Sydney NSW 2000",
+    "phone": "+61-2-9299-4800",
+    "website": "pakistanconsulatesydney.org.au",
+    "hours": "Mon–Fri 9:00 AM – 5:00 PM; Consular: 9:30 AM – 12:30 PM",
+    "nadraDesk": true,
+    "passportServices": true,
+    "nicopServices": true,
+    "services": [
+      "Passport issuance and renewal",
+      "NICOP application and renewal (NADRA desk on-site)",
+      "POC (Pakistan Origin Card) biometrics",
+      "Document attestation",
+      "Police character certificate (PCC) processing",
+      "Birth, marriage, and death certificate registration",
+      "Power of Attorney attestation"
+    ],
+    "requirements": [
+      "Valid appointment",
+      "Current Pakistani passport (original + 1 photocopy)",
+      "2 recent passport-size photographs (white background)",
+      "Completed application form",
+      "Fee by bank cheque or money order payable to 'Consulate General of Pakistan'",
+      "Proof of NSW or Victoria residence"
+    ],
+    "steps": [
+      "Book an appointment online or by phone — this consulate serves NSW and Victoria residents primarily",
+      "Download and fill in forms before visiting",
+      "Travel to 1 Market Street in Sydney CBD — excellent public transport (Town Hall and Wynyard stations nearby)",
+      "Submit documents and fee at the consular window",
+      "NADRA desk on-site for NICOP and POC biometrics",
+      "Documents returned by Australia Post registered mail to your address"
+    ],
+    "fees": [
+      "Passport (5 years): AUD 130",
+      "Passport (10 years): AUD 170",
+      "Emergency Travel Document: AUD 65",
+      "NICOP: USD 20–50 equivalent in AUD",
+      "POC Card: USD 100–150 equivalent in AUD",
+      "Document attestation: AUD 25 per document"
+    ],
+    "notes": [
+      "Jurisdiction: New South Wales and Victoria — Canberra High Commission serves other states",
+      "Located in Sydney CBD — the most convenient Pakistani consulate location in Australia for public transport",
+      "NADRA desk available here — preferred option for NICOP/POC over the Canberra High Commission",
+      "Book appointments well in advance; Sydney has the largest Pakistani community in Australia"
+    ],
+    "lastUpdated": "2026-03-22"
+  }
+]

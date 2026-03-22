@@ -853,5 +853,210 @@
         "a": "Online registration via eServices typically takes 1–3 business days if your documents are in order. Name reservation adds 1–2 days if done separately."
       }
     ]
+  },
+  {
+    "slug": "poc-card-overseas",
+    "title": "How to Get a POC (Pakistan Origin Card)",
+    "emoji": "🌍",
+    "summary": "Not a Pakistani citizen anymore but have Pakistani roots? The POC lets you live, work, and own property in Pakistan. Here's how to apply from abroad.",
+    "category": "Overseas",
+    "city": null,
+    "estimatedTime": "1–2 hours online + embassy visit",
+    "totalFees": "USD 100–150",
+    "lastUpdated": "2026-03-22",
+    "relatedOfficeCategory": "NADRA",
+    "requirements": [
+      "Foreign country passport (currently valid)",
+      "Evidence of Pakistani origin: parent/grandparent's CNIC or old Pakistani passport",
+      "Birth certificate showing Pakistani parentage (if applicable)",
+      "Recent passport-size photograph (white background)",
+      "Proof of current foreign address",
+      "NADRA online account at id.nadra.gov.pk"
+    ],
+    "steps": [
+      {
+        "title": "Confirm eligibility",
+        "body": "POC is for former Pakistani citizens who have acquired foreign nationality, and their children/grandchildren. If you are still a Pakistani national, you need NICOP, not POC. If you hold dual nationality (which Pakistan does not officially recognise), check with NADRA whether you qualify."
+      },
+      {
+        "title": "Gather proof of Pakistani origin",
+        "body": "You need documentary evidence linking you to Pakistan. This can be your own old Pakistani passport, your parent's CNIC, a birth certificate showing a Pakistani parent, or similar documents. NADRA cross-references these against their database."
+      },
+      {
+        "title": "Apply online via NADRA portal",
+        "body": "Go to id.nadra.gov.pk, create an account, and select 'POC' under services. Upload your foreign passport, origin documents, and photograph. Pay the fee online — NADRA accepts international debit/credit cards."
+      },
+      {
+        "title": "Visit a Pakistani embassy or consulate",
+        "body": "POC applicants must complete biometric verification at a Pakistani embassy or consulate in person. Book an appointment online before visiting. Bring original documents — NADRA staff at the embassy will scan and verify them."
+      },
+      {
+        "title": "Receive your POC",
+        "body": "After biometric verification, your POC is processed in Islamabad and mailed to your embassy or to your overseas address, depending on what you selected. Processing typically takes 4–8 weeks."
+      }
+    ],
+    "tips": [
+      "POC holders can buy and sell property in Pakistan without a No-Objection Certificate",
+      "POC is valid for life — it does not expire like NICOP",
+      "POC does not give you voting rights in Pakistan",
+      "Children born to POC holders abroad are also eligible for POC",
+      "If your parents are deceased, you can still prove origin via old documents — contact NADRA helpline for guidance"
+    ],
+    "faqs": [
+      {
+        "q": "What is the difference between NICOP and POC?",
+        "a": "NICOP is for Pakistani nationals living abroad — they are still Pakistani citizens. POC is for people who were Pakistani but gave up citizenship (e.g. naturalised in the US, UK, etc.) and their descendants."
+      },
+      {
+        "q": "Can I work in Pakistan with a POC?",
+        "a": "Yes. POC holders have the right to live and work in Pakistan without a work permit. They can also open bank accounts and own property."
+      },
+      {
+        "q": "Does POC allow visa-free entry to Pakistan?",
+        "a": "Yes. POC holders do not need a visa to enter Pakistan. You present your POC and foreign passport at immigration."
+      },
+      {
+        "q": "My grandfather was Pakistani but I was born abroad. Can I get a POC?",
+        "a": "Yes, Pakistani origin extends to grandchildren. You will need your grandfather's CNIC or Pakistani passport as part of your application."
+      }
+    ]
+  },
+  {
+    "slug": "power-of-attorney-abroad",
+    "title": "How to Execute a Power of Attorney from Abroad",
+    "emoji": "📜",
+    "summary": "Need someone in Pakistan to manage your property, bank account, or legal matters? This guide covers how to create, notarise, and apostille a POA from your country of residence.",
+    "category": "Overseas",
+    "city": null,
+    "estimatedTime": "2–5 days",
+    "totalFees": "USD 50–300 (notary + apostille + attestation)",
+    "lastUpdated": "2026-03-22",
+    "relatedOfficeCategory": null,
+    "requirements": [
+      "Your valid passport",
+      "Details of the person you are authorising (their full name and CNIC number)",
+      "Specific description of what powers you are granting (property address, bank account details, etc.)",
+      "Access to a local notary public in your country of residence",
+      "Apostille service (if your country is a Hague Convention member) OR Pakistani embassy attestation"
+    ],
+    "steps": [
+      {
+        "title": "Draft the POA",
+        "body": "Write or have a lawyer draft a Power of Attorney document in English. Clearly state: your full name and passport number, the attorney-in-fact's name and CNIC number, the exact powers being granted (e.g. sell property at Plot 5, Block A, DHA Lahore), and any time limits. Be specific — vague POAs are often rejected."
+      },
+      {
+        "title": "Get it notarised locally",
+        "body": "Take the signed POA to a local notary public in your country of residence. The notary verifies your identity and witnesses your signature. This costs USD 10–50 depending on your country."
+      },
+      {
+        "title": "Apostille OR embassy attestation",
+        "body": "If your country is a Hague Convention member (USA, UK, Canada, Australia, Germany, etc.), get an Apostille stamp on the document from your country's competent authority (e.g. Secretary of State in the US, Foreign & Commonwealth Office in the UK). If your country is NOT a member, get the document attested by the Pakistani embassy/consulate instead."
+      },
+      {
+        "title": "Send to Pakistan",
+        "body": "Once apostilled or attested, courier the original document to your representative in Pakistan. They must then get the document attested by the Ministry of Foreign Affairs (MoFA) in Islamabad or a provincial foreign affairs office."
+      },
+      {
+        "title": "Register with local authority if needed",
+        "body": "For property transactions, the POA may need to be registered with the Sub-Registrar or relevant authority in the city where the property is located. Your attorney-in-fact handles this locally. Required for court matters and many property deals."
+      }
+    ],
+    "tips": [
+      "Hire a Pakistani lawyer to draft the POA — a poorly worded POA can be rejected by banks or property registrars",
+      "Include an expiry date on the POA (e.g. valid for 1 year) to limit risk",
+      "Keep a certified copy of the POA yourself before sending the original",
+      "For property sales, the buyer's bank may have specific POA wording requirements — ask them before drafting",
+      "Some banks in Pakistan accept only specific types of POA for account operations — check with the bank first"
+    ],
+    "faqs": [
+      {
+        "q": "Can I do a POA over video call?",
+        "a": "Not for Pakistani legal use. The notarisation must be a physical in-person signing. Some countries allow remote online notarisation (RON) but this is generally not accepted for Pakistani property or banking transactions."
+      },
+      {
+        "q": "What is the difference between General and Special POA?",
+        "a": "A General POA grants broad powers across many matters. A Special (or Limited) POA grants authority for one specific task only (e.g. sell a specific property). For high-value matters, a Special POA is safer."
+      },
+      {
+        "q": "My POA was rejected by the bank. What now?",
+        "a": "Banks often have their own POA templates. Ask the bank for their required wording, redo the POA with a notary, and resubmit after apostille/attestation again."
+      },
+      {
+        "q": "Does a POA survive my death?",
+        "a": "No. A standard POA automatically ends upon the death of the grantor. If you need someone to manage your estate after death, you need a Will, not a POA."
+      }
+    ]
+  },
+  {
+    "slug": "transfer-property-via-poa",
+    "title": "How to Transfer Property Remotely Using a POA",
+    "emoji": "🏠",
+    "summary": "Living abroad and need to sell or transfer property in Pakistan? With a valid Power of Attorney, your representative can handle the entire process on your behalf.",
+    "category": "Overseas",
+    "city": null,
+    "estimatedTime": "2–6 weeks (varies by city)",
+    "totalFees": "PKR 50,000–200,000+ (stamp duty, CVT, capital gains tax)",
+    "lastUpdated": "2026-03-22",
+    "relatedOfficeCategory": "Land",
+    "requirements": [
+      "Valid apostilled/attested Power of Attorney (see the POA guide)",
+      "Original title deed or allotment letter of the property",
+      "Your CNIC or NICOP (overseas Pakistanis use NICOP)",
+      "Buyer's CNIC",
+      "NOC from relevant authority (DHA, LDA, CDA, etc.) if applicable",
+      "Utility bills showing the property address",
+      "Tax returns or proof of tax compliance (IRIS/FBR)"
+    ],
+    "steps": [
+      {
+        "title": "Execute and send a POA",
+        "body": "Before anything else, execute a Special Power of Attorney in your country of residence (notarised + apostilled or embassy-attested). The POA should specifically authorise your representative to sell the named property, receive payment, and sign all transfer documents. See the 'How to Execute a POA from Abroad' guide for this step."
+      },
+      {
+        "title": "Get the POA attested in Pakistan",
+        "body": "Once received in Pakistan, your attorney-in-fact must get the POA attested by the Ministry of Foreign Affairs (MoFA). This is done at MoFA offices in Islamabad or through a provincial liaison office. Takes 1–3 days."
+      },
+      {
+        "title": "Get an NOC (if required)",
+        "body": "Many housing societies (DHA, Bahria, LDA-approved schemes) require a No-Objection Certificate before transfer. Your attorney applies for the NOC from the relevant society office using the POA, original documents, and paid membership/dues receipts."
+      },
+      {
+        "title": "Execute the sale deed at Sub-Registrar",
+        "body": "The attorney-in-fact and buyer appear before the Sub-Registrar with all documents. Stamp duty and other taxes are paid before registration. The Registrar records the transfer and issues a registered sale deed. Your attorney signs on your behalf using the POA."
+      },
+      {
+        "title": "Mutation (intiqal) at the Patwari",
+        "body": "After registration, file for mutation with the local Patwari (revenue officer) to update the land record in your name (or buyer's name). This is the final legal step that updates government ownership records."
+      },
+      {
+        "title": "Capital Gains Tax (if selling)",
+        "body": "If you are selling, Capital Gains Tax (CGT) is payable depending on how long you've owned the property. File this on FBR IRIS or have a local accountant handle it. Overseas Pakistanis must be on the Active Taxpayers List to avoid withholding tax penalties."
+      }
+    ],
+    "tips": [
+      "Hire a local property lawyer in the relevant city — they know the specific requirements of each Sub-Registrar office",
+      "Do NOT transfer title before receiving payment — instruct your attorney to ensure payment is in the bank first",
+      "Ensure you file your Pakistani tax return as an overseas Pakistani — this affects your withholding tax rate significantly",
+      "Video call your attorney during key steps for peace of mind",
+      "If selling DHA property, contact DHA's overseas desk — they have a dedicated service for expat sellers"
+    ],
+    "faqs": [
+      {
+        "q": "Can I sell property without coming to Pakistan?",
+        "a": "Yes. With a valid POA, your representative can complete the entire process — NOC, registration, and mutation — without you being present."
+      },
+      {
+        "q": "Do I need a NICOP to sell property as an overseas Pakistani?",
+        "a": "Yes. NICOP (or POC for non-citizen Pakistanis) is required for property transactions in Pakistan if you are abroad. Your CNIC alone may not be accepted if your address is not current."
+      },
+      {
+        "q": "What taxes do I pay when selling property as an overseas Pakistani?",
+        "a": "Capital Gains Tax varies by holding period (0–15% roughly). Withholding tax on the sale proceeds is also deducted at source. If you are a non-filer, the rate is higher — staying on the Active Taxpayers List saves significantly."
+      },
+      {
+        "q": "My attorney misused the POA. What are my options?",
+        "a": "You can revoke a POA at any time by executing a 'Revocation of POA' document (also notarised and attested) and sending it to the relevant Sub-Registrar. For fraud, file an FIR and consult a lawyer immediately."
+      }
+    ]
   }
 ]

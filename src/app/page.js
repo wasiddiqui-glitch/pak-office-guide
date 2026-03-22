@@ -42,6 +42,9 @@ export default function HomePage() {
           <Link href="/guides" style={layout.buttonPrimary}>
             Guides
           </Link>
+          <Link href="/overseas" style={layout.buttonPrimary}>
+            ✈️ Overseas
+          </Link>
           <Link href="/cities" style={layout.buttonSoft}>
             Browse Cities
           </Link>
@@ -54,8 +57,8 @@ export default function HomePage() {
 
       
       <section style={{ ...styles.grid2, marginTop: 15 }}>
-        <div style={styles.card}>
-          <h2 style={styles.h2}>Cities</h2>
+        <div style={layout.cityCard}>
+          <h2 style={styles.h2}>🏙️ Cities</h2>
           <div style={styles.grid}>
             {cities.map((c) => (
               <Link
@@ -66,13 +69,13 @@ export default function HomePage() {
               <div style={{ fontWeight: 800 }}>{c}</div>
               <div style={styles.small}>View offices</div>
             </Link>
-            
+
             ))}
           </div>
         </div>
 
         <div style={layout.card}>
-          <h2 style={styles.h2}>Categories</h2>
+          <h2 style={styles.h2}>🗂️ Categories</h2>
           <div style={styles.grid}>
             {categories.map((cat) => (
               <Link
