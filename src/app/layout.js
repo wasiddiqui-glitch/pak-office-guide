@@ -1,4 +1,5 @@
 import BottomNav from "@/components/BottomNav";
+import ChatBot from "@/components/ChatBot";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
@@ -63,6 +64,7 @@ html { scroll-behavior: smooth; }
 
         {children}
         <BottomNav />
+        <ChatBot />
         <Analytics />
       </body>
     </html>
