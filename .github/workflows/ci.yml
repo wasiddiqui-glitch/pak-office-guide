@@ -4,6 +4,7 @@ on:
   pull_request:
   push:
     branches: [main]
+  workflow_dispatch: {} # allows a manual re-run from the Actions tab
 
 env:
   # A plain Postgres service container — unlike local dev's `prisma dev` proxy,

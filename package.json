@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "postinstall": "prisma generate",
     "dev": "next dev --webpack",
     "build": "next build --webpack",
     "start": "next start",
@@ -44,5 +45,12 @@
     "ioredis": "^6.0.0",
     "typescript": "^6.0.3",
     "vitest": "^4.1.11"
+  },
+  "allowScripts": {
+    "@prisma/engines": true,
+    "prisma": true,
+    "sharp": true,
+    "unrs-resolver": true,
+    "@sentry/cli": true
   }
 }
