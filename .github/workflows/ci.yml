@@ -41,10 +41,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
+          # No npm cache: this project is small enough that it isn't worth it,
+          # and a stale/corrupted cache entry keyed by a lockfile hash that
+          # briefly failed to install was a real suspect while debugging CI.
 
       - name: Install dependencies
-        run: npm ci
+        # --foreground-scripts: makes postinstall (prisma generate) output show
+        # up inline in this step's log instead of being buffered/hidden.
+        run: npm ci --foreground-scripts
 
       - name: Lint
         run: npm run lint
