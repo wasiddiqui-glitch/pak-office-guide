@@ -1,83 +1,37 @@
 import OpenAI from "openai";
-import offices from "@/data/offices.json";
-
-if (!process.env.OPENAI_API_KEY) {
-  console.warn("OPENAI_API_KEY is not set — AI search will use keyword fallback only.");
-}
+import { searchOffices } from "@/lib/search/officeSearch";
+import { slugify } from "@/lib/slug";
+import { OFFICE_CATEGORIES, CITIES } from "@/lib/constants";
+import { aiSearchBodySchema } from "@/lib/validation/search";
+import { withErrorHandling } from "@/lib/http/errors";
+import { enforceRateLimit } from "@/lib/rateLimit";
+import { getOrSetCache, cacheKey } from "@/lib/cache/redis";
+import { recordSearch, recordOpenAiCall } from "@/lib/metrics";
 
 const client = process.env.OPENAI_API_KEY
   ? new OpenAI({ apiKey: process.env.OPENAI_API_KEY })
   : null;
 
-const KNOWN_CATEGORIES = [
-  "NADRA",
-  "Passport",
-  "Driving License",
-  "Utilities",
-  "Police",
-  "Excise",
-  "Land",
-  "Courts",
-  "Post Office",
-];
+const FILTER_CACHE_TTL_SECONDS = 60 * 60; // NL -> filters is deterministic-ish and expensive; cache it for an hour.
 
 function normalizeText(value) {
   return String(value || "").toLowerCase().trim();
 }
 
-function scoreOffice(office, filters) {
-  let score = 0;
-
-  const city = normalizeText(office.city);
-  const area = normalizeText(office.area);
-  const category = normalizeText(office.category);
-  const name = normalizeText(office.name);
-  const address = normalizeText(office.address);
-  const notes = Array.isArray(office.notes)
-    ? office.notes.map(normalizeText).join(" ")
-    : normalizeText(office.notes);
-  const requirements = Array.isArray(office.requirements)
-    ? office.requirements.map(normalizeText).join(" ")
-    : "";
-  const steps = Array.isArray(office.steps)
-    ? office.steps.map(normalizeText).join(" ")
-    : "";
-
-  if (filters.city && city === normalizeText(filters.city)) score += 5;
-  if (filters.category && category === normalizeText(filters.category)) score += 5;
-  if (filters.area && area.includes(normalizeText(filters.area))) score += 3;
-
-  for (const keyword of filters.keywords || []) {
-    const k = normalizeText(keyword);
-    if (!k) continue;
-
-    if (name.includes(k)) score += 2;
-    if (address.includes(k)) score += 1;
-    if (notes.includes(k)) score += 1;
-    if (requirements.includes(k)) score += 1;
-    if (steps.includes(k)) score += 1;
-    if (category.includes(k)) score += 1;
-    if (city.includes(k)) score += 1;
-    if (area.includes(k)) score += 1;
-  }
-
-  return score;
-}
-
 function fallbackExtract(query) {
   const q = normalizeText(query);
 
-  const cities = [...new Set(offices.map((o) => o.city).filter(Boolean))];
-  const city = cities.find((c) => q.includes(normalizeText(c))) || null;
+  const city = CITIES.find((c) => q.includes(normalizeText(c))) || null;
 
   let category = null;
-
   if (q.includes("cnic") || q.includes("nicop") || q.includes("b-form") || q.includes("nadra")) {
     category = "NADRA";
   } else if (q.includes("passport")) {
     category = "Passport";
   } else if (q.includes("license") || q.includes("learner")) {
     category = "Driving License";
+  } else if (q.includes("traffic") || q.includes("challan")) {
+    category = "Traffic";
   } else if (
     q.includes("electricity") ||
     q.includes("bill") ||
@@ -86,8 +40,6 @@ function fallbackExtract(query) {
     q.includes("utility")
   ) {
     category = "Utilities";
-  } else if (q.includes("police")) {
-    category = "Police";
   }
 
   return {
@@ -108,85 +60,74 @@ function sanitizeFilters(filters) {
     category: typeof filters?.category === "string" ? filters.category : null,
     area: typeof filters?.area === "string" ? filters.area : null,
     keywords: Array.isArray(filters?.keywords)
-      ? filters.keywords
-          .map((k) => String(k).trim())
-          .filter(Boolean)
-          .slice(0, 8)
+      ? filters.keywords.map((k) => String(k).trim()).filter(Boolean).slice(0, 8)
       : [],
   };
 }
 
-export async function POST(req) {
+async function extractFilters(query) {
   try {
-    const { query } = await req.json();
+    if (!client) throw new Error("No API key");
 
-    if (!query || !query.trim()) {
-      return Response.json({ error: "Query is required." }, { status: 400 });
-    }
-
-    if (query.length > 200) {
-      return Response.json({ error: "Query is too long." }, { status: 400 });
-    }
-
-    let filters;
-
-    try {
-      if (!client) throw new Error("No API key");
-      const response = await client.chat.completions.create({
-        model: "gpt-4o-mini",
-        response_format: { type: "json_object" },
-        messages: [
-          {
-            role: "system",
-            content: `
+    const start = Date.now();
+    const response = await client.chat.completions.create({
+      model: "gpt-4o-mini",
+      response_format: { type: "json_object" },
+      messages: [
+        {
+          role: "system",
+          content: `
 You extract structured search filters for a Pakistan public office finder.
 Respond with a JSON object only — no extra text.
 
 Rules:
 - Do not invent offices.
 - Extract only from the user's query.
-- Known categories: ${KNOWN_CATEGORIES.join(", ")}
+- Known categories: ${OFFICE_CATEGORIES.join(", ")}
 - CNIC, NICOP, B-form -> NADRA
 - learner permit, driving test, driving licence, license renewal -> Driving License
 - electricity, gas, water, bill, customer service, utility -> Utilities
 - passport renewal/new passport -> Passport
-- police verification -> Police
+- traffic challan/violation -> Traffic
 - Keep keywords short and useful.
 - If missing, return null for city/category/area and [] for keywords.
 
 Return format: {"city": string|null, "category": string|null, "area": string|null, "keywords": string[]}
-            `.trim(),
-          },
-          {
-            role: "user",
-            content: query,
-          },
-        ],
-      });
-
-      const raw = response.choices[0].message.content;
-      filters = sanitizeFilters(JSON.parse(raw));
-    } catch (err) {
-      console.error("Structured AI parse failed, using fallback:", err);
-      filters = fallbackExtract(query);
-    }
-
-    const ranked = offices
-      .map((office) => ({
-        ...office,
-        _score: scoreOffice(office, filters),
-      }))
-      .filter((office) => office._score > 0)
-      .sort((a, b) => b._score - a._score)
-      .slice(0, 10);
-
-    return Response.json({
-      query,
-      filters,
-      results: ranked,
+          `.trim(),
+        },
+        { role: "user", content: query },
+      ],
     });
-  } catch (error) {
-    console.error("AI search error:", error);
-    return Response.json({ error: "Something went wrong." }, { status: 500 });
+    await recordOpenAiCall({ operation: "filter_extraction", latencyMs: Date.now() - start });
+
+    return sanitizeFilters(JSON.parse(response.choices[0].message.content));
+  } catch (err) {
+    console.error("Structured AI parse failed, using fallback:", err);
+    return fallbackExtract(query);
   }
 }
+
+export const POST = withErrorHandling(async (req) => {
+  await enforceRateLimit("aiSearch", req);
+
+  const { query } = aiSearchBodySchema.parse(await req.json());
+
+  const filters = await getOrSetCache(
+    cacheKey("ai-search-filters", { query: query.toLowerCase() }),
+    FILTER_CACHE_TTL_SECONDS,
+    () => extractFilters(query)
+  );
+
+  const start = Date.now();
+  const { results, pagination } = await searchOffices({
+    q: filters.keywords.join(" ") || undefined,
+    city: filters.city ? slugify(filters.city) : undefined,
+    category: filters.category ? slugify(filters.category) : undefined,
+    area: filters.area || undefined,
+    page: 1,
+    pageSize: 10,
+  });
+  await recordSearch({ zeroResults: pagination.total === 0, latencyMs: Date.now() - start });
+
+  return Response.json({ query, filters, results, pagination });
+});

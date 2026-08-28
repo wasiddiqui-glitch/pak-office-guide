@@ -10,7 +10,7 @@ import SuggestCorrectionButton from "@/components/SuggestCorrectionButton";
 
 export async function generateMetadata({ params }) {
   const { id } = await params;
-  const office = getOfficeById(id);
+  const office = await getOfficeById(id);
   if (!office) return { title: "Office not found" };
   return {
     title: `${office.name} — ${office.city}`,
@@ -24,7 +24,7 @@ export async function generateMetadata({ params }) {
 
 export default async function OfficePage({ params }) {
   const { id } = await params;
-  const office = getOfficeById(id);
+  const office = await getOfficeById(id);
 
   if (!office) {
     return (
@@ -32,7 +32,7 @@ export default async function OfficePage({ params }) {
         <div style={layout.container}>
           <div style={layout.card}>
             <h1 style={layout.h1}>Office not found</h1>
-            <p style={layout.sub}>Check the ID in src/data/offices.json</p>
+            <p style={layout.sub}>This office ID doesn&apos;t exist.</p>
             <Link href="/" style={layout.pill}>
               Go Home
             </Link>

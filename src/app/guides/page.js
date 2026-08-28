@@ -39,8 +39,8 @@ export const metadata = {
   description: "Step-by-step guides for common government tasks in Pakistan — CNIC renewal, passport, driving license, property transfer, and more.",
 };
 
-export default function GuidesPage() {
-  const guides = getAllGuides();
+export default async function GuidesPage() {
+  const guides = await getAllGuides();
 
   return (
     <main className="page-transition" style={layout.page}>

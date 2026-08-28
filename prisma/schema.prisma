@@ -1,10 +1,13 @@
 generator client {
   provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
 }
 
 datasource db {
   provider = "postgresql"
 }
+
+// ─── Lookups ────────────────────────────────────────────────────────────────
 
 model City {
   id        String   @id @default(cuid())
@@ -15,30 +18,51 @@ model City {
   updatedAt DateTime @updatedAt
 }
 
-model Office {
-  id          String   @id @default(cuid())
-  cityId      String
-  city        City     @relation(fields: [cityId], references: [id], onDelete: Cascade)
+model Category {
+  id        String   @id @default(cuid())
+  name      String   @unique
+  slug      String   @unique
+  icon      String?
+  offices   Office[]
+  guides    Guide[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
 
-  name        String
-  category    String
-  area        String?
-  address     String?
-  hours       String?
-  website     String?
-  phone       String?
-  notes       String?
-  lastUpdated DateTime?
+// ─── Offices ────────────────────────────────────────────────────────────────
+
+model Office {
+  id         String   @id
+  cityId     String
+  city       City     @relation(fields: [cityId], references: [id], onDelete: Cascade)
+  categoryId String
+  category   Category @relation(fields: [categoryId], references: [id], onDelete: Restrict)
+
+  name           String
+  area           String?
+  address        String?
+  googleMapsLink String?
+  hours          String?
+  website        String?
+  phone          String?
+  lat            Float?
+  lng            Float?
+  lastUpdated    DateTime?
 
   requirements OfficeRequirement[]
   steps        OfficeStep[]
   fees         OfficeFee[]
+  notes        OfficeNote[]
+
+  // Maintained by a DB trigger (see migration SQL) — weighted over name/category/city/area/address.
+  searchVector Unsupported("tsvector")?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  @@index([cityId, category])
+  @@index([cityId, categoryId])
   @@index([name])
+  @@index([searchVector], type: Gin)
 }
 
 model OfficeRequirement {
@@ -66,4 +90,187 @@ model OfficeFee {
   text     String
   position Int
   @@index([officeId, position])
+}
+
+model OfficeNote {
+  id       String @id @default(cuid())
+  officeId String
+  office   Office @relation(fields: [officeId], references: [id], onDelete: Cascade)
+  text     String
+  position Int
+  @@index([officeId, position])
+}
+
+// ─── Guides ─────────────────────────────────────────────────────────────────
+
+model Guide {
+  id         String    @id @default(cuid())
+  slug       String    @unique
+  title      String
+  emoji      String?
+  summary    String?
+  categoryId String?
+  category   Category? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  city       String?
+
+  estimatedTime          String?
+  totalFees               String?
+  relatedOfficeCategory  String?
+  lastUpdated            DateTime?
+
+  requirements GuideRequirement[]
+  steps        GuideStep[]
+  tips         GuideTip[]
+  faqs         GuideFaq[]
+
+  // Maintained by a DB trigger — weighted over title/summary/category.
+  searchVector Unsupported("tsvector")?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([categoryId])
+  @@index([searchVector], type: Gin)
+}
+
+model GuideRequirement {
+  id       String @id @default(cuid())
+  guideId  String
+  guide    Guide  @relation(fields: [guideId], references: [id], onDelete: Cascade)
+  text     String
+  position Int
+  @@index([guideId, position])
+}
+
+model GuideStep {
+  id       String @id @default(cuid())
+  guideId  String
+  guide    Guide  @relation(fields: [guideId], references: [id], onDelete: Cascade)
+  title    String
+  body     String
+  position Int
+  @@index([guideId, position])
+}
+
+model GuideTip {
+  id       String @id @default(cuid())
+  guideId  String
+  guide    Guide  @relation(fields: [guideId], references: [id], onDelete: Cascade)
+  text     String
+  position Int
+  @@index([guideId, position])
+}
+
+model GuideFaq {
+  id       String @id @default(cuid())
+  guideId  String
+  guide    Guide  @relation(fields: [guideId], references: [id], onDelete: Cascade)
+  q        String
+  a        String
+  position Int
+  @@index([guideId, position])
+}
+
+// ─── Embassies ──────────────────────────────────────────────────────────────
+
+model Embassy {
+  id     String @id
+  name   String
+  city   String
+  country String
+  region String
+
+  address String?
+  phone   String?
+  website String?
+  hours   String?
+
+  nadraDesk        Boolean @default(false)
+  passportServices Boolean @default(false)
+  nicopServices    Boolean @default(false)
+  lastUpdated      DateTime?
+
+  services     EmbassyService[]
+  requirements EmbassyRequirement[]
+  steps        EmbassyStep[]
+  fees         EmbassyFee[]
+  notes        EmbassyNote[]
+
+  // Maintained by a DB trigger — weighted over name/city/country.
+  searchVector Unsupported("tsvector")?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([region])
+  @@index([searchVector], type: Gin)
+}
+
+model EmbassyService {
+  id        String  @id @default(cuid())
+  embassyId String
+  embassy   Embassy @relation(fields: [embassyId], references: [id], onDelete: Cascade)
+  text      String
+  position  Int
+  @@index([embassyId, position])
+}
+
+model EmbassyRequirement {
+  id        String  @id @default(cuid())
+  embassyId String
+  embassy   Embassy @relation(fields: [embassyId], references: [id], onDelete: Cascade)
+  text      String
+  position  Int
+  @@index([embassyId, position])
+}
+
+model EmbassyStep {
+  id        String  @id @default(cuid())
+  embassyId String
+  embassy   Embassy @relation(fields: [embassyId], references: [id], onDelete: Cascade)
+  text      String
+  position  Int
+  @@index([embassyId, position])
+}
+
+model EmbassyFee {
+  id        String  @id @default(cuid())
+  embassyId String
+  embassy   Embassy @relation(fields: [embassyId], references: [id], onDelete: Cascade)
+  text      String
+  position  Int
+  @@index([embassyId, position])
+}
+
+model EmbassyNote {
+  id        String  @id @default(cuid())
+  embassyId String
+  embassy   Embassy @relation(fields: [embassyId], references: [id], onDelete: Cascade)
+  text      String
+  position  Int
+  @@index([embassyId, position])
+}
+
+// ─── RAG ────────────────────────────────────────────────────────────────────
+
+model DocumentChunk {
+  id         String @id @default(cuid())
+  sourceType String // "guide" | "office" | "embassy"
+  sourceId   String
+  title      String
+  content    String
+  chunkIndex Int
+  tokenCount Int?
+
+  // pgvector — text-embedding-3-small (1536 dims). Indexed via HNSW in migration SQL.
+  embedding Unsupported("vector(1536)")?
+
+  // Postgres full-text search over `content`, for the keyword half of hybrid retrieval.
+  searchVector Unsupported("tsvector")?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([sourceType, sourceId])
+  @@index([searchVector], type: Gin)
 }

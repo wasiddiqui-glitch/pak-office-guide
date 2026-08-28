@@ -2,8 +2,8 @@ import Link from "next/link";
 import { getCities } from "@/lib/offices";
 import { layout } from "@/lib/ui";
 
-export default function CitiesPage() {
-  const cities = getCities();
+export default async function CitiesPage() {
+  const cities = await getCities();
 
   return (
     <main className="page-transition" style={layout.page}>

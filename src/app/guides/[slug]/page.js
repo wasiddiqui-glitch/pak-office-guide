@@ -5,12 +5,13 @@ import { layout, colors } from "@/lib/ui";
 import CollapsibleSection from "@/components/CollapsibleSection";
 
 export async function generateStaticParams() {
-  return getAllGuides().map((g) => ({ slug: g.slug }));
+  const guides = await getAllGuides();
+  return guides.map((g) => ({ slug: g.slug }));
 }
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
-  const guide = getGuideBySlug(slug);
+  const guide = await getGuideBySlug(slug);
   if (!guide) return { title: "Guide not found" };
   return {
     title: guide.title,
@@ -21,7 +22,7 @@ export async function generateMetadata({ params }) {
 
 export default async function GuidePage({ params }) {
   const { slug } = await params;
-  const guide = getGuideBySlug(slug);
+  const guide = await getGuideBySlug(slug);
 
   if (!guide) {
     return (
@@ -37,9 +38,9 @@ export default async function GuidePage({ params }) {
   }
 
   const relatedOffices = guide.relatedOfficeCategory
-    ? getOfficesByCategory(guide.relatedOfficeCategory).filter(
-        (o) => !guide.city || o.city === guide.city
-      ).slice(0, 6)
+    ? (await getOfficesByCategory(guide.relatedOfficeCategory))
+        .filter((o) => !guide.city || o.city === guide.city)
+        .slice(0, 6)
     : [];
 
   return (

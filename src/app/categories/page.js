@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { getCategories } from "@/lib/offices";
-import offices from "@/data/offices.json";
+import { getCategories, getOfficeCountsByCategory } from "@/lib/offices";
 import { layout } from "@/lib/ui";
 
 const CATEGORY_ICONS = {
@@ -16,8 +15,8 @@ const CATEGORY_ICONS = {
   "Traffic": "🚦",
 };
 
-export default function CategoriesPage() {
-  const categories = getCategories();
+export default async function CategoriesPage() {
+  const [categories, counts] = await Promise.all([getCategories(), getOfficeCountsByCategory()]);
 
   return (
     <main className="page-transition" style={layout.page}>
@@ -34,7 +33,7 @@ export default function CategoriesPage() {
 
         <div style={{ display: "grid", gap: 12 }}>
           {categories.map((cat) => {
-            const count = offices.filter((o) => o.category === cat).length;
+            const count = counts[cat] || 0;
             return (
               <Link
                 key={cat}

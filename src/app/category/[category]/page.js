@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
 export default async function CategoryPage({ params }) {
   const { category: rawCategory } = await params;
   const category = decodeURIComponent(rawCategory);
-  const offices = getOfficesByCategory(category);
+  const offices = await getOfficesByCategory(category);
 
   return (
     <main className="page-transition" style={layout.page}>

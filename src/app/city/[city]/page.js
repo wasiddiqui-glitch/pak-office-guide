@@ -20,7 +20,7 @@ export default async function CityPage({ params }) {
   const { city: rawCity } = await params; // params is a Promise in your Next version
   const city = decodeURIComponent(rawCity);
 
-  const offices = getOfficesByCity(city);
+  const offices = await getOfficesByCity(city);
 
   return (
     <main className="page-transition" style={layout.page}>

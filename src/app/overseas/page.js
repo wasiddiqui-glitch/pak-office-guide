@@ -33,13 +33,13 @@ const OVERSEAS_SLUGS = [
   "transfer-property-via-poa",
 ];
 
-export default function OverseasPage() {
-  const allGuides = getAllGuides();
+export default async function OverseasPage() {
+  const allGuides = await getAllGuides();
   const overseasGuides = OVERSEAS_SLUGS.map((slug) =>
     allGuides.find((g) => g.slug === slug)
   ).filter(Boolean);
 
-  const byRegion = getEmbassiesByRegion();
+  const byRegion = await getEmbassiesByRegion();
   const regionOrder = ["Middle East", "Europe", "North America", "Asia-Pacific"];
 
   return (

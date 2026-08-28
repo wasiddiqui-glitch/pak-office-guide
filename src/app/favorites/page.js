@@ -2,14 +2,17 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import offices from "@/data/offices.json";
 import { layout, colors } from "@/lib/ui";
 import { getFavorites } from "@/lib/favorites";
 
 export default function FavoritesPage() {
   const [ids, setIds] = useState([]);
+  const [favOffices, setFavOffices] = useState([]);
 
   useEffect(() => {
+    // Reading localStorage must happen after mount (SSR has no `window`) —
+    // setting state here, once, on mount is the standard hydration-safe pattern.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIds(getFavorites());
 
     // update if user opens another tab / saves elsewhere
@@ -18,7 +21,23 @@ export default function FavoritesPage() {
     return () => window.removeEventListener("storage", onStorage);
   }, []);
 
-  const favOffices = offices.filter((o) => ids.includes(o.id));
+  useEffect(() => {
+    if (ids.length === 0) return;
+    let cancelled = false;
+    fetch(`/api/offices?ids=${encodeURIComponent(ids.join(","))}`)
+      .then((res) => res.json())
+      .then((json) => {
+        if (!cancelled) setFavOffices(json.offices || []);
+      })
+      .catch(() => {
+        if (!cancelled) setFavOffices([]);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [ids]);
+
+  const displayedOffices = ids.length === 0 ? [] : favOffices;
 
   return (
     <main className="page-transition" style={layout.page}>
@@ -33,7 +52,7 @@ export default function FavoritesPage() {
           </Link>
         </div>
 
-        {favOffices.length === 0 ? (
+        {displayedOffices.length === 0 ? (
           <div style={layout.card}>
             <div style={{ fontWeight: 900, marginBottom: 6 }}>No favorites yet</div>
             <div style={{ color: colors.muted, lineHeight: 1.6 }}>
@@ -46,7 +65,7 @@ export default function FavoritesPage() {
           </div>
         ) : (
           <div style={{ display: "grid", gap: 12 }}>
-            {favOffices.map((o) => (
+            {displayedOffices.map((o) => (
               <Link
                 key={o.id}
                 href={`/office/${o.id}`}

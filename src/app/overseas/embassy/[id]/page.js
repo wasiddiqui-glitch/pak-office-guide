@@ -6,12 +6,13 @@ import { getEmbassyById, getAllEmbassies } from "@/lib/embassies";
 import { layout, colors } from "@/lib/ui";
 
 export async function generateStaticParams() {
-  return getAllEmbassies().map((e) => ({ id: e.id }));
+  const embassies = await getAllEmbassies();
+  return embassies.map((e) => ({ id: e.id }));
 }
 
 export async function generateMetadata({ params }) {
   const { id } = await params;
-  const e = getEmbassyById(id);
+  const e = await getEmbassyById(id);
   if (!e) return { title: "Mission not found" };
   return {
     title: `${e.name} — ${e.city}`,
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }) {
 
 export default async function EmbassyPage({ params }) {
   const { id } = await params;
-  const e = getEmbassyById(id);
+  const e = await getEmbassyById(id);
 
   if (!e) {
     return (

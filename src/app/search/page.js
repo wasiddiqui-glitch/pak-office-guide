@@ -1,11 +1,14 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import offices from "@/data/offices.json";
 import { layout } from "@/lib/ui";
 import { distanceKm, formatDistance } from "@/lib/geo";
+import { slugify } from "@/lib/slug";
+import { CITIES, OFFICE_CATEGORIES } from "@/lib/constants";
 import OpenNowBadge from "@/components/OpenNowBadge";
+
+const PAGE_SIZE = 20;
 
 const theme = {
   ink: "#0b1220",
@@ -163,6 +166,13 @@ export default function SearchPage() {
   const [city, setCity] = useState("All");
   const [category, setCategory] = useState("All");
 
+  const [results, setResults] = useState([]);
+  const [pagination, setPagination] = useState({ page: 1, pageSize: PAGE_SIZE, total: 0, totalPages: 1 });
+  const [loading, setLoading] = useState(false);
+  const [loadingMore, setLoadingMore] = useState(false);
+  const [error, setError] = useState("");
+  const requestId = useRef(0);
+
   const [aiQuery, setAiQuery] = useState("");
   const [aiLoading, setAiLoading] = useState(false);
   const [aiError, setAiError] = useState("");
@@ -173,42 +183,51 @@ export default function SearchPage() {
   const [locLoading, setLocLoading] = useState(false);
   const [locError, setLocError] = useState("");
 
-  const cities = useMemo(
-    () => ["All", ...Array.from(new Set(offices.map((o) => o.city))).sort()],
-    []
-  );
-  const categories = useMemo(
-    () => ["All", ...Array.from(new Set(offices.map((o) => o.category))).sort()],
-    []
-  );
+  const cities = useMemo(() => ["All", ...CITIES], []);
+  const categories = useMemo(() => ["All", ...OFFICE_CATEGORIES], []);
 
-  const filtered = useMemo(() => {
-    const query = q.trim().toLowerCase();
-    const base = query
-      ? offices.filter((o) => {
-          const hay = [o.name, o.city, o.area, o.category, o.address]
-            .filter(Boolean)
-            .join(" ")
-            .toLowerCase();
-          return hay.includes(query);
-        })
-      : offices;
+  async function runSearch(page) {
+    const myRequestId = ++requestId.current;
+    if (page === 1) setLoading(true);
+    else setLoadingMore(true);
+    setError("");
 
-    const withFilter = base.filter((o) => {
-      const cityOk = city === "All" || o.city === city;
-      const catOk = category === "All" || o.category === category;
-      return cityOk && catOk;
-    });
+    try {
+      const params = new URLSearchParams({ page: String(page), pageSize: String(PAGE_SIZE) });
+      if (q.trim()) params.set("q", q.trim());
+      if (city !== "All") params.set("city", slugify(city));
+      if (category !== "All") params.set("category", slugify(category));
 
-    if (location) {
-      return [...withFilter].sort(
-        (a, b) =>
-          distanceKm(a, location.lat, location.lng) -
-          distanceKm(b, location.lat, location.lng)
-      );
+      const res = await fetch(`/api/search?${params.toString()}`);
+      const json = await res.json();
+      if (!res.ok) throw new Error(json.error?.message || "Search failed");
+      if (myRequestId !== requestId.current) return; // a newer search superseded this one
+
+      setResults((prev) => (page === 1 ? json.results : [...prev, ...json.results]));
+      setPagination(json.pagination);
+    } catch (err) {
+      if (myRequestId === requestId.current) setError(err.message || "Something went wrong");
+    } finally {
+      if (myRequestId === requestId.current) {
+        setLoading(false);
+        setLoadingMore(false);
+      }
     }
-    return withFilter;
-  }, [q, city, category, location]);
+  }
+
+  // Debounced search whenever filters change.
+  useEffect(() => {
+    const t = setTimeout(() => runSearch(1), 250);
+    return () => clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [q, city, category]);
+
+  const sortedResults = useMemo(() => {
+    if (!location) return results;
+    return [...results].sort(
+      (a, b) => distanceKm(a, location.lat, location.lng) - distanceKm(b, location.lat, location.lng)
+    );
+  }, [results, location]);
 
   const clearAll = () => {
     setQ("");
@@ -258,7 +277,7 @@ export default function SearchPage() {
         body: JSON.stringify({ query: aiQuery }),
       });
       const json = await res.json();
-      if (!res.ok) throw new Error(json.error || "AI search failed");
+      if (!res.ok) throw new Error(json.error?.message || "AI search failed");
       setAiData(json);
     } catch (err) {
       setAiError(err.message || "Something went wrong");
@@ -397,7 +416,10 @@ export default function SearchPage() {
                 </div>
               </div>
               <div style={{ color: theme.muted, fontSize: 13 }}>
-                AI found <b style={{ color: theme.ink }}>{aiData.results?.length || 0}</b>{" "}
+                AI found{" "}
+                <b style={{ color: theme.ink }}>
+                  {aiData.pagination?.total ?? aiData.results?.length ?? 0}
+                </b>{" "}
                 result(s).
               </div>
               <div style={{ display: "grid", gap: 12 }}>
@@ -538,15 +560,25 @@ export default function SearchPage() {
 
         {/* Summary */}
         <div style={{ marginTop: 10, color: theme.muted, fontSize: 13 }}>
-          Showing <b style={{ color: theme.ink }}>{filtered.length}</b> result(s) out of{" "}
-          <b style={{ color: theme.ink }}>{offices.length}</b>.
+          {loading ? (
+            "Searching…"
+          ) : (
+            <>
+              Showing <b style={{ color: theme.ink }}>{results.length}</b> of{" "}
+              <b style={{ color: theme.ink }}>{pagination.total}</b> result(s).
+            </>
+          )}
         </div>
 
         <div style={{ height: 12 }} />
 
+        {error && (
+          <div style={{ ...layout.card, color: theme.danger, marginBottom: 12 }}>{error}</div>
+        )}
+
         {/* Results */}
         <div style={{ display: "grid", gap: 16 }}>
-          {filtered.length === 0 ? (
+          {!loading && sortedResults.length === 0 ? (
             <div style={layout.card}>
               <div style={{ fontWeight: 900, marginBottom: 6, color: theme.ink }}>
                 No results found
@@ -577,7 +609,7 @@ export default function SearchPage() {
               </button>
             </div>
           ) : (
-            filtered.map((o) => (
+            sortedResults.map((o) => (
               <ResultCard
                 key={o.id}
                 office={o}
@@ -587,6 +619,26 @@ export default function SearchPage() {
             ))
           )}
         </div>
+
+        {!loading && pagination.page < pagination.totalPages && (
+          <div style={{ display: "flex", justifyContent: "center", marginTop: 16 }}>
+            <button
+              onClick={() => runSearch(pagination.page + 1)}
+              disabled={loadingMore}
+              style={{
+                borderRadius: 999,
+                padding: "10px 18px",
+                border: `1px solid ${theme.border}`,
+                background: theme.softBg,
+                color: theme.ink,
+                cursor: loadingMore ? "default" : "pointer",
+                fontWeight: 800,
+              }}
+            >
+              {loadingMore ? "Loading…" : "Load more"}
+            </button>
+          </div>
+        )}
       </div>
     </main>
   );

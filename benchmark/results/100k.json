@@ -1,0 +1,29 @@
+{
+  "label": "100k",
+  "rowCount": 100000,
+  "timestamp": "2026-08-27T15:51:17.996Z",
+  "withoutIndex": {
+    "avgMs": 41.93,
+    "p50Ms": 38.59,
+    "p95Ms": 55.83,
+    "minMs": 32.08,
+    "maxMs": 77.11,
+    "samples": 50
+  },
+  "withIndex": {
+    "avgMs": 19.13,
+    "p50Ms": 10.15,
+    "p95Ms": 41.42,
+    "minMs": 4.29,
+    "maxMs": 55.97,
+    "samples": 50
+  },
+  "cache": {
+    "uncachedMs": 104.93,
+    "cachedMs": 1.88
+  },
+  "summary": {
+    "indexSpeedupFactor": 2.2,
+    "cacheSpeedupFactor": 55.8
+  }
+}

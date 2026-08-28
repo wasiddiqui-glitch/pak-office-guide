@@ -1,11 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import offices from "@/data/offices.json";
+import { getCities, getCategories } from "@/lib/offices";
 import { layout } from "@/lib/ui";
 
-export default function HomePage() {
-  const cities = Array.from(new Set(offices.map((o) => o.city))).sort();
-  const categories = Array.from(new Set(offices.map((o) => o.category))).sort();
+export default async function HomePage() {
+  const [cities, categories] = await Promise.all([getCities(), getCategories()]);
 
   return (
     <main className="page-transition" style={layout.page}>
