@@ -8,6 +8,9 @@ export default function FavoriteButton({ id, bubbleStyle }) {
   const [fav, setFav] = useState(false);
 
   useEffect(() => {
+    // Reading localStorage must happen after mount (SSR has no `window`) —
+    // setting state here, once, on mount is the standard hydration-safe pattern.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setFav(isFavorite(id));
   }, [id]);
 
