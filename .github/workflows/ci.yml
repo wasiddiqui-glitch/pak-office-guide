@@ -1,0 +1,69 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch: {} # allows a manual re-run from the Actions tab
+
+env:
+  # A plain Postgres service container — unlike local dev's `prisma dev` proxy,
+  # this speaks the wire protocol directly, so DATABASE_URL (used by the Prisma
+  # CLI) and DIRECT_DATABASE_URL (used by the app's @prisma/adapter-pg client)
+  # are simply the same value here. No API keys are needed anywhere in this
+  # workflow — RAG tests use a deterministic mock embedding (see
+  # src/lib/rag/embeddings.js), never real OpenAI calls.
+  DATABASE_URL: postgresql://postgres:postgres@localhost:5432/pak_office_guide_ci
+  DIRECT_DATABASE_URL: postgresql://postgres:postgres@localhost:5432/pak_office_guide_ci
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: pak_office_guide_ci
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          # No npm cache: this project is small enough that it isn't worth it,
+          # and a stale/corrupted cache entry keyed by a lockfile hash that
+          # briefly failed to install was a real suspect while debugging CI.
+
+      - name: Install dependencies
+        # --foreground-scripts: makes postinstall (prisma generate) output show
+        # up inline in this step's log instead of being buffered/hidden.
+        run: npm ci --foreground-scripts
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Apply migrations
+        run: npx prisma migrate deploy
+
+      - name: Seed database
+        run: npx prisma db seed
+
+      - name: Test
+        run: npm run test
+
+      - name: Build
+        run: npm run build

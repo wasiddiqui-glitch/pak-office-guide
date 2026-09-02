@@ -72,12 +72,9 @@ export default function ChatBot() {
         <div style={windowStyle}>
           {/* Header */}
           <div style={headerStyle}>
-            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-              <span style={{ fontSize: 18 }}>🇵🇰</span>
-              <div>
-                <div style={{ fontWeight: 900, fontSize: 14, color: "#fff" }}>Office Guide Assistant</div>
-                <div style={{ fontSize: 11, color: "rgba(255,255,255,0.75)" }}>Answers from our own database</div>
-              </div>
+            <div>
+              <div style={{ fontWeight: 900, fontSize: 14, color: "#fff" }}>Office Guide Assistant</div>
+              <div style={{ fontSize: 11, color: "rgba(255,255,255,0.75)" }}>Answers from our own database</div>
             </div>
             <button onClick={() => setOpen(false)} style={closeBtnStyle} aria-label="Close chat">
               ✕
@@ -123,9 +120,6 @@ export default function ChatBot() {
                         onClick={() => setOpen(false)}
                         style={sourceChipStyle}
                       >
-                        <span style={{ fontSize: 13 }}>
-                          {src.type === "guide" ? src.emoji || "📋" : src.type === "embassy" ? "🌍" : "🏢"}
-                        </span>
                         <span style={{ flex: 1, minWidth: 0, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
                           {src.type === "guide" ? src.title : `${src.name} — ${src.city}`}
                         </span>
@@ -181,7 +175,14 @@ export default function ChatBot() {
         {open ? (
           <span style={{ fontSize: 18 }}>✕</span>
         ) : (
-          <span style={{ fontSize: 20 }}>💬</span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden>
+            <path
+              d="M4 5.5C4 4.67 4.67 4 5.5 4h13c.83 0 1.5.67 1.5 1.5v9c0 .83-.67 1.5-1.5 1.5H9l-4 3.5v-3.5H5.5C4.67 15.5 4 14.83 4 14v-8.5Z"
+              stroke="white"
+              strokeWidth="1.7"
+              strokeLinejoin="round"
+            />
+          </svg>
         )}
       </button>
     </>

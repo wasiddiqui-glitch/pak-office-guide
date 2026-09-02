@@ -1,6 +1,6 @@
 "use client";
 
-export default function SuggestCorrectionButton({ office, style = {} }) {
+export default function SuggestCorrectionButton({ office, style = {}, className }) {
   const suggest = () => {
     const url = window.location.href;
     const body = [
@@ -18,8 +18,13 @@ export default function SuggestCorrectionButton({ office, style = {} }) {
   };
 
   return (
-    <button onClick={suggest} style={{ cursor: "pointer", ...style }} title="Opens WhatsApp">
-      ✏️ Suggest correction via WhatsApp
+    <button
+      onClick={suggest}
+      className={className}
+      style={{ cursor: "pointer", ...style }}
+      title="Opens WhatsApp"
+    >
+      Suggest correction via WhatsApp
     </button>
   );
 }

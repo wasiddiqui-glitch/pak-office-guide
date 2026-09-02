@@ -1,6 +1,6 @@
 "use client";
 
-export default function ShareButton({ office, style = {} }) {
+export default function ShareButton({ office, style = {}, className }) {
   const share = async () => {
     const url = window.location.href;
     const text = [
@@ -26,8 +26,8 @@ export default function ShareButton({ office, style = {} }) {
   };
 
   return (
-    <button onClick={share} style={{ cursor: "pointer", ...style }}>
-      📤 Share
+    <button onClick={share} className={className} style={{ cursor: "pointer", ...style }}>
+      Share
     </button>
   );
 }

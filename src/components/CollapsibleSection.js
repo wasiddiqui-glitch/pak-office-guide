@@ -1,14 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { layout, colors } from "@/lib/ui";
+import { layout, colors, type, space } from "@/lib/ui";
 
-export default function CollapsibleSection({
-  title,
-  icon,
-  defaultOpen = false,
-  children,
-}) {
+export default function CollapsibleSection({ title, defaultOpen = false, children }) {
   const [open, setOpen] = useState(defaultOpen);
 
   return (
@@ -30,26 +25,22 @@ export default function CollapsibleSection({
         }}
         aria-expanded={open}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <span style={{ fontSize: 16 }}>{icon}</span>
-          <div style={{ fontWeight: 900, fontSize: 16, color: colors.text }}>
-            {title}
-          </div>
-        </div>
+        <div style={{ ...type.h3, color: colors.text }}>{title}</div>
 
         <span
+          className="ui-icon-btn"
           style={{
-            width: 24,
-            height: 24,
+            width: 26,
+            height: 26,
             display: "inline-flex",
             alignItems: "center",
             justifyContent: "center",
             borderRadius: "50%",
-            border: `1px solid rgba(255,255,255,0.12)`,
-            fontSize: 18,
+            border: `1px solid ${colors.border}`,
+            fontSize: 16,
             lineHeight: 1,
             userSelect: "none",
-            color: colors.muted,
+            color: colors.greenDark,
             flexShrink: 0,
           }}
         >
@@ -57,7 +48,7 @@ export default function CollapsibleSection({
         </span>
       </button>
 
-      {open && <div style={{ marginTop: 12 }}>{children}</div>}
+      {open && <div style={{ marginTop: space.md }}>{children}</div>}
     </section>
   );
 }

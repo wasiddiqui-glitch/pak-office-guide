@@ -1,7 +1,8 @@
-import Link from "next/link";
 import { getOfficesByCity } from "@/lib/offices";
-import { layout } from "@/lib/ui";
-import OpenNowBadge from "@/components/OpenNowBadge";
+import { layout, space } from "@/lib/ui";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import PageHeader from "@/components/PageHeader";
+import OfficeListItem from "@/components/OfficeListItem";
 
 export async function generateMetadata({ params }) {
   const { city: rawCity } = await params;
@@ -17,66 +18,27 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function CityPage({ params }) {
-  const { city: rawCity } = await params; // params is a Promise in your Next version
+  const { city: rawCity } = await params;
   const city = decodeURIComponent(rawCity);
-
-  const offices = getOfficesByCity(city);
+  const offices = await getOfficesByCity(city);
 
   return (
     <main className="page-transition" style={layout.page}>
       <div style={layout.container}>
-        {/* Breadcrumbs + header */}
-        <div style={{ display: "grid", gap: 8, marginBottom: 12 }}>
-          <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-            <Link href="/" style={{ ...layout.badge, textDecoration: "none" }}>
-              Home
-            </Link>
-            <span style={layout.badge}>›</span>
-            <Link href="/cities" style={{ ...layout.badge, textDecoration: "none" }}>
-              Cities
-            </Link>
-            <span style={layout.badge}>›</span>
-            <span style={layout.badge}>{city}</span>
-          </div>
+        <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Cities", href: "/cities" }]} />
+        <PageHeader
+          eyebrow="City"
+          title={city}
+          sub={`${offices.length} office${offices.length !== 1 ? "s" : ""}`}
+          action={{ href: "/cities", label: "All cities" }}
+        />
 
-          <div style={{ display: "flex", justifyContent: "space-between", gap: 10 }}>
-            <div>
-              <h1 style={layout.h1}>{city}</h1>
-              <p style={layout.sub}>{offices.length} office(s)</p>
-            </div>
-
-            <Link href="/cities" style={{ ...layout.pill, textDecoration: "none" }}>
-              All cities
-            </Link>
-          </div>
-        </div>
-
-        {/* Offices list */}
-        <div style={{ display: "grid", gap: 12 }}>
+        <div style={{ display: "grid", gap: space.md }}>
           {offices.map((o) => (
-            <Link
-              key={o.id}
-              href={`/office/${o.id}`}
-              style={{ ...layout.card, display: "block", textDecoration: "none" }}
-            >
-              <div style={{ display: "flex", justifyContent: "space-between", gap: 8, flexWrap: "wrap" }}>
-                <div style={{ fontWeight: 900 }}>{o.name}</div>
-                <OpenNowBadge hours={o.hours} />
-              </div>
-
-              <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 8 }}>
-                <span style={layout.badge}>{o.category}</span>
-                <span style={layout.badge}>{o.area}</span>
-              </div>
-            </Link>
+            <OfficeListItem key={o.id} office={o} />
           ))}
         </div>
       </div>
     </main>
   );
 }
-
-
-
-
-

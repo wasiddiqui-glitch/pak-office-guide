@@ -1,13 +1,11 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --background: #f6f8f7;
+  --foreground: #0b1220;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* The whole UI is an intentionally light "NADRA-ish" theme (see src/lib/ui.js) —
+     forcing color-scheme: light stops the OS/browser from darkening native form
+     controls (checkboxes, scrollbars) against our hardcoded light palette. */
+  color-scheme: light;
 }
 
 html,
@@ -19,9 +17,10 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "cv11", "ss01", "tnum";
 }
 
 * {
@@ -35,23 +34,89 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+:focus-visible {
+  outline: 2px solid #0b6b3a;
+  outline-offset: 2px;
+  border-radius: 6px;
 }
 
 .page-transition {
-  animation: pageFadeIn 0.5s ease-out;
+  animation: pageFadeIn 0.4s ease-out;
 }
 
 @keyframes pageFadeIn {
   from {
     opacity: 0;
-    transform: translateY(8px) scale(0.99);
+    transform: translateY(6px);
   }
   to {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
+  }
+}
+
+/* ---- Interactive design-system primitives ----
+   Paired with the style objects in src/lib/ui.js: those set the static look
+   (SSR-safe, no flash), these classes add the motion/hover/focus states that
+   inline styles can't express. */
+
+.ui-tile,
+.ui-card-hover {
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.ui-tile:hover,
+.ui-card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(2, 55, 27, 0.1);
+  border-color: rgba(11, 107, 58, 0.28) !important;
+}
+
+.ui-tile:active,
+.ui-card-hover:active {
+  transform: translateY(0);
+}
+
+.ui-btn {
+  transition: transform 0.12s ease, filter 0.12s ease, box-shadow 0.12s ease;
+}
+
+.ui-btn:hover {
+  filter: brightness(1.06);
+  box-shadow: 0 6px 16px rgba(2, 55, 27, 0.14);
+}
+
+.ui-btn:active {
+  transform: translateY(1px);
+  filter: brightness(0.98);
+}
+
+.ui-btn-soft:hover {
+  background: rgba(11, 107, 58, 0.2) !important;
+}
+
+.ui-pill,
+.ui-badge {
+  transition: background 0.12s ease, border-color 0.12s ease, transform 0.12s ease;
+}
+
+a.ui-pill:hover,
+a.ui-badge:hover {
+  background: rgba(11, 107, 58, 0.18) !important;
+  border-color: rgba(11, 107, 58, 0.32) !important;
+}
+
+.ui-icon-btn {
+  transition: background 0.12s ease, transform 0.12s ease;
+}
+
+.ui-icon-btn:hover {
+  background: rgba(11, 107, 58, 0.1);
+  transform: scale(1.06);
+}
+
+@media (min-width: 720px) {
+  .home-columns {
+    grid-template-columns: 1fr 1fr !important;
   }
 }

@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": [
+      "ES2022",
+      "DOM"
+    ],
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "strict": false,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "incremental": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  // Scoped to the new backend/data layer this upgrade added — not the whole
+  // app. The pre-existing UI components are plain, loosely-typed JS with no
+  // JSDoc annotations; type-checking them for the first time here would just
+  // be noise, not signal. New backend code should stay checkable as it grows.
+  "include": [
+    "src/lib/**/*.js",
+    "src/app/api/**/*.js",
+    "prisma/seed.js",
+    "scripts/rag/**/*.js",
+    "scripts/benchmark/**/*.js",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next",
+    "src/generated"
+  ]
+}
