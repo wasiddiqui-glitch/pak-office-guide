@@ -2,8 +2,10 @@ import Link from "next/link";
 import CollapsibleSection from "@/components/CollapsibleSection";
 import CopyButton from "@/components/CopyButton";
 import ShareButton from "@/components/ShareButton";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import StepList from "@/components/StepList";
 import { getEmbassyById, getAllEmbassies } from "@/lib/embassies";
-import { layout, colors } from "@/lib/ui";
+import { layout, colors, type, space } from "@/lib/ui";
 
 export async function generateStaticParams() {
   const embassies = await getAllEmbassies();
@@ -33,8 +35,10 @@ export default async function EmbassyPage({ params }) {
       <main style={layout.page}>
         <div style={layout.container}>
           <div style={layout.card}>
-            <h1 style={layout.h1}>Mission not found</h1>
-            <Link href="/overseas" style={layout.pill}>← Overseas</Link>
+            <h1 style={type.h1}>Mission not found</h1>
+            <Link href="/overseas" className="ui-badge" style={layout.pill}>
+              ← Overseas
+            </Link>
           </div>
         </div>
       </main>
@@ -71,27 +75,35 @@ export default async function EmbassyPage({ params }) {
   return (
     <main className="page-transition" style={layout.page}>
       <div style={layout.container}>
-
-        {/* Breadcrumbs */}
-        <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 10 }}>
-          <Link href="/" style={layout.badge}>Home</Link>
-          <span style={layout.badge}>›</span>
-          <Link href="/overseas" style={layout.badge}>Overseas</Link>
-          <span style={layout.badge}>›</span>
-          <span style={layout.badge}>{e.city}</span>
-        </div>
+        <Breadcrumbs
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Overseas", href: "/overseas" },
+          ]}
+        />
 
         {/* Title row */}
-        <div style={{ display: "flex", justifyContent: "space-between", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
-          <div style={{ display: "grid", gap: 6 }}>
-            <h1 style={{ ...layout.h1, fontSize: 22 }}>{e.name}</h1>
-            <div style={{ display: "flex", gap: 8, flexWrap: "wrap", alignItems: "center" }}>
-              <span style={layout.badge}>{e.country}</span>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            gap: space.md,
+            marginBottom: space.md,
+            alignItems: "flex-start",
+          }}
+        >
+          <div style={{ display: "grid", gap: space.xs }}>
+            <p style={type.eyebrow}>{e.country}</p>
+            <h1 style={type.h1}>{e.name}</h1>
+            <div style={{ display: "flex", gap: space.xs, flexWrap: "wrap", alignItems: "center", marginTop: 4 }}>
+              <span style={layout.badge}>{e.city}</span>
               <span style={layout.badge}>{e.region}</span>
               {e.nadraDesk && <span style={layout.badge}>NADRA desk</span>}
             </div>
           </div>
-          <Link href="/overseas" style={layout.pill}>← Back</Link>
+          <Link href="/overseas" className="ui-badge" style={layout.pill}>
+            ← Back
+          </Link>
         </div>
 
         {/* Sticky actions */}
@@ -105,126 +117,118 @@ export default async function EmbassyPage({ params }) {
             WebkitBackdropFilter: "blur(10px)",
             paddingTop: 6,
             paddingBottom: 10,
-            marginBottom: 12,
+            marginBottom: space.md,
           }}
         >
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 10, alignItems: "center" }}>
-            <a href={mapsUrl} target="_blank" rel="noreferrer" style={actionPrimary}>
-              📍 Open in Maps
+          <div style={{ display: "flex", flexWrap: "wrap", gap: space.sm, alignItems: "center" }}>
+            <a href={mapsUrl} target="_blank" rel="noreferrer" className="ui-btn" style={actionPrimary}>
+              Open in Maps
             </a>
 
             {e.address && (
-              <CopyButton text={e.address} label="Copy address" style={actionOutline} />
+              <CopyButton text={e.address} label="Copy address" style={actionOutline} className="ui-btn" />
             )}
 
             {e.phone && (
-              <a href={`tel:${e.phone}`} style={actionOutline}>
-                📞 {e.phone}
+              <a href={`tel:${e.phone}`} className="ui-btn" style={actionOutline}>
+                {e.phone}
               </a>
             )}
 
-            <ShareButton office={{ name: e.name, city: e.city, address: e.address }} style={actionOutline} />
+            <ShareButton
+              office={{ name: e.name, city: e.city, address: e.address }}
+              style={actionOutline}
+              className="ui-btn"
+            />
           </div>
         </div>
 
         {/* Sections */}
-        <div style={{ display: "grid", gap: 12 }}>
-
-          <CollapsibleSection title="Overview" icon="ℹ️" defaultOpen>
-            <div style={{ color: colors.muted, fontSize: 14, lineHeight: 1.8, display: "grid", gap: 4 }}>
-              <div><b style={{ color: colors.text }}>Address:</b> {e.address}</div>
-              <div><b style={{ color: colors.text }}>Country:</b> {e.country}</div>
-              <div><b style={{ color: colors.text }}>Hours:</b> {e.hours || "Verify with the mission"}</div>
+        <div style={{ display: "grid", gap: space.md }}>
+          <CollapsibleSection title="Overview" defaultOpen>
+            <div style={{ ...type.body, display: "grid", gap: space.xs }}>
+              <div>
+                <b style={{ color: colors.text }}>Address:</b> {e.address}
+              </div>
+              <div>
+                <b style={{ color: colors.text }}>Country:</b> {e.country}
+              </div>
+              <div>
+                <b style={{ color: colors.text }}>Hours:</b> {e.hours || "Verify with the mission"}
+              </div>
               {e.website && (
                 <div>
-                  <b style={{ color: colors.text }}>Website:</b>{" "}
-                  <span style={{ color: colors.muted }}>{e.website}</span>
+                  <b style={{ color: colors.text }}>Website:</b> {e.website}
                 </div>
               )}
             </div>
           </CollapsibleSection>
 
           {e.services?.length > 0 && (
-            <CollapsibleSection title="Services available" icon="🛂" defaultOpen>
-              <ul style={{ margin: 0, paddingLeft: 18, color: colors.muted, lineHeight: 1.8 }}>
-                {e.services.map((s, i) => <li key={i}>{s}</li>)}
+            <CollapsibleSection title="Services available" defaultOpen>
+              <ul style={{ ...type.body, margin: 0, paddingLeft: 18, lineHeight: 1.8 }}>
+                {e.services.map((s, i) => (
+                  <li key={i}>{s}</li>
+                ))}
               </ul>
             </CollapsibleSection>
           )}
 
           {e.requirements?.length > 0 && (
-            <CollapsibleSection title="What to bring" icon="🪪" defaultOpen>
-              <ul style={{ margin: 0, paddingLeft: 18, color: colors.muted, lineHeight: 1.8 }}>
-                {e.requirements.map((r, i) => <li key={i}>{r}</li>)}
+            <CollapsibleSection title="What to bring" defaultOpen>
+              <ul style={{ ...type.body, margin: 0, paddingLeft: 18, lineHeight: 1.8 }}>
+                {e.requirements.map((r, i) => (
+                  <li key={i}>{r}</li>
+                ))}
               </ul>
             </CollapsibleSection>
           )}
 
           {e.steps?.length > 0 && (
-            <CollapsibleSection title="How to visit" icon="🪜" defaultOpen>
-              <div style={{ display: "grid", gap: 14 }}>
-                {e.steps.map((step, i) => (
-                  <div key={i} style={{ display: "flex", gap: 14 }}>
-                    <div
-                      style={{
-                        width: 28,
-                        height: 28,
-                        borderRadius: "50%",
-                        background: colors.green,
-                        color: "white",
-                        fontWeight: 900,
-                        fontSize: 13,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        flexShrink: 0,
-                        marginTop: 2,
-                      }}
-                    >
-                      {i + 1}
-                    </div>
-                    <div style={{ color: colors.muted, fontSize: 14, lineHeight: 1.6, paddingTop: 4 }}>
-                      {step}
-                    </div>
-                  </div>
-                ))}
-              </div>
+            <CollapsibleSection title="How to visit" defaultOpen>
+              <StepList steps={e.steps} />
             </CollapsibleSection>
           )}
 
           {e.fees?.length > 0 && (
-            <CollapsibleSection title="Fees" icon="💵" defaultOpen>
-              <ul style={{ margin: 0, paddingLeft: 18, color: colors.muted, lineHeight: 1.8 }}>
-                {e.fees.map((f, i) => <li key={i}>{f}</li>)}
+            <CollapsibleSection title="Fees" defaultOpen>
+              <ul style={{ ...type.body, margin: 0, paddingLeft: 18, lineHeight: 1.8 }}>
+                {e.fees.map((f, i) => (
+                  <li key={i}>{f}</li>
+                ))}
               </ul>
             </CollapsibleSection>
           )}
 
           {e.notes?.length > 0 && (
-            <CollapsibleSection title="Notes" icon="📝" defaultOpen>
-              <ul style={{ margin: 0, paddingLeft: 18, color: colors.muted, lineHeight: 1.8 }}>
-                {e.notes.map((n, i) => <li key={i}>{n}</li>)}
+            <CollapsibleSection title="Notes" defaultOpen>
+              <ul style={{ ...type.body, margin: 0, paddingLeft: 18, lineHeight: 1.8 }}>
+                {e.notes.map((n, i) => (
+                  <li key={i}>{n}</li>
+                ))}
               </ul>
-              <div style={{ marginTop: 10, fontSize: 12, color: colors.muted }}>
+              <div style={{ ...type.small, marginTop: space.sm }}>
                 Always verify hours and requirements with the official mission before visiting.
               </div>
             </CollapsibleSection>
           )}
 
-          <CollapsibleSection title="Verify before you visit" icon="✅" defaultOpen>
-            <div style={{ color: colors.muted, lineHeight: 1.6, fontSize: 14 }}>
-              Embassy hours, fees, and procedures can change. Always confirm by calling ahead or checking
-              the official Pakistani mission website.
+          <CollapsibleSection title="Verify before you visit" defaultOpen>
+            <div style={type.body}>
+              Embassy hours, fees, and procedures can change. Always confirm by calling ahead or
+              checking the official Pakistani mission website.
             </div>
-            <div style={{ height: 10 }} />
-            <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+            <div style={{ height: space.sm }} />
+            <div style={{ display: "flex", gap: space.sm, flexWrap: "wrap" }}>
               {e.phone ? (
-                <a href={`tel:${e.phone}`} style={layout.pill}>📞 Call: {e.phone}</a>
+                <a href={`tel:${e.phone}`} className="ui-pill" style={layout.pill}>
+                  Call: {e.phone}
+                </a>
               ) : (
                 <span style={layout.pill}>Phone: not listed</span>
               )}
               {e.website ? (
-                <span style={layout.pill}>🌐 {e.website}</span>
+                <span style={layout.pill}>{e.website}</span>
               ) : (
                 <span style={layout.pill}>Website: not listed</span>
               )}
@@ -232,11 +236,11 @@ export default async function EmbassyPage({ params }) {
           </CollapsibleSection>
 
           {e.lastUpdated && (
-            <div style={{ color: colors.muted, fontSize: 12 }}>
-              Last updated: {e.lastUpdated}. Fees and procedures can change — verify with the mission directly.
+            <div style={type.small}>
+              Last updated: {e.lastUpdated}. Fees and procedures can change — verify with the
+              mission directly.
             </div>
           )}
-
         </div>
       </div>
     </main>

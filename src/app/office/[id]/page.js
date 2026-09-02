@@ -2,7 +2,7 @@ import Link from "next/link";
 import CopyButton from "@/components/CopyButton";
 import CollapsibleSection from "@/components/CollapsibleSection";
 import { getOfficeById } from "@/lib/offices";
-import { layout, colors } from "@/lib/ui";
+import { layout, colors, type, space } from "@/lib/ui";
 import FavoriteButton from "@/components/FavoriteButton";
 import OpenNowBadge from "@/components/OpenNowBadge";
 import ShareButton from "@/components/ShareButton";
@@ -75,20 +75,22 @@ export default async function OfficePage({ params }) {
     <main className="page-transition" style={layout.page}>
       <div style={layout.container}>
         {/* Breadcrumbs */}
-        <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 10 }}>
-          <Link href="/" style={layout.badge}>
+        <div style={{ display: "flex", gap: space.xs, flexWrap: "wrap", marginBottom: space.md }}>
+          <Link href="/" className="ui-badge" style={layout.badge}>
             Home
           </Link>
-          <span style={layout.badge}>›</span>
-          <Link href="/cities" style={layout.badge}>
+          <span style={{ ...type.small, alignSelf: "center" }}>/</span>
+          <Link href="/cities" className="ui-badge" style={layout.badge}>
             Cities
           </Link>
-          <span style={layout.badge}>›</span>
-          <Link href={`/city/${encodeURIComponent(office.city)}`} style={layout.badge}>
+          <span style={{ ...type.small, alignSelf: "center" }}>/</span>
+          <Link
+            href={`/city/${encodeURIComponent(office.city)}`}
+            className="ui-badge"
+            style={layout.badge}
+          >
             {office.city}
           </Link>
-          <span style={layout.badge}>›</span>
-          <span style={layout.badge}>{office.name}</span>
         </div>
 
         {/* Title row */}
@@ -96,23 +98,35 @@ export default async function OfficePage({ params }) {
           style={{
             display: "flex",
             justifyContent: "space-between",
-            gap: 12,
-            marginBottom: 12,
+            gap: space.md,
+            marginBottom: space.md,
             alignItems: "flex-start",
           }}
         >
-          <div style={{ display: "grid", gap: 6 }}>
-            <h1 style={{ ...layout.h1, fontSize: 22 }}>{office.name}</h1>
+          <div style={{ display: "grid", gap: space.xs }}>
+            <p style={type.eyebrow}>{office.category}</p>
+            <h1 style={type.h1}>{office.name}</h1>
 
-            <div style={{ display: "flex", gap: 8, flexWrap: "wrap", alignItems: "center" }}>
-              <span style={layout.badge}>{office.category}</span>
+            <div
+              style={{
+                display: "flex",
+                gap: space.xs,
+                flexWrap: "wrap",
+                alignItems: "center",
+                marginTop: 4,
+              }}
+            >
               <span style={layout.badge}>{office.city}</span>
-              <span style={layout.badge}>{office.area}</span>
+              {office.area && <span style={layout.badge}>{office.area}</span>}
               <OpenNowBadge hours={office.hours} />
             </div>
           </div>
 
-          <Link href={`/city/${encodeURIComponent(office.city)}`} style={layout.pill}>
+          <Link
+            href={`/city/${encodeURIComponent(office.city)}`}
+            className="ui-badge"
+            style={layout.pill}
+          >
             ← Back
           </Link>
         </div>
@@ -131,34 +145,39 @@ export default async function OfficePage({ params }) {
             marginBottom: 12,
           }}
         >
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 10, alignItems: "center" }}>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: space.sm, alignItems: "center" }}>
             {/* Primary */}
-            <a href={maps} target="_blank" rel="noreferrer" style={actionPrimary}>
-              📍 Open in Maps
+            <a href={maps} target="_blank" rel="noreferrer" className="ui-btn" style={actionPrimary}>
+              Open in Maps
             </a>
 
             {/* Address copy — outline */}
             {office.address && (
-              <CopyButton text={office.address} label="Copy address" style={actionOutline} />
+              <CopyButton
+                text={office.address}
+                label="Copy address"
+                style={actionOutline}
+                className="ui-btn"
+              />
             )}
 
             {/* Phone as plain link — browser detects and offers call/save */}
             {office.phone && (
-              <a href={`tel:${office.phone}`} style={actionOutline}>
-                📞 {office.phone}
+              <a href={`tel:${office.phone}`} className="ui-btn" style={actionOutline}>
+                {office.phone}
               </a>
             )}
 
-            <ShareButton office={office} style={actionOutline} />
-            <FavoriteButton id={office.id} bubbleStyle={actionOutline} />
-            <SuggestCorrectionButton office={office} style={actionOutline} />
+            <ShareButton office={office} style={actionOutline} className="ui-btn" />
+            <FavoriteButton id={office.id} bubbleStyle={actionOutline} className="ui-btn" />
+            <SuggestCorrectionButton office={office} style={actionOutline} className="ui-btn" />
           </div>
         </div>
 
         {/* Collapsible sections */}
-        <div style={{ display: "grid", gap: 12 }}>
-          <CollapsibleSection title="Overview" icon="ℹ️" defaultOpen>
-            <div style={{ color: colors.muted, fontSize: 14, lineHeight: 1.6 }}>
+        <div style={{ display: "grid", gap: space.md }}>
+          <CollapsibleSection title="Overview" defaultOpen>
+            <div style={{ ...type.body, display: "grid", gap: space.xs }}>
               <div>
                 <b style={{ color: colors.text }}>Address:</b>{" "}
                 {office.address || "Not added yet"}
@@ -173,7 +192,7 @@ export default async function OfficePage({ params }) {
                     href={office.website}
                     target="_blank"
                     rel="noreferrer"
-                    style={{ color: colors.green }}
+                    style={{ color: colors.green, fontWeight: 600 }}
                   >
                     {office.website}
                   </a>
@@ -184,69 +203,75 @@ export default async function OfficePage({ params }) {
             </div>
           </CollapsibleSection>
 
-          <CollapsibleSection title="Requirements" icon="🪪" defaultOpen>
+          <CollapsibleSection title="Requirements" defaultOpen>
             {(office.requirements || []).length > 0 ? (
-              <ul style={{ margin: 0, paddingLeft: 18, color: colors.muted, lineHeight: 1.7 }}>
+              <ul style={{ ...type.body, margin: 0, paddingLeft: 18, lineHeight: 1.75 }}>
                 {(office.requirements || []).map((x, i) => (
                   <li key={i}>{x}</li>
                 ))}
               </ul>
             ) : (
-              <div style={{ color: colors.muted }}>No specific requirements listed yet.</div>
+              <div style={type.body}>No specific requirements listed yet.</div>
             )}
           </CollapsibleSection>
 
-          <CollapsibleSection title="Steps" icon="🪜" defaultOpen>
+          <CollapsibleSection title="Steps" defaultOpen>
             {(office.steps || []).length > 0 ? (
-              <ol style={{ margin: 0, paddingLeft: 18, color: colors.muted, lineHeight: 1.7 }}>
+              <ol style={{ ...type.body, margin: 0, paddingLeft: 18, lineHeight: 1.75 }}>
                 {(office.steps || []).map((x, i) => (
                   <li key={i}>{x}</li>
                 ))}
               </ol>
             ) : (
-              <div style={{ color: colors.muted }}>No steps listed yet.</div>
+              <div style={type.body}>No steps listed yet.</div>
             )}
           </CollapsibleSection>
 
-          <CollapsibleSection title="Fees" icon="💵" defaultOpen>
+          <CollapsibleSection title="Fees" defaultOpen>
             {(office.fees || []).length > 0 ? (
-              <ul style={{ margin: 0, paddingLeft: 18, color: colors.muted, lineHeight: 1.7 }}>
+              <ul style={{ ...type.body, margin: 0, paddingLeft: 18, lineHeight: 1.75 }}>
                 {(office.fees || []).map((x, i) => (
                   <li key={i}>{x}</li>
                 ))}
               </ul>
             ) : (
-              <div style={{ color: colors.muted }}>No fees listed yet.</div>
+              <div style={type.body}>No fees listed yet.</div>
             )}
           </CollapsibleSection>
 
-          <CollapsibleSection title="Notes" icon="📝" defaultOpen>
+          <CollapsibleSection title="Notes" defaultOpen>
             {(office.notes || []).length > 0 ? (
-              <ul style={{ margin: 0, paddingLeft: 18, color: colors.muted, lineHeight: 1.7 }}>
+              <ul style={{ ...type.body, margin: 0, paddingLeft: 18, lineHeight: 1.75 }}>
                 {(office.notes || []).map((x, i) => (
                   <li key={i}>{x}</li>
                 ))}
               </ul>
             ) : (
-              <div style={{ color: colors.muted }}>No notes listed yet.</div>
+              <div style={type.body}>No notes listed yet.</div>
             )}
 
-            <div style={{ marginTop: 10, fontSize: 12, color: colors.muted }}>
+            <div style={{ ...type.small, marginTop: space.sm }}>
               Always verify requirements with the official office/website before visiting.
             </div>
           </CollapsibleSection>
 
-          <CollapsibleSection title="Verify before you visit" icon="✅" defaultOpen>
-            <div style={{ color: colors.muted, lineHeight: 1.6, fontSize: 14 }}>
+          <CollapsibleSection title="Verify before you visit" defaultOpen>
+            <div style={type.body}>
               Requirements and timings can change. Always confirm with the official source or call
               the office.
             </div>
 
-            <div style={{ height: 10 }} />
+            <div style={{ height: space.sm }} />
 
-            <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+            <div style={{ display: "flex", gap: space.sm, flexWrap: "wrap" }}>
               {office.website ? (
-                <a href={office.website} target="_blank" rel="noreferrer" style={layout.pill}>
+                <a
+                  href={office.website}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="ui-pill"
+                  style={layout.pill}
+                >
                   Official website
                 </a>
               ) : (
@@ -254,8 +279,8 @@ export default async function OfficePage({ params }) {
               )}
 
               {office.phone ? (
-                <a href={`tel:${office.phone}`} style={layout.pill}>
-                  📞 Call: {office.phone}
+                <a href={`tel:${office.phone}`} className="ui-pill" style={layout.pill}>
+                  Call: {office.phone}
                 </a>
               ) : (
                 <span style={layout.pill}>Phone: not added yet</span>

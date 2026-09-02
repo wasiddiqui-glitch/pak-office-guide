@@ -1,7 +1,10 @@
+import { Inter } from "next/font/google";
 import BottomNav from "@/components/BottomNav";
 import ChatBot from "@/components/ChatBot";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 
 export const metadata = {
   title: {
@@ -9,7 +12,7 @@ export const metadata = {
     template: "%s | Pakistan Office Guide",
   },
   description: "Requirements, steps, fees & hours for government offices in Pakistan. Find NADRA, Passport, Driving License, Utilities and more.",
-  metadataBase: new URL("https://pk-office-guide.vercel.app"),
+  metadataBase: new URL("https://pak-office-guide.vercel.app"),
   openGraph: {
     siteName: "Pakistan Office Guide",
     type: "website",
@@ -36,8 +39,8 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body style={{ margin: 0, color: "#e7ecf5", background: "#0b0f19" }}>
+    <html lang="en" className={inter.variable}>
+      <body style={{ margin: 0, color: "#0b1220", background: "#f6f8f7" }}>
         {/* Global link style reset */}
         <style>{`
   a {

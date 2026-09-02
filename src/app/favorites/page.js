@@ -2,8 +2,10 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { layout, colors } from "@/lib/ui";
+import { layout, type, space } from "@/lib/ui";
 import { getFavorites } from "@/lib/favorites";
+import PageHeader from "@/components/PageHeader";
+import OfficeListItem from "@/components/OfficeListItem";
 
 export default function FavoritesPage() {
   const [ids, setIds] = useState([]);
@@ -42,44 +44,28 @@ export default function FavoritesPage() {
   return (
     <main className="page-transition" style={layout.page}>
       <div style={layout.container}>
-        <div style={{ display: "flex", justifyContent: "space-between", gap: 12 }}>
-          <div>
-            <h1 style={layout.h1}>Favorites</h1>
-            <p style={layout.sub}>Saved offices on this device.</p>
-          </div>
-          <Link href="/" style={layout.pill}>
-            Home
-          </Link>
-        </div>
+        <PageHeader
+          eyebrow="On this device"
+          title="Favorites"
+          sub="Offices you've saved for quick access."
+          action={{ href: "/", label: "Home" }}
+        />
 
         {displayedOffices.length === 0 ? (
           <div style={layout.card}>
-            <div style={{ fontWeight: 900, marginBottom: 6 }}>No favorites yet</div>
-            <div style={{ color: colors.muted, lineHeight: 1.6 }}>
-              Open any office and tap <b>Save</b>.
+            <div style={type.h3}>No favorites yet</div>
+            <div style={{ ...type.body, marginTop: space.xs }}>
+              Open any office and tap <b style={{ color: "inherit" }}>Save</b>.
             </div>
-            <div style={{ height: 10 }} />
-            <Link href="/search" style={layout.pill}>
+            <div style={{ height: space.sm }} />
+            <Link href="/search" className="ui-badge" style={layout.pill}>
               Go to Search
             </Link>
           </div>
         ) : (
-          <div style={{ display: "grid", gap: 12 }}>
+          <div style={{ display: "grid", gap: space.md }}>
             {displayedOffices.map((o) => (
-              <Link
-                key={o.id}
-                href={`/office/${o.id}`}
-                style={{ ...layout.card, textDecoration: "none" }}
-              >
-                <div style={{ display: "flex", justifyContent: "space-between", gap: 10 }}>
-                  <div style={{ fontWeight: 900, color: colors.text }}>{o.name}</div>
-                  <span style={layout.badge}>{o.category}</span>
-                </div>
-                <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 6 }}>
-                  <span style={layout.badge}>{o.city}</span>
-                  <span style={layout.badge}>{o.area}</span>
-                </div>
-              </Link>
+              <OfficeListItem key={o.id} office={o} />
             ))}
           </div>
         )}

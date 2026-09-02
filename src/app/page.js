@@ -1,122 +1,147 @@
 import Link from "next/link";
 import Image from "next/image";
-import { getCities, getCategories } from "@/lib/offices";
-import { layout } from "@/lib/ui";
+import { getCities, getCategories, getOfficeCountsByCategory } from "@/lib/offices";
+import { getAllEmbassies } from "@/lib/embassies";
+import { layout, type, space, grid, colors } from "@/lib/ui";
 
 export default async function HomePage() {
-  const [cities, categories] = await Promise.all([getCities(), getCategories()]);
+  const [cities, categories, officeCounts, embassies] = await Promise.all([
+    getCities(),
+    getCategories(),
+    getOfficeCountsByCategory(),
+    getAllEmbassies(),
+  ]);
+  const officeCount = Object.values(officeCounts).reduce((a, b) => a + b, 0);
+
+  const quickLinks = [
+    { href: "/search", label: "Search", variant: "primary" },
+    { href: "/guides", label: "Guides", variant: "primary" },
+    { href: "/overseas", label: "Overseas", variant: "primary" },
+    { href: "/cities", label: "Browse Cities", variant: "soft" },
+    { href: "/categories", label: "Browse Categories", variant: "soft" },
+  ];
 
   return (
     <main className="page-transition" style={layout.page}>
       <div style={layout.container}>
-      <header style={styles.header}>
-        <div>
-        <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 8 }}>
-  <Image
-    src="/pakistan.png"
-    alt="Pakistan flag"
-    width={105}
-    height={70}
-    style={{ objectFit: "cover", borderRadius: 1, background: "white", padding: 3 }}
-    priority
-  />
-  <div>
-    <h1 style={styles.title}>Pakistan Office Guide</h1>
-    <p style={styles.sub}>
-      Requirements & steps for government offices (English).
-    </p>
-  </div>
-</div>
+        <header style={styles.hero}>
+          <div style={styles.heroRow}>
+            <Image
+              src="/pakistan.png"
+              alt="Pakistan flag"
+              width={72}
+              height={48}
+              style={{ objectFit: "cover", borderRadius: 6, background: "white", padding: 3 }}
+              priority
+            />
+            <div>
+              <p style={type.eyebrow}>Pakistan Office Guide</p>
+              <h1 style={{ ...type.display, marginTop: 4 }}>
+                Government offices, made findable.
+              </h1>
+            </div>
+          </div>
+          <p style={{ ...type.body, maxWidth: 560, marginTop: space.sm }}>
+            Requirements, steps, fees, and hours for government offices across Pakistan — and for
+            Pakistani missions abroad.
+          </p>
 
-        </div>
-        <div style={layout.pill}>v1</div>
-      </header>
+          <div style={styles.statRow}>
+            <span style={layout.badge}>{officeCount} offices</span>
+            <span style={layout.badge}>{cities.length} cities</span>
+            <span style={layout.badge}>{embassies.length} missions abroad</span>
+          </div>
+        </header>
 
-      <section style={layout.card}>
-        <h2 style={styles.h2}>Quick Start</h2>
-        <div style={styles.row}>
-          <Link href="/search" style={layout.buttonPrimary}>
-            Search
-          </Link>
-          <Link href="/guides" style={layout.buttonPrimary}>
-            Guides
-          </Link>
-          <Link href="/overseas" style={layout.buttonPrimary}>
-            ✈️ Overseas
-          </Link>
-          <Link href="/cities" style={layout.buttonSoft}>
-            Browse Cities
-          </Link>
-          <Link href="/categories" style={layout.buttonSoft}>
-            Browse Categories
-          </Link>
-        </div>
-
-      </section>
-
-      
-      <section style={{ ...styles.grid2, marginTop: 15 }}>
-        <div style={layout.cityCard}>
-          <h2 style={styles.h2}>🏙️ Cities</h2>
-          <div style={styles.grid}>
-            {cities.map((c) => (
-              <Link
-              key={c}
-              href={`/city/${encodeURIComponent(c)}`}
-              style={{ ...layout.card, padding: 12, textDecoration: "none" }}
+        <section style={{ ...grid(150, space.sm), marginTop: space.xl }}>
+          {quickLinks.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              className="ui-btn"
+              style={l.variant === "primary" ? layout.buttonPrimary : layout.buttonSoft}
             >
-              <div style={{ fontWeight: 800 }}>{c}</div>
-              <div style={styles.small}>View offices</div>
+              {l.label}
             </Link>
+          ))}
+        </section>
 
-            ))}
+        <section className="home-columns" style={{ ...styles.grid2, marginTop: space.xl }}>
+          <div style={layout.cityCard}>
+            <p style={type.eyebrow}>Browse</p>
+            <h2 style={{ ...type.h2, marginTop: 4, marginBottom: space.md }}>Cities</h2>
+            <div style={grid(130, space.sm)}>
+              {cities.map((c) => (
+                <Link
+                  key={c}
+                  href={`/city/${encodeURIComponent(c)}`}
+                  className="ui-tile"
+                  style={{ ...layout.card, padding: space.md, textDecoration: "none" }}
+                >
+                  <div style={type.h3}>{c}</div>
+                  <div style={{ ...type.small, marginTop: 4 }}>View offices</div>
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
 
-        <div style={layout.card}>
-          <h2 style={styles.h2}>🗂️ Categories</h2>
-          <div style={styles.grid}>
-            {categories.map((cat) => (
-              <Link
-                key={cat}
-                href={`/category/${encodeURIComponent(cat)}`}
-                style={{ ...layout.badge, textDecoration: "none" }}
-              >
-                {cat}
-              </Link>
-            ))}
+          <div style={layout.card}>
+            <p style={type.eyebrow}>Browse</p>
+            <h2 style={{ ...type.h2, marginTop: 4, marginBottom: space.md }}>Categories</h2>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: space.sm }}>
+              {categories.map((cat) => (
+                <Link
+                  key={cat}
+                  href={`/category/${encodeURIComponent(cat)}`}
+                  className="ui-badge"
+                  style={{ ...layout.badge, textDecoration: "none" }}
+                >
+                  {cat}
+                  {!!officeCounts[cat] && (
+                    <span style={{ opacity: 0.65 }}> · {officeCounts[cat]}</span>
+                  )}
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <footer style={styles.footer}>
+          <span>Always verify details with the official office before visiting.</span>
+        </footer>
       </div>
     </main>
   );
 }
 
 const styles = {
-  header: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "flex-start",
-    gap: 12,
+  hero: {
     maxWidth: 900,
-    margin: "0 auto 14px auto",
+    margin: "0 auto",
   },
-  title: { margin: 0, fontSize: 26, letterSpacing: 0.2 },
-  sub: { margin: "6px 0 0 0", color: "inherit", opacity: 0.75, fontSize: 14 },
-  
-  h2: { margin: "0 0 10px 0", fontSize: 16 },
-  row: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, gridAutoRows: "auto" },
-
-  small: { margin: "10px 0 0 0", opacity: 0.75, fontSize: 13, lineHeight: 1.5 },
-
+  heroRow: {
+    display: "flex",
+    alignItems: "center",
+    gap: space.md,
+  },
+  statRow: {
+    display: "flex",
+    flexWrap: "wrap",
+    gap: space.sm,
+    marginTop: space.lg,
+  },
   grid2: {
     maxWidth: 900,
     margin: "0 auto",
     display: "grid",
-    gap: 12,
+    gap: space.md,
     gridTemplateColumns: "1fr",
   },
-  grid: { display: "grid", gap: 10 },
+  footer: {
+    maxWidth: 900,
+    margin: `${space.xxl}px auto 0 auto`,
+    ...type.small,
+    color: colors.muted,
+    textAlign: "center",
+  },
 };
-
